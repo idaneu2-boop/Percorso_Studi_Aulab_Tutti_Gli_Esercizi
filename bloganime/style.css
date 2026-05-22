@@ -1,0 +1,27 @@
+        body {
+      background-color: #141414;
+      color: white;
+    }
+    .hero {
+      background: url('./media/chainsaw-man-denji-bound-makimas-eye-live-wallpaper.png') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+    }
+    .card {
+      background-color: #1f1f1f;
+      border: none;
+      cursor: pointer;
+    }
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .lanavvi{
+        width: 50px;
+        height: 30px;
+    }
+    .pep .card{
+        border: none;
+    }

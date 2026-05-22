@@ -1,0 +1,347 @@
+:root {
+    color-scheme: light;
+    --ink: #17223b;
+    --muted: #53627a;
+    --panel: #ffffff;
+    --line: #1f2f55;
+    --pokemon-red: #e83b3b;
+    --pokemon-red-dark: #b91f2b;
+    --pokemon-blue: #2c62c9;
+    --pokemon-blue-dark: #173a84;
+    --pokemon-yellow: #ffcc32;
+    --grass: #39a96b;
+    --screen: #e9fff2;
+    --shadow: 0 18px 0 #14233f, 0 26px 42px rgba(14, 28, 58, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(90deg, rgba(23, 58, 132, 0.08) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(23, 58, 132, 0.08) 1px, transparent 1px),
+        radial-gradient(circle at 18% 12%, rgba(255, 204, 50, 0.5), transparent 16rem),
+        radial-gradient(circle at 90% 0%, rgba(232, 59, 59, 0.26), transparent 22rem),
+        linear-gradient(135deg, #eaf4ff 0%, #fff8d9 46%, #e9fff2 100%);
+    background-size: 34px 34px, 34px 34px, auto, auto, auto;
+    color: var(--ink);
+    font-family: "Trebuchet MS", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    right: -90px;
+    bottom: -110px;
+    width: 320px;
+    height: 320px;
+    pointer-events: none;
+    border: 18px solid rgba(23, 34, 59, 0.14);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, white 0 34px, rgba(23, 34, 59, 0.14) 35px 48px, transparent 49px),
+        linear-gradient(to bottom, rgba(232, 59, 59, 0.14) 0 48%, rgba(23, 34, 59, 0.14) 49% 53%, rgba(255, 255, 255, 0.3) 54% 100%);
+}
+
+.site-header,
+main {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.site-header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 52px 0 28px;
+}
+
+.site-header::after {
+    content: "";
+    flex: 0 0 auto;
+    width: 96px;
+    height: 96px;
+    border: 8px solid var(--line);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, white 0 13px, var(--line) 14px 21px, transparent 22px),
+        linear-gradient(to bottom, var(--pokemon-red) 0 47%, var(--line) 48% 54%, white 55% 100%);
+    box-shadow: 0 10px 0 rgba(20, 35, 63, 0.18);
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    margin: 0 0 12px;
+    padding: 0 12px;
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    background: var(--pokemon-yellow);
+    color: var(--pokemon-blue-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 var(--line);
+}
+
+h1 {
+    margin: 0;
+    color: var(--pokemon-yellow);
+    font-size: clamp(2.45rem, 6vw, 5.4rem);
+    line-height: 0.95;
+    letter-spacing: 0;
+    text-shadow:
+        3px 3px 0 var(--pokemon-blue),
+        -2px 2px 0 var(--pokemon-blue),
+        0 6px 0 var(--pokemon-blue-dark);
+}
+
+.subtitle {
+    max-width: 730px;
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+button {
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.header-actions {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
+}
+
+.run-all,
+.exercise-button,
+.music-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    background: linear-gradient(180deg, var(--pokemon-red) 0%, var(--pokemon-red-dark) 100%);
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 6px 0 var(--line);
+    transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+}
+
+.run-all {
+    padding: 0 18px;
+}
+
+.music-button {
+    padding: 0 16px;
+    background: linear-gradient(180deg, var(--pokemon-yellow) 0%, #f2a900 100%);
+    color: var(--pokemon-blue-dark);
+}
+
+.run-all:hover,
+.exercise-button:hover,
+.music-button:hover {
+    filter: brightness(1.06);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 var(--line);
+}
+
+.run-all:active,
+.exercise-button:active,
+.music-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 var(--line);
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+    padding: 16px 18px;
+    border: 4px solid var(--line);
+    border-radius: 8px;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.94), rgba(233, 255, 242, 0.94)),
+        var(--panel);
+    box-shadow: 0 8px 0 var(--line);
+}
+
+.stat-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 42px;
+    margin-right: 8px;
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    background: var(--pokemon-yellow);
+    color: var(--pokemon-blue-dark);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.stat-label,
+.console-hint {
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    padding-bottom: 56px;
+}
+
+.exercise-card {
+    position: relative;
+    display: flex;
+    min-height: 270px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    overflow: hidden;
+    border: 4px solid var(--line);
+    border-radius: 8px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0 58%, rgba(255, 248, 217, 0.96) 59% 100%),
+        var(--panel);
+    box-shadow: var(--shadow);
+}
+
+.exercise-card::before {
+    content: "";
+    position: absolute;
+    top: -34px;
+    right: -34px;
+    width: 112px;
+    height: 112px;
+    border: 8px solid rgba(31, 47, 85, 0.12);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, white 0 11px, rgba(31, 47, 85, 0.16) 12px 19px, transparent 20px),
+        linear-gradient(to bottom, rgba(232, 59, 59, 0.18) 0 48%, rgba(31, 47, 85, 0.16) 49% 53%, rgba(255, 255, 255, 0.45) 54% 100%);
+}
+
+.card-top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    background: var(--pokemon-blue);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.topic {
+    color: var(--pokemon-red-dark);
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.exercise-card h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--pokemon-blue-dark);
+    font-size: 1.2rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+
+.exercise-card p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--muted);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.result-box {
+    position: relative;
+    z-index: 1;
+    min-height: 82px;
+    margin-top: auto;
+    padding: 12px;
+    overflow-wrap: anywhere;
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    background: var(--screen);
+    color: #173d2a;
+    font-family: "Consolas", "Liberation Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    box-shadow: inset 0 0 0 4px rgba(57, 169, 107, 0.12);
+}
+
+.result-box.is-empty {
+    color: #6a8a79;
+}
+
+.exercise-button {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 14px;
+}
+
+@media (max-width: 720px) {
+    .site-header,
+    .toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .site-header {
+        padding-top: 34px;
+    }
+
+    .site-header::after {
+        width: 72px;
+        height: 72px;
+        border-width: 6px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+    }
+
+    .run-all,
+    .music-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+APPUNTI DA COPIA INCOLLARE PER FAR VELOCE ALTRIMENTI MI SUICIDO :)
+Homepage
+            <button class="home2Button"> <a class="homeButton" href="Homepage.html">Home</a></button>
+            <button class="mainButton"><a class="primeButton" href="Creazione.html">Creazione</a></button>
+            <button class="mainButton"><a class="primeButton" href="Medioevo.html">Medioevo</a></button>
+            <button class="mainButton"><a class="primeButton" href="Presente.html">Presente</a></button>
+Creazione
+            <button class="mainButton"> <a class="primeButton" href="Homepage.html">Home</a></button>
+            <button class="cre2Button"><a class="creButton" href="Creazione.html">Creazione</a></button>
+            <button class="mainButton"><a class="primeButton" href="Medioevo.html">Medioevo</a></button>
+            <button class="mainButton"><a class="primeButton" href="Presente.html">Presente</a></button>
+Medioevo
+            <button class="mainButton"> <a class="primeButton" href="Homepage.html">Home</a></button>
+            <button class="mainButton"><a class="primeButton" href="Creazione.html">Creazione</a></button>
+            <button class="mev2Button"><a class="mevButton" href="Medioevo.html">Medioevo</a></button>
+            <button class="mainButton"><a class="primeButton" href="Presente.html">Presente</a></button>
+Presente
+            <button class="mainButton"> <a class="primeButton" href="Homepage.html">Home</a></button>
+            <button class="mainButton"><a class="primeButton" href="Creazione.html">Creazione</a></button>
+            <button class="mainButton"><a class="primeButton" href="Medioevo.html">Medioevo</a></button>
+            <button class="pre2Button"><a class="preButton" href="Presente.html">Presente</a></button>
