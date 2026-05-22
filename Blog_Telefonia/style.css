@@ -1,0 +1,23 @@
+body{
+    background-color: #212529;
+}
+
+header {
+    height: 100vh;
+    background: url('./media/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg') center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-decoration-style: solid;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.logo{
+    width: 100px;
+}
+
+.card{
+    background-color: #394047;
+}
