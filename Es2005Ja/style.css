@@ -53,6 +53,46 @@ main {
     margin: 0 auto;
 }
 
+.exercise-home-link {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 20;
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    border: 10px solid var(--line);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--pokemon-red) 0 48%, var(--line) 49% 55%, #fff 56% 100%);
+    color: var(--line);
+    font-size: 0;
+    text-decoration: none;
+    box-shadow: 0 7px 0 rgba(20, 35, 63, 0.22);
+}
+
+.exercise-home-link::before {
+    content: "Home";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    border: 10px solid var(--line);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--line);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translate(-50%, -50%);
+}
+
+.exercise-home-link:hover {
+    transform: translateY(-2px);
+}
+
 .site-header {
     position: relative;
     display: flex;

@@ -15,6 +15,30 @@ body{
     padding: 0;
 }
 
+.exercise-home-link{
+    position: fixed;
+    top: 50%;
+    left: 16px;
+    z-index: 20;
+    padding: 10px 14px;
+    border: 2px solid #70667768;
+    border-radius: 20px;
+    background-color: #b8aba2;
+    color: rgb(220, 185, 9);
+    font-family:"Aboreto", system-ui;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #08070968;
+    box-shadow: 6px 6px 10px #00000068;
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+}
+
+.exercise-home-link:hover{
+    transform: translateY(-50%) scale(1.05);
+    background-color: #a89890;
+}
+
 /* Navbar */
 
 /* Titolo Navbar */
@@ -44,7 +68,7 @@ body{
     font-family: "Aboreto", system-ui;
     text-align: center; 
     color:rgb(220, 185, 9) ;
-    background-image: url(./Media/immagini/Border\ h1\ text\ image.jpg);
+    background-image: url("./Media/immagini/Border h1 text image.jpg");
     background-size: clamp(110px, 6vw, 120px);
     text-shadow:3px 3px 3px #12101468 ;
     font-size: 90px;

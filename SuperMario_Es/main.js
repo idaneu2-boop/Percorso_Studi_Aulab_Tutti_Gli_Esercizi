@@ -1,6 +1,14 @@
 // Partendo da questa struttura, creare un programma che simuli il gioco di super Mario Bros.
 const GIOCOSUPERDUCE = document.getElementById('playButton');
 GIOCOSUPERDUCE.addEventListener('click' , playz);
+const musica = document.getElementById('musica');
+
+musica.addEventListener('timeupdate', function () {
+  if (!musica.paused && musica.duration && musica.duration - musica.currentTime < 0.35) {
+    musica.currentTime = 0;
+    musica.play();
+  }
+});
 
 function playz() {
   nascondereCard();

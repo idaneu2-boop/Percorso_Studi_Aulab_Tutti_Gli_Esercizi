@@ -39,6 +39,26 @@ a {
     text-decoration: none;
 }
 
+.exercise-home-link {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 30;
+    padding: 10px 14px;
+    border: 1px solid var(--brand-yellow);
+    border-radius: 4px;
+    background: #050505;
+    color: var(--brand-yellow);
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: 5px 5px 0 var(--brand-yellow);
+}
+
+.exercise-home-link:hover {
+    background: var(--brand-yellow);
+    color: #050505;
+}
+
 button {
     font: inherit;
 }

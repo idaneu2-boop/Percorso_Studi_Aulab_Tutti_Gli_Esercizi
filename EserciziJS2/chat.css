@@ -33,6 +33,26 @@ body {
   background-attachment: fixed;
 }
 
+.exercise-home-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 30;
+  padding: 10px 14px;
+  border: 2px solid var(--line);
+  border-radius: 0;
+  background: var(--black);
+  color: var(--save);
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--heart);
+}
+
+.exercise-home-link:hover {
+  color: var(--text);
+  background: var(--heart);
+}
+
 body::before {
   position: fixed;
   inset: 0;

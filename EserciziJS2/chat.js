@@ -235,7 +235,7 @@ sansTrigger.addEventListener("click", function () {
 });
 
 sansSong.addEventListener("ended", function () {
-  window.location.href = "../index.html";
+  window.location.href = "../home.html";
 });
 
 activateDogSong();

@@ -31,6 +31,27 @@ body {
     var(--paper);
 }
 
+.exercise-home-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 30;
+  padding: 10px 14px;
+  border: 1px solid rgba(16, 20, 31, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 6px 6px 0 var(--coral);
+  backdrop-filter: blur(12px);
+}
+
+.exercise-home-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0 var(--mint);
+}
+
 body::before {
   position: fixed;
   inset: 0;
@@ -242,20 +263,21 @@ button {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
-  gap: 28px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 980px);
+  justify-content: center;
   padding: 76px 0 28px;
 }
 
 .intro-copy {
   display: flex;
-  min-height: 420px;
+  min-height: 360px;
   flex-direction: column;
   justify-content: center;
-  padding: 42px;
+  align-items: center;
+  padding: 48px;
   border-radius: 28px;
   color: #fff;
+  text-align: center;
   background:
     linear-gradient(120deg, rgba(16, 20, 31, 0.96), rgba(30, 42, 67, 0.92)),
     radial-gradient(circle at 80% 20%, rgba(88, 199, 168, 0.3), transparent 32%);
@@ -290,7 +312,7 @@ h1 {
 }
 
 .intro-copy p {
-  max-width: 620px;
+  max-width: 760px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.76);
   font-size: 1.12rem;
@@ -554,6 +576,8 @@ h1 {
 
 .students-card {
   --accent: #7f6df2;
+  grid-column: 1 / -1;
+  min-height: 0;
 }
 
 .nickname-card {
@@ -704,9 +728,9 @@ button:hover {
 
 .students-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 16px;
-  margin-top: 18px;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  margin-top: 22px;
 }
 
 .student-actions {
@@ -716,9 +740,17 @@ button:hover {
   min-width: 0;
 }
 
+.students-card .input-row.triple {
+  grid-template-columns: minmax(0, 1fr) minmax(96px, 120px);
+}
+
+.students-card .input-row.triple button {
+  grid-column: 1 / -1;
+}
+
 .student-board {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;
   min-width: 0;
 }
@@ -783,8 +815,7 @@ button:hover {
     grid-column: auto;
   }
 
-  .intro-copy,
-  .console-panel {
+  .intro-copy {
     min-height: 340px;
   }
 }

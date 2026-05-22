@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSD Viaggi</title>
     <link rel="shortcut icon" href="./Media/Icona.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 54px;
+            font-family: Arial, sans-serif;
+            background: #f5fbff;
+            color: #123047;
+        }
+
+        .exercise-home-link {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            z-index: 20;
+            padding: 10px 14px;
+            border: 2px solid #0f4c81;
+            border-radius: 999px;
+            background: #ffffff;
+            color: #0f4c81;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 5px 0 #b8dcf0;
+        }
+
+        .exercise-home-link:hover {
+            background: #0f4c81;
+            color: #ffffff;
+        }
+    </style>
 
 </head>
 <body>
-        <a href="../home.html" style="position: fixed; top: 16px; left: 16px; z-index: 9999; padding: 10px 14px; border-radius: 999px; background: #e30613; color: #ffffff; font-family: Arial, sans-serif; font-weight: 700; text-decoration: none;">Home esercizi</a>
+        <a class="exercise-home-link" href="../home.html">Home</a>
         <!-- Inizio Navbar -->
      <nav>
      <ul>
-      <a href="./BlogViaggi.html">Home</a>
-      <a href="/contatti.html">Contatti</a>
+      <a href="contatti.html">Contatti</a>
     </ul>
     </nav>
     <!-- Fine Navbar -->

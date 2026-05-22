@@ -30,6 +30,27 @@ body {
     linear-gradient(180deg, var(--bg), var(--bg-deep));
 }
 
+.exercise-home-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 30;
+  padding: 10px 14px;
+  border: 1px solid rgba(240, 232, 255, 0.18);
+  border-radius: 6px;
+  background: rgba(23, 23, 29, 0.9);
+  color: var(--violet);
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 0 0 2px rgba(184, 132, 255, 0.24), 0 16px 30px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.exercise-home-link:hover {
+  color: var(--text);
+  background: var(--violet-strong);
+}
+
 body::before {
   position: fixed;
   inset: 0;

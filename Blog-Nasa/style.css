@@ -39,6 +39,27 @@ p{
     margin-right: auto;
 }
 
+.exercise-home-link{
+    position: fixed;
+    top: 8px;
+    left: 18px;
+    z-index: 9999;
+    padding: 10px 16px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 4px;
+    background: rgba(22,73,174,0.85);
+    color: var(--third);
+    font-family: "Audiowide", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+.exercise-home-link:hover{
+    color: var(--light);
+    background: rgba(32,33,37,0.95);
+}
+
 .botton1{
     transition: 0.4s ease-in-out;
 }

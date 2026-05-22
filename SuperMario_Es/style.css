@@ -32,6 +32,27 @@ body {
   background-color: #5c94fc;
 }
 
+.exercise-home-link {
+  position: fixed;
+  top: 76px;
+  left: 50%;
+  z-index: 10;
+  padding: 10px 14px;
+  border: 3px solid #111;
+  border-radius: 6px;
+  background-color: #ffd22e;
+  color: #111;
+  font: 700 14px Arial, sans-serif;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 #111;
+  transform: translateX(-50%);
+}
+
+.exercise-home-link:active {
+  transform: translate(calc(-50% + 3px), 3px);
+  box-shadow: none;
+}
+
 .sup {
   width: 100vw;
   height: 100vh;

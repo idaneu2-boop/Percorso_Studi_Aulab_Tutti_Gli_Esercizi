@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-    <a href="../home.html" style="position: fixed; top: 16px; left: 16px; z-index: 9999; padding: 10px 14px; border-radius: 999px; background: #e30613; color: #ffffff; font-family: Arial, sans-serif; font-weight: 700; text-decoration: none;">Home esercizi</a>
+    <a class="exercise-home-link" href="../home.html">Torna agli esercizi</a>
     <!-- Navbar -->
     <nav>
         <!-- Bottoni -->
@@ -45,13 +45,13 @@
                 <h1 class="title"> PokéMitology </h1>
                 
             </a>
-            <img class="giffona2" src="/Media/immagini/Dittoballa.gif" alt="gif di Ditto che balla">
+            <img class="giffona2" src="./Media/immagini/Dittoballa.gif" alt="gif di Ditto che balla">
         </div>
         <!-- Barra di ricerca e gif -->
         <div class="sezionericerca">
             <form class="barraricerca">
                 <input type="search" placeholder="Acchiappali Tutti!">
-                <button type="submit"><img src="./Media/immagini/diglett gif.gif" alt="diglett che sbuca e dice ok"></button>
+                <button type="submit"><img id="diglettGif" src="./Media/immagini/diglett gif.gif" alt="diglett che sbuca e dice ok"></button>
             </form>
         </div>
         <!-- Cards -->
@@ -100,5 +100,13 @@
         
     </nav>
     <!-- Header -->
+    <script>
+        const diglettGif = document.getElementById("diglettGif");
+        const diglettSrc = "./Media/immagini/diglett gif.gif";
+
+        setInterval(function () {
+            diglettGif.src = diglettSrc + "?restart=" + Date.now();
+        }, 6000);
+    </script>
 </body>
 </html>
