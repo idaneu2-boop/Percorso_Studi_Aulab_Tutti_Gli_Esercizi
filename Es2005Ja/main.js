@@ -14,7 +14,7 @@ console.log(canzonisingole);
 let varieeta = [12, 24, 10, 60];
 function buttafuori(numeri) {
     if (numeri >= 14) {
-        return "Può vedere il pornazzo";
+        return "Può vedere il film";
     } else { 
         return "Smamma giovanotto!";
     }
@@ -77,15 +77,15 @@ let danni = [15, 30, 25, 10, 40, 120, 200];
 // Crea una funzione che sommi tutti i danni che puoi fare e restituisca:
 // "Donato è stato sconfitto" se il totale dei tuoi attacchi supera i LP di Donato
 // "Donato vive, Donato regna" se non puoi farci nulla. Donato è troppo potente per noi comuni mortali
-function massacriamolo(numeroattacchi) {
+function calcolaDanni(numeroattacchi) {
     let mazzatetirate = numeroattacchi.reduce((acc, danno) => acc + danno, 0);
     if (mazzatetirate >= 1000){
-        return "Donato è morto";
+        return "Donato è stato sconfitto";
     } else {
-        return "Donato mi ha inculato";
+        return "Donato resiste ancora";
     }
 }
-let battaglia = massacriamolo(danni);
+let battaglia = calcolaDanni(danni);
 console.log(battaglia);
 
 
@@ -100,11 +100,11 @@ let livelliPokemon = [30, 20, 6, 12, 18];
 // "Allena di più i tuoi pokémon" - Se la media del team è inferiore a 15
 function imiegoats(troppofortipervalerio) {
     let sommalivelli = troppofortipervalerio.reduce((somma, livello)=> somma + livello, 0);
-    let medialivelli = sommalivelli / troppofortipervalerio.lenght;
+    let medialivelli = sommalivelli / troppofortipervalerio.length;
     if (medialivelli >= 15){
-        return "Team adatto alla pippa";
+        return "Team adatto a battere Valerio";
     } else {
-        return "Lo scopano senza vasella";
+        return "Allena di più i tuoi Pokémon";
     }
 }
 let squadraz = imiegoats(livelliPokemon);
@@ -177,9 +177,9 @@ let serie = ["game of thrones", "The Boys", "the witcher", "rick e morty", "uplo
 function seriedascegliere(umamusume){
     let maiuscole = umamusume.map(titolo=> titolo.toUpperCase());
     console.log(maiuscole);
-    let sceltafalsa = prompt("Robertone quale serie di merda vuoi guardarti? \n GAME OF THRONES \n THE BOYS \n THE WITCHER \n RICK E MORTY \n UPLOAD");
+    let sceltafalsa = prompt("Roberto, quale serie vuoi guardare? \n GAME OF THRONES \n THE BOYS \n THE WITCHER \n RICK E MORTY \n UPLOAD");
     if (maiuscole.includes(sceltafalsa)){
-        let risposta = "Roberto hai scelto " + sceltafalsa + " ma io ti farò guardare comunque Umamusume invece di " + sceltafalsa + " di merda";
+        let risposta = "Roberto hai scelto " + sceltafalsa + ", ma oggi guarderai comunque Umamusume invece di " + sceltafalsa;
         alert(risposta);
         return risposta;
     }else{
@@ -200,10 +200,10 @@ function seriedascegliere(umamusume){
 let squadrozzissima = ["guerriero", "mago", "ladro", "stregone"];
 function babbuino(components){
     if (components.includes("mago")) {
-        let ndocazzosta = components.indexOf("mago");
-        return "er mago sta lì " + ndocazzosta + " aveva visto un culo";
+        let posizioneMago = components.indexOf("mago");
+        return "Il mago si trova alla posizione " + posizioneMago;
     } else {
-        return "Federica ma te sei persa er mago? E mo come cazzo famo?"
+        return "Federica ha dimenticato il mago";
     }
     }
 let cestannotutti = babbuino(squadrozzissima);
@@ -229,7 +229,7 @@ function capellozzinicola(preghiere){
     let capellitot = crescitatot + capelliiniz;
     console.log("L'amore mio Nicola ha " + capellitot + " cm. di capelli");
     if (capellitot >= 12) {
-        return "Nicola mi ci può frustare il culo";
+        return "Nicola può fare il codino da samurai";
     }else{
         return "Nicola ti spalmo io le Gocce Madò";
     }
@@ -254,11 +254,11 @@ console.log(quindicapelli);
 let vinili = ["Queen", "Nirvana", "Beatles", "Muse"];
 let haBacchettaMagica = false;
 let soldi = 40;
-function spennemoisordi(dischi, inculino, isordi) {
-    if(!inculino){
+function spennemoisordi(dischi, haBacchetta, isordi) {
+    if(!haBacchetta){
         if (isordi >= 30) {
             isordi -= 30;
-            console.log("Valerio si può sturare l'ano! Soldi Rimasti: " + isordi + " €");
+            console.log("Valerio può comprare la bacchetta. Soldi rimasti: " + isordi + " €");
             let dischiord = dischi.sort();
             return dischiord;
         }else{
@@ -295,7 +295,7 @@ function contadeisordi(incas){
     }else if(tuttisordi >= 500 && tuttisordi <= 1000){
         return "Mejo Star Warse Ascesa der Camminatore der Cielo";
     }else{
-        return "Donato ha iniziato a prostitursi";
+        return "Donato deve migliorare la prossima uscita";
     }
 }
 let comeannata = contadeisordi(incassi);

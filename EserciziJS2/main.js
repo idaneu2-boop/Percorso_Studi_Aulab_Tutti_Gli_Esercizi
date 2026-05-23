@@ -1,20 +1,20 @@
 // Es.1
 
-// let v = Number(prompt(`Inserisci un numero per dire quanto ti stanno sul cazzo gli ebrei`));
+// let v = Number(prompt(`Inserisci un numero per verificare la fascia d'età`));
 
 // if(v >= 0 && v < 18){
-//     console.log(`Hai il pisello minuscolo`);   
+//     console.log(`Sei minorenne`);
 // }else if(v >= 18 && v <= 21){
-//     console.log(`Nuovo Camerato`);
+//     console.log(`Nuovo adulto`);
 // }else if(v >= 22 && v <= 24){
-//     console.log(`Formazione del ghetto di Roma`);  
+//     console.log(`Fascia giovane adulta`);
 // }else if(v >=25 && v <= 27){
-//     console.log(`Gnagnagnau morto appeso a pietrate`);
+//     console.log(`Fascia adulta`);
 // }else if(v >=28 && v <=29){
-//     console.log(`Riapertura di Auschwitz`);
+//     console.log(`Fascia avanzata`);
 // }else if(v == 30){
-//     console.log(`Israele cancellata dalle mappe Sieg Hail mein Ziegler`);
-// }else{console.log(`Torna nel ghetto ebreo`);
+//     console.log(`Valore massimo raggiunto`);
+// }else{console.log(`Valore non valido`);
 // }
 
 // Es.2
@@ -30,8 +30,8 @@
 // }else if(c <= -1 && c >= -10){
 //     console.log(`sciarpina contro il freddo`);
 // }else if(c <= -11){
-//     console.log(`che cazzo ci fai fuori casa?`);
-// }else{console.log(`tira più un pelo di figa che un carro di buoi`);
+//     console.log(`Fa davvero molto freddo`);
+// }else{console.log(`Temperatura non valida`);
 // }
 
 // Es.3

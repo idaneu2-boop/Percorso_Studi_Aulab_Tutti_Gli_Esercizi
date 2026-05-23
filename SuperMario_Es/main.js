@@ -1,6 +1,6 @@
 // Partendo da questa struttura, creare un programma che simuli il gioco di super Mario Bros.
-const GIOCOSUPERDUCE = document.getElementById('playButton');
-GIOCOSUPERDUCE.addEventListener('click' , playz);
+const gameButton = document.getElementById('playButton');
+gameButton.addEventListener('click' , playz);
 const musica = document.getElementById('musica');
 
 musica.addEventListener('timeupdate', function () {
@@ -13,36 +13,36 @@ musica.addEventListener('timeupdate', function () {
 function playz() {
   nascondereCard();
   
-  let startGame = prompt(`Camerato è pronto a servire la patria?! \n (1) Inizia partita \n (2) Esci dal gioco `);
+    let startGame = prompt(`Sei pronto a iniziare la partita? \n (1) Inizia partita \n (2) Esci dal gioco `);
   
   let counter = 0;
   counter++;
   
   while (startGame != `1` && startGame != `2` && counter < 5) {
-    startGame = prompt(`Camerato è pronto a servire la patria?! \n (1) Inizia partita \n (2) Esci dal gioco `);
+    startGame = prompt(`Sei pronto a iniziare la partita? \n (1) Inizia partita \n (2) Esci dal gioco `);
     counter++;
   }
   
   if (startGame === `1`) {
-    alert(`Vincere e Vinceremo!`);
+    alert(`Si parte!`);
     let victory = 0;
     let attempts = 0;
     let gameOver = false;
     let gameWin = false;
     while (!gameOver && attempts < 5 && !gameWin && victory < 5){
-      let enemy = prompt(`Attento c'e' un nemico! Premi: \n (1) Salta e corri \n (2) Salta sopra al nemico ed eliminalo \n (3) Saluta il Duce`);
+      let enemy = prompt(`Attento c'e' un nemico! Premi: \n (1) Salta e corri \n (2) Salta sopra al nemico ed eliminalo \n (3) Saluta Mario`);
       switch (enemy) {
         case `1`:
-        alert(`C'e' mancato poco! Sei riuscito a schivare il pisello!`);
+        alert(`C'e' mancato poco! Sei riuscito a schivare il nemico!`);
         break;
         case `2`:
-        alert(`Wow! Bravissimo! L'hai scappellato! Continua cosi'!`);
+        alert(`Wow! Bravissimo! L'hai superato! Continua cosi'!`);
         break;
         case `3`:
         victory++;
-        alert(`Uomini di Terra, di Mare e di Aria avanzate! \n Conquista di Africonia: ${5 - victory}`);
+        alert(`Avanti tutta! \n Obiettivi rimasti: ${5 - victory}`);
         
-        if (victory == 5) {alert(`I Fascisti sono arrivati su Marte!`)
+        if (victory == 5) {alert(`Hai completato la missione!`)
           gameWin = true;
           vincere();
           break;
@@ -51,18 +51,18 @@ function playz() {
         default:
         attempts++;
         if (attempts < 5){
-          alert(`Hai preso il cazzo nel culo! \n Tentativi rimasti prima delle emorroidi: ${5 - attempts}`)
+          alert(`Colpito! \n Tentativi rimasti: ${5 - attempts}`)
         }else{
-          alert(`Peccato sei stato troppo lento...ti è esploso l'ano... GAME OVER!`);
+          alert(`Peccato, sei stato troppo lento... GAME OVER!`);
           gameOver = true;
           perdere(); }
           break;
         }
       }
     } else if(counter >= 5) {
-      alert(`Ti hanno sparato alle mani? O ti ammazzi di seghe tutti i giorni? Riprova quando ti sarà passato il Parkinson`);
+      alert(`Hai superato il numero massimo di tentativi. Riprova con più calma.`);
     } else {
-      alert(`Fottutissimo comunista fucilatelo sul posto!`);
+      alert(`Partita annullata. Alla prossima!`);
     } 
   }
   

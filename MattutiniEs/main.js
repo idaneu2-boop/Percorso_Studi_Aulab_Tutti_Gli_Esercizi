@@ -39,7 +39,7 @@ console.log(med)
 // 'divisione'
 // La funzione dovrà restituire un nuovo array i cui valori siano quelli dei due array mandati come parametri a cui sia applicata l'operazione indicata tra gli elementi con lo stesso indice.
 // Es. input= [1,2,3], [4,5,6], 'somma'      output= [5,7,9]
-const ditoinculo = (operazione, ...gliarray) =>{
+const calcolaArray = (operazione, ...gliarray) =>{
     let [array1, array2] = gliarray;
     console.log(operazione);
     return array1.map((num, i) => {
@@ -48,7 +48,7 @@ const ditoinculo = (operazione, ...gliarray) =>{
         }
     });
 };
-console.log( ditoinculo("somma", [1,2,3], [4,5,6]));
+console.log(calcolaArray("somma", [1,2,3], [4,5,6]));
 // Es.Giornalieri
 // FACILI
 // Traccia 1:
@@ -72,12 +72,12 @@ let gwyn = mundus.reverse().map((numeri)=> numeri * 2);
 console.log(gwyn);
 // Traccia 5:
 // Scrivere una funzione che prenda in ingresso un qualsiasi numero di parametri e restituisca un array che contenga soltanto i dati passati di tipo numerico
-let varie = [72, "mr. president", 69, "they've hit", 911, "the second tower"];
+let varie = [72, "prima stringa", 69, "seconda stringa", 911, "terza stringa"];
 let scritta = varie.filter((elemento, indice)=> typeof elemento === "string");
 console.log(...scritta);
 // Traccia 6:
 // Scrivere una funzione che prenda in ingresso due array e restituisca l'array che contiene più elementi, in caso in cui gli array contengano lo stesso numero di elementi dovrà restituire la stringa 'Questi array contengono lo stesso numero di elementi'
-function piselloPiugrande(array1, array2) {
+function arrayPiuLungo(array1, array2) {
     if (array1.length > array2.length) {
     return array1;
     } 
@@ -85,12 +85,12 @@ function piselloPiugrande(array1, array2) {
     return array2;
     }
     else {
-    return "Questi array hanno il pisello lungo uguale";
+    return "Questi array hanno la stessa lunghezza";
     }
 }
-console.log(piselloPiugrande([1, 2, 3], [4, 5]));
-console.log(piselloPiugrande([1], [2, 3, 4]));
-console.log(piselloPiugrande([1, 2], ["a", "b"]));
+console.log(arrayPiuLungo([1, 2, 3], [4, 5]));
+console.log(arrayPiuLungo([1], [2, 3, 4]));
+console.log(arrayPiuLungo([1, 2], ["a", "b"]));
 // DIFFICILI
 // Traccia 7:
 // Scrivere una funzione che prenda in ingresso due array contenenti numeri. Questa funzione dovrà restituire un nuovo array che contenga 2 elementi. Il primo elemento dovrà essere la somma dei numeri del primo array mentre il secondo elemento dovrà essere la somma dei numeri del secondo array.
@@ -102,7 +102,7 @@ let sakura = somma1 + somma2;
 console.log(sakura);
 // Traccia 8:
 // Scrivere una funzione che prenda in ingresso un array. Questa funzione dovrà restituire la media degli elementi numerici dell'array passato (l'array può potenzialmente contenere anche elementi non numerici)
-let goku = [4, "mi scopo junior", 20, "Z", 7, "Dragon Ball GT siamo tutti qui"]
+let goku = [4, "Dragon Ball", 20, "Z", 7, "Dragon Ball GT siamo tutti qui"]
 let junior = goku.filter((elemento)=> typeof elemento === "number");
 let chichi = junior.reduce((acc, numero)=>acc + numero, 0);
 let gohan = chichi / junior.length;
