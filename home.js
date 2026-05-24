@@ -5,6 +5,9 @@ const categoryFilterMenu = document.querySelector("#categoryFilterMenu");
 const cards = [...document.querySelectorAll(".exercise-card")];
 const emptyState = document.querySelector("#emptyState");
 const linkedPagesCount = document.querySelector("#linkedPagesCount");
+const helperButton = document.querySelector("#helperButton");
+const helperBubble = document.querySelector("#helperBubble");
+const helperClose = document.querySelector("#helperClose");
 let selectedCategory = "";
 
 const normalizeText = (text) =>
@@ -63,6 +66,16 @@ const closeCategoryMenu = () => {
 const openCategoryMenu = () => {
   categoryFilterMenu.hidden = false;
   categoryFilterButton.setAttribute("aria-expanded", "true");
+};
+
+const closeHelper = () => {
+  helperBubble.hidden = true;
+  helperButton.setAttribute("aria-expanded", "false");
+};
+
+const openHelper = () => {
+  helperBubble.hidden = false;
+  helperButton.setAttribute("aria-expanded", "true");
 };
 
 const setActiveCategory = (category, label) => {
@@ -130,15 +143,31 @@ categoryFilterButton.addEventListener("click", () => {
   }
 });
 
+helperButton.addEventListener("click", () => {
+  if (helperBubble.hidden) {
+    openHelper();
+  } else {
+    closeHelper();
+  }
+});
+
+helperClose.addEventListener("click", closeHelper);
+
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".category-filter")) {
     closeCategoryMenu();
+  }
+
+  if (!event.target.closest(".page-helper")) {
+    closeHelper();
   }
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeCategoryMenu();
+    closeHelper();
     categoryFilterButton.blur();
+    helperButton.blur();
   }
 });
