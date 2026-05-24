@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funzioni Array | Violet Lab</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <a class="exercise-home-link" href="../../home.html">Array Hub</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Funzioni Array">
+        <span class="brand-icon">FA</span>
+        <span>
+          <strong>Violet Lab</strong>
+          <small>FunzioniArray</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione esercizi">
+        <a href="../../home.html">Home</a>
+        <a href="#numeri">Numeri</a>
+        <a href="#dadi">Dadi</a>
+        <a href="#giorno">Giorno</a>
+        <a href="#fizzbuzz">FizzBuzz</a>
+        <a href="#array">Array</a>
+        <a href="#palindroma">Palindroma</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">dark violet edition</span>
+          <h1>Funzioni e array, ordinati in una console elegante.</h1>
+          <p>Una pagina interattiva per provare medie, tabelline, dadi, FizzBuzz, confronti, array annidati, ordinamenti e palindrome.</p>
+        </div>
+
+        <div class="code-panel" aria-label="Pannello codice">
+          <div class="panel-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="panel-body">
+            <p><span>function</span> solve(exercise) {</p>
+            <p>  return exercise.run();</p>
+            <p>}</p>
+            <p class="ok">11 moduli disponibili</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Statistiche esercizi">
+        <article>
+          <strong>11</strong>
+          <span>esercizi</span>
+        </article>
+        <article>
+          <strong>[]</strong>
+          <span>array</span>
+        </article>
+        <article>
+          <strong>fn</strong>
+          <span>funzioni</span>
+        </article>
+      </section>
+
+      <section class="exercise-grid" aria-label="Esercizi interattivi">
+        <article class="exercise-card wide" id="numeri">
+          <div class="card-header">
+            <span class="chip">reduce()</span>
+            <span class="index">01</span>
+          </div>
+          <h2>Somma e media</h2>
+          <p>Inserisci cinque numeri separati da virgola e calcola somma e media.</p>
+
+          <form class="tool-form" data-form="average">
+            <label for="averageInput">Numeri</label>
+            <div class="input-line">
+              <input id="averageInput" name="averageInput" type="text" value="1, 2, 3, 4, 5" required>
+              <button type="submit">Calcola</button>
+            </div>
+          </form>
+
+          <output class="result" id="averageResult">Pronto a calcolare.</output>
+        </article>
+
+        <article class="exercise-card">
+          <div class="card-header">
+            <span class="chip">for</span>
+            <span class="index">02</span>
+          </div>
+          <h2>Tabellina</h2>
+          <p>Genera la tabellina completa di un numero.</p>
+
+          <form class="tool-form" data-form="table">
+            <label for="tableInput">Numero</label>
+            <div class="input-line">
+              <input id="tableInput" name="tableInput" type="number" value="2" required>
+              <button type="submit">Genera</button>
+            </div>
+          </form>
+
+          <output class="result list-result" id="tableResult">La tabellina comparira qui.</output>
+        </article>
+
+        <article class="exercise-card wide" id="dadi">
+          <div class="card-header">
+            <span class="chip">Math.random()</span>
+            <span class="index">03</span>
+          </div>
+          <h2>Gioco di dadi</h2>
+          <p>Scegli quanti tiri fare per ogni giocatore e scopri il vincitore.</p>
+
+          <form class="tool-form" data-form="dice">
+            <label for="diceRounds">Numero tiri</label>
+            <div class="input-line">
+              <input id="diceRounds" name="diceRounds" type="number" min="1" max="20" value="5" required>
+              <button type="submit">Lancia</button>
+            </div>
+          </form>
+
+          <div class="score-board" id="diceBoard" aria-live="polite">
+            <div><strong>Giocatore 1</strong><span>0</span></div>
+            <div><strong>Giocatore 2</strong><span>0</span></div>
+          </div>
+
+          <output class="result" id="diceResult">I dadi sono fermi.</output>
+        </article>
+
+        <article class="exercise-card" id="giorno">
+          <div class="card-header">
+            <span class="chip">switch</span>
+            <span class="index">04</span>
+          </div>
+          <h2>Giorno settimana</h2>
+          <p>Da 1 a 7, trova il giorno corrispondente.</p>
+
+          <form class="tool-form" data-form="day">
+            <label for="dayInput">Numero giorno</label>
+            <div class="input-line">
+              <input id="dayInput" name="dayInput" type="number" min="1" max="7" value="6" required>
+              <button type="submit">Trova</button>
+            </div>
+          </form>
+
+          <output class="result" id="dayResult">Seleziona un numero.</output>
+        </article>
+
+        <article class="exercise-card" id="fizzbuzz">
+          <div class="card-header">
+            <span class="chip">modulo</span>
+            <span class="index">05</span>
+          </div>
+          <h2>FizzBuzz</h2>
+          <p>Genera la sequenza fino al numero scelto.</p>
+
+          <form class="tool-form" data-form="fizzbuzz">
+            <label for="fizzBuzzInput">Limite</label>
+            <div class="input-line">
+              <input id="fizzBuzzInput" name="fizzBuzzInput" type="number" min="1" max="100" value="30" required>
+              <button type="submit">Crea</button>
+            </div>
+          </form>
+
+          <output class="result compact-result" id="fizzBuzzResult">FizzBuzz in attesa.</output>
+        </article>
+
+        <article class="exercise-card">
+          <div class="card-header">
+            <span class="chip">String()</span>
+            <span class="index">06</span>
+          </div>
+          <h2>Conta cifre</h2>
+          <p>Conta quante cifre ha un numero intero fino a 9999.</p>
+
+          <form class="tool-form" data-form="digits">
+            <label for="digitsInput">Numero</label>
+            <div class="input-line">
+              <input id="digitsInput" name="digitsInput" type="number" min="0" max="9999" value="999" required>
+              <button type="submit">Conta</button>
+            </div>
+          </form>
+
+          <output class="result" id="digitsResult">Numero non ancora letto.</output>
+        </article>
+
+        <article class="exercise-card">
+          <div class="card-header">
+            <span class="chip">===</span>
+            <span class="index">07</span>
+          </div>
+          <h2>Uguaglianza stretta</h2>
+          <p>Confronta due valori usando uguaglianza identica.</p>
+
+          <form class="tool-form stacked" data-form="equality">
+            <label>Valore A<input name="valueA" type="text" value="2" required></label>
+            <label>Tipo A
+              <select name="typeA">
+                <option value="number">numero</option>
+                <option value="string">stringa</option>
+              </select>
+            </label>
+            <label>Valore B<input name="valueB" type="text" value="2" required></label>
+            <label>Tipo B
+              <select name="typeB">
+                <option value="number">numero</option>
+                <option value="string" selected>stringa</option>
+              </select>
+            </label>
+            <button type="submit">Confronta</button>
+          </form>
+
+          <output class="result" id="equalityResult">Confronto pronto.</output>
+        </article>
+
+        <article class="exercise-card wide" id="array">
+          <div class="card-header">
+            <span class="chip">array annidati</span>
+            <span class="index">08</span>
+          </div>
+          <h2>Frase dagli array</h2>
+          <p>Ricostruisce la frase pescando parole dentro array annidati.</p>
+
+          <button class="full-button" id="phraseButton" type="button">Ricostruisci frase</button>
+          <output class="result" id="phraseResult">La frase comparira qui.</output>
+        </article>
+
+        <article class="exercise-card">
+          <div class="card-header">
+            <span class="chip">sort()</span>
+            <span class="index">09</span>
+          </div>
+          <h2>Ordina numeri</h2>
+          <p>Inserisci numeri casuali e ordinali in crescente o decrescente.</p>
+
+          <form class="tool-form" data-form="sort">
+            <label for="sortInput">Array</label>
+            <input id="sortInput" name="sortInput" type="text" value="3, 7, -2, 5, 8, 1, 2, 5, 6, -4" required>
+            <select name="sortDirection">
+              <option value="desc">Decrescente</option>
+              <option value="asc">Crescente</option>
+            </select>
+            <button type="submit">Ordina</button>
+          </form>
+
+          <output class="result" id="sortResult">Array non ordinato.</output>
+        </article>
+
+        <article class="exercise-card">
+          <div class="card-header">
+            <span class="chip">map()</span>
+            <span class="index">10</span>
+          </div>
+          <h2>Somma array</h2>
+          <p>Somma elemento per elemento due array della stessa lunghezza.</p>
+
+          <form class="tool-form stacked" data-form="sumArrays">
+            <label>Array 1<input name="arrayOne" type="text" value="10, 20, 30" required></label>
+            <label>Array 2<input name="arrayTwo" type="text" value="40, 50, 60" required></label>
+            <button type="submit">Somma</button>
+          </form>
+
+          <output class="result" id="sumArraysResult">Risultato in attesa.</output>
+        </article>
+
+        <article class="exercise-card wide" id="palindroma">
+          <div class="card-header">
+            <span class="chip">reverse()</span>
+            <span class="index">11</span>
+          </div>
+          <h2>Stringa palindroma</h2>
+          <p>Elimina spazi e punteggiatura, poi controlla se la frase si legge al contrario.</p>
+
+          <form class="tool-form" data-form="palindrome">
+            <label for="palindromeInput">Frase</label>
+            <div class="input-line">
+              <input id="palindromeInput" name="palindromeInput" type="text" value="I topi non avevano nipoti" required>
+              <button type="submit">Controlla</button>
+            </div>
+          </form>
+
+          <output class="result" id="palindromeResult">Scrivi una frase.</output>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

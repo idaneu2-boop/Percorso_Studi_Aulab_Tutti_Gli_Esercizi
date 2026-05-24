@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Telefonia</title>
+
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- ICON -->
+    <link rel="shortcut icon" href="./media/8068184.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <a class="exercise-home-link" href="../../home.html">Home</a>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container justify-content-around">
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./media/SMART-4.jpg" alt="Immagine Logo"></a>
+            
+            <a class="text-decoration-none" href="https://www.euronics.it/prenota-e-ritira.html?_gl=1*mtas58*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwzevPBhBaEiwAplAxvlABSHdCajnZfwWHSdFYptGwYHtqlvxnGTi7Xemq_IroQpg87g4CdhoCfwIQAvD_BwE&gbraid=0AAAAACtPrNO7NGMRHyZgVhfFTHGkJQkXG"><h1 class="text-light">Ultime Offerte!</h1></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://www.euronics.it/?_gl=1*1lwiohx*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwzevPBhBaEiwAplAxvlABSHdCajnZfwWHSdFYptGwYHtqlvxnGTi7Xemq_IroQpg87g4CdhoCfwIQAvD_BwE&gbraid=0AAAAACtPrNO7NGMRHyZgVhfFTHGkJQkXG">Home Euronics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.euronics.it/telefonia/?utm_source=google&utm_medium=cpc&utm_campaign=01._LF_Search-Brand_Google_Always-on_RelatedNew_[E_P]_AIMAX&utm_id=20105134722&utm_source_platform=google+ads&gad_source=1&gad_campaignid=20105134722&gbraid=0AAAAACtPrNO7NGMRHyZgVhfFTHGkJQkXG&gclid=CjwKCAjwzevPBhBaEiwAplAxvlABSHdCajnZfwWHSdFYptGwYHtqlvxnGTi7Xemq_IroQpg87g4CdhoCfwIQAvD_BwE">Negozio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HEADER -->
+    <header>
+        <h1>Benvenuto nel mondo della telefonia!</h1>
+    </header>
+    <main>
+        <!-- PRODOTTI -->
+        <section id="prodotti" class="container py-5">
+            <h2 class="text-center mb-4">Prodotti Recenti</h2>
+            <div class="row">
+                
+                <!-- CARD 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./media/apple-iphone-17-pro-max-256gb-arancione-cosmico-garanzia-24-mesi.jpg" class="card-img-top" alt="iPhone 17 Pro Max arancione cosmico">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Iphone 17 Pro Max</h5>
+                            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Dettagli</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CARD 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./media/SAM08073L-bb64aa54cd-0.jpg" class="card-img-top" alt="Samsung Galaxy S25 Ultra">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Samsung Galaxy S25 Ultra</h5>
+                            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal2">Dettagli</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CARD 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./media/nokia-1.jpg" class="card-img-top" alt="Motorola Edge 70">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Motorola Edge 70</h5>
+                            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal3">Dettagli</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- MODALI -->
+        <div class="modal fade" id="modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-light"><h5>Iphone 17 Pro Max</h5></div>
+                    <div class="modal-body">L’iPhone 17 Pro Max è stato presentato il 09/09/2025 e debutta con un design unibody in alluminio forgiato con camera di vapore. Integra una fotocamera frontale Center Stage da 18 MP, il chip A19 Pro e un sistema di tre fotocamere Fusion da 48 MP con lo zoom di qualità ottica più lungo mai visto su un iPhone (fino a 8x / 200 mm). Il display Super Retina XDR da 6,9" mantiene ProMotion a 120 Hz e picchi di 3.000 nit, con la migliore autonomia storica su un iPhone.
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-light"><h5>Samsung Galaxy S25 Ultra</h5></div>
+                    <div class="modal-body">Samsung Galaxy S25 Ultra è uno smartphone Android con caratteristiche all'avanguardia che lo rendono una scelta eccellente per ogni tipo di utilizzo, rappresentando uno dei migliori dispositivi mobili mai realizzati. Dispone di un grande display da 6.9 pollici e di una risoluzione da 3120x1440 pixel, fra le più elevate attualmente in circolazione. Nello stilare la scheda tecnica di questo Samsung Galaxy S25 Ultra, notiamo che le funzionalità offerte sono innumerevoli e tutte al top di gamma. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettività Wi-fi e il GPS. La batteria è da 5000mAh.
+                        L'eccellenza di questo Samsung Galaxy S25 Ultra è completata da una fotocamera con un sensore da ben 200 megapixel che permette di scattare foto di alta qualità con una risoluzione di 16330x12247 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Veniamo alle dimensioni: lo spessore di 8.2mm è contenuto e rende questo Samsung Galaxy S25 Ultra molto interessante. Il tutto sta in un oggetto dal peso di 218g.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="modal3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger text-light"><h5>Motorola Edge 70</h5></div>
+                        <div class="modal-body">Motorola Edge 70, come emerge dalla sua scheda tecnica, è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.7 pollici con una risoluzione di 2712x1220 pixel. Le funzionalità offerte da questo Motorola Edge 70 sono veramente tante e all'avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+                            Questo Motorola Edge 70 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 50 megapixel che permette al Motorola Edge 70 di scattare foto di alta qualità con una risoluzione di 8165x6124 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Guardando alle dimensioni, lo spessore di appena 6mm rende questo Motorola Edge 70 un prodotto completo e tra i più sottili sul mercato. Per finire il peso è di 159g e abbiamo una batteria da 4800mAh.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAROUSEL -->
+                <section class="container py-5">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="./media/nokia.webp" class="d-block w-100" alt="Smartphone Nokia">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./media/blackb.jpg" class="d-block w-100" alt="Smartphone BlackBerry">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./media/WS-47592_WP.jpg" class="d-block w-100" alt="Wallpaper per smartphone">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+                
+                <!-- FAQ -->
+                <section id="faq" class="container py-5">
+                    <h2 class="text-center mb-4 text-light">Domande Frequenti</h2>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Qual è la garanzia?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse">
+                                <div class="accordion-body">Tutti i prodotti venduti presso i punti vendita o online sul sito www.Smart4.com godono della garanzia legale come previsto sia dal Codice Civile che dal Codice del Consumo (Decreto Legislativo n. 206 del 6 settembre 2005 e successive modifiche introdotte con il DECRETO LEGISLATIVO 4 novembre 2021, n. 170).</div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Spedizione disponibile?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse">
+                                <div class="accordion-body">Sì, in tutta Italia, con 2 giorni lavorativi per Sicilia, sardegna e Calabria e 3 giorni lavorativi per località più difficilmente raggiungibili (es.: località montane, isole minori, estreme periferie o zone disagiate).</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+    </main>
+            
+            <!-- FOOTER -->
+            <footer class="bg-dark text-white pt-5 pb-3">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- COLONNA 1 -->
+                        <div class="col-md-4 mb-4">
+                            <h5>Telefonia</h5>
+                            <p>Il tuo punto di riferimento per smartphone di <strong>TUTTE</strong> le generazioni.</p>
+                        </div>
+                        
+                        <!-- COLONNA 2 -->
+                        <div class="col-md-4 mb-4">
+                            <h5>Link Utili</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+                                <li><a href="https://www.euronics.it/prenota-e-ritira.html?_gl=1*mtas58*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwzevPBhBaEiwAplAxvlABSHdCajnZfwWHSdFYptGwYHtqlvxnGTi7Xemq_IroQpg87g4CdhoCfwIQAvD_BwE&gbraid=0AAAAACtPrNO7NGMRHyZgVhfFTHGkJQkXG" class="text-white text-decoration-none">Negozio</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- COLONNA 3 -->
+                        <div class="col-md-4 mb-4">
+                            <h5>Contatti</h5>
+                            <p>Email: info@smart4.it</p>
+                            <p>Telefono: +39 123 456 789</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- COPYRIGHT -->
+                    <div class="text-center border-top pt-3">
+                        <p class="mb-0">© 2026 Telefonia - Tutti i diritti riservati</p>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- SCRIPT BOOTSTRAP -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+</body>
+</html>
