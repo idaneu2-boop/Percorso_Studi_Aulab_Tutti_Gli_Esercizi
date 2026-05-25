@@ -1,28 +1,54 @@
 :root {
-  --bg: #f6f7f8;
-  --ink: #171717;
-  --muted: #5f6874;
-  --paper: #ffffff;
-  --line: #dfe4ea;
-  --red: #e30613;
-  --teal: #00a88f;
-  --yellow: #ffd33d;
-  --blue: #1f6feb;
+  --sky: #78bff0;
+  --sky-dark: #4a91d8;
+  --grass: #4f9a2d;
+  --grass-light: #70c044;
+  --dirt: #8b5a2b;
+  --dirt-dark: #5b351c;
+  --stone: #7d858b;
+  --stone-dark: #3f4549;
+  --wood: #9b6735;
+  --wood-dark: #563314;
+  --sand: #f4d77a;
+  --paper: #efe6c5;
+  --ink: #201610;
+  --muted: #5a432d;
+  --line: #23170d;
+  --diamond: #55e3e9;
+  --redstone: #d9271e;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  image-rendering: pixelated;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 18% 16%, rgba(0, 168, 143, 0.18), transparent 32%),
-    radial-gradient(circle at 84% 4%, rgba(227, 6, 19, 0.14), transparent 28%),
-    var(--bg);
+    linear-gradient(180deg, rgba(15, 31, 14, 0.12), rgba(39, 25, 14, 0.3)),
+    url("./media/sfondo.avif") center / cover fixed,
+    linear-gradient(180deg, var(--sky) 0 34%, var(--grass) 34% 41%, var(--dirt) 41% 100%);
   color: var(--ink);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto Mono", "Courier New", monospace;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    rgba(20, 15, 10, 0.2);
+  background-position: 0 0, 0 0, 0 34vh, 0 34vh;
+  background-size: 48px 48px, 48px 48px, auto;
+  pointer-events: none;
 }
 
 .topbar {
@@ -36,30 +62,70 @@ body {
 }
 
 .back-link,
-button {
-  min-height: 44px;
-  border-radius: 8px;
+.lesson-badge,
+button:not(.audio-toggle) {
+  border: 4px solid var(--line);
+  border-radius: 0;
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.28),
+    inset -4px -4px rgba(0, 0, 0, 0.22),
+    0 6px 0 rgba(0, 0, 0, 0.28);
   font-weight: 800;
   text-decoration: none;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.35);
 }
 
 .back-link {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--line);
+  min-height: 48px;
   padding: 0 16px;
   background: var(--paper);
   color: var(--ink);
-  box-shadow: 0 10px 24px rgba(23, 23, 23, 0.08);
 }
 
-.lesson-badge,
+.lesson-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  background: var(--sand);
+  color: var(--ink);
+}
+
+.page-logo {
+  width: clamp(72px, 10vw, 118px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 0 rgba(0, 0, 0, 0.32));
+  transition: filter 180ms ease, transform 180ms ease;
+}
+
+.audio-toggle {
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.audio-toggle:hover .page-logo,
+.audio-toggle:focus .page-logo {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.audio-toggle.is-playing .page-logo {
+  filter:
+    drop-shadow(0 8px 0 rgba(0, 0, 0, 0.32))
+    drop-shadow(0 0 10px rgba(112, 255, 68, 0.95))
+    drop-shadow(0 0 22px rgba(112, 255, 68, 0.72));
+}
+
 .eyebrow,
 .panel-kicker {
-  color: var(--red);
-  font-family: "Roboto Mono", monospace;
+  color: var(--redstone);
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -67,7 +133,7 @@ button {
 main {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding-bottom: 56px;
 }
 
 .hero {
@@ -76,25 +142,40 @@ main {
   gap: 28px;
   align-items: stretch;
   min-height: 360px;
-  padding: 40px 0 28px;
+  padding: 36px 0 28px;
 }
 
 .hero-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 5px solid var(--line);
+  padding: clamp(20px, 4vw, 34px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0 25%, transparent 25% 50%, rgba(0, 0, 0, 0.08) 50% 75%, transparent 75%),
+    var(--paper);
+  background-size: 34px 34px;
+  box-shadow:
+    inset 6px 6px rgba(255, 255, 255, 0.32),
+    inset -6px -6px rgba(0, 0, 0, 0.18),
+    0 12px 0 rgba(0, 0, 0, 0.24);
 }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3rem, 11vw, 7rem);
-  line-height: 0.9;
+  color: #fff5cf;
+  font-size: clamp(3rem, 10vw, 6.6rem);
+  line-height: 0.92;
+  text-shadow:
+    4px 4px 0 var(--wood-dark),
+    8px 8px 0 rgba(0, 0, 0, 0.28);
 }
 
 .hero p {
   max-width: 620px;
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
   line-height: 1.7;
 }
 
@@ -102,62 +183,73 @@ main {
   position: relative;
   min-height: 320px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #171717;
-  box-shadow: 0 24px 60px rgba(23, 23, 23, 0.2);
+  border: 5px solid var(--line);
+  border-radius: 0;
+  background:
+    linear-gradient(90deg, transparent 0 46%, rgba(255, 255, 255, 0.14) 46% 54%, transparent 54%),
+    linear-gradient(180deg, var(--stone) 0 50%, var(--stone-dark) 50% 100%);
+  background-size: 64px 64px, 100% 100%;
+  box-shadow:
+    inset 6px 6px rgba(255, 255, 255, 0.18),
+    inset -6px -6px rgba(0, 0, 0, 0.28),
+    0 12px 0 rgba(0, 0, 0, 0.26);
 }
 
 .hero-visual::before,
 .hero-visual::after {
   position: absolute;
-  inset: auto;
   content: "";
-  background: linear-gradient(90deg, var(--teal), var(--yellow), var(--red));
+  background: var(--wood);
+  box-shadow:
+    inset 5px 5px rgba(255, 255, 255, 0.18),
+    inset -5px -5px rgba(0, 0, 0, 0.24);
 }
 
 .hero-visual::before {
-  top: 50px;
-  left: 76px;
-  width: 68%;
-  height: 4px;
+  top: 72px;
+  left: 62px;
+  width: 70%;
+  height: 18px;
   transform: rotate(18deg);
 }
 
 .hero-visual::after {
-  right: 68px;
-  bottom: 92px;
-  width: 56%;
-  height: 4px;
+  right: 62px;
+  bottom: 112px;
+  width: 58%;
+  height: 18px;
   transform: rotate(-24deg);
 }
 
 .node {
   position: absolute;
   z-index: 1;
-  width: 74px;
+  width: 76px;
   aspect-ratio: 1;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.3);
+  border: 5px solid var(--line);
+  border-radius: 0;
+  box-shadow:
+    inset 6px 6px rgba(255, 255, 255, 0.3),
+    inset -6px -6px rgba(0, 0, 0, 0.22),
+    0 8px 0 rgba(0, 0, 0, 0.28);
 }
 
 .node-a {
   top: 36px;
   left: 42px;
-  background: var(--red);
+  background: var(--redstone);
 }
 
 .node-b {
   top: 116px;
   right: 58px;
-  background: var(--teal);
+  background: var(--diamond);
 }
 
 .node-c {
   left: 96px;
   bottom: 42px;
-  background: var(--yellow);
+  background: var(--sand);
 }
 
 .code-window {
@@ -167,17 +259,21 @@ main {
   z-index: 2;
   display: grid;
   gap: 12px;
-  width: min(300px, calc(100% - 68px));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
+  width: min(315px, calc(100% - 68px));
+  border: 4px solid var(--line);
+  border-radius: 0;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.94);
-  font-family: "Roboto Mono", monospace;
+  background: #151515;
+  color: #c9ffb4;
   font-size: 0.84rem;
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.12),
+    inset -4px -4px rgba(0, 0, 0, 0.35),
+    0 8px 0 rgba(0, 0, 0, 0.24);
 }
 
 .code-window strong {
-  color: var(--red);
+  color: var(--diamond);
 }
 
 .exercise-board {
@@ -187,11 +283,30 @@ main {
 }
 
 .panel {
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border: 5px solid var(--line);
+  border-radius: 0;
   padding: 22px;
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.08);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    var(--paper);
+  background-size: 24px 24px;
+  box-shadow:
+    inset 6px 6px rgba(255, 255, 255, 0.35),
+    inset -6px -6px rgba(0, 0, 0, 0.18),
+    0 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+.intro-panel {
+  background-color: #d8c08d;
+}
+
+.controls-panel {
+  background-color: #d5b17a;
+}
+
+.list-panel {
+  background-color: #cfcfcf;
 }
 
 .panel h2,
@@ -201,11 +316,17 @@ main {
 }
 
 .panel h2 {
-  font-size: 1.55rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.panel h3 {
+  line-height: 1.35;
 }
 
 .highlight-title {
-  color: var(--blue);
+  color: var(--diamond);
+  text-shadow: 2px 2px 0 var(--stone-dark);
 }
 
 .paragraph-list {
@@ -217,12 +338,16 @@ main {
 
 .paragraph-list p {
   margin: 0;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border: 4px solid var(--line);
+  border-radius: 0;
   padding: 14px;
-  background: #f9fafb;
+  background: #efe6c5;
   color: var(--muted);
+  font-weight: 800;
   line-height: 1.55;
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.3),
+    inset -4px -4px rgba(0, 0, 0, 0.12);
 }
 
 .actions {
@@ -231,18 +356,23 @@ main {
   gap: 10px;
 }
 
-button {
+button:not(.audio-toggle) {
+  min-height: 48px;
   cursor: pointer;
-  border: 0;
   padding: 0 15px;
-  background: var(--ink);
-  color: #ffffff;
+  background: var(--grass-light);
+  color: #13210e;
   font-family: inherit;
 }
 
-button:hover,
-button:focus {
-  background: var(--red);
+button:not(.audio-toggle):hover,
+button:not(.audio-toggle):focus {
+  background: var(--diamond);
+  transform: translateY(2px);
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.28),
+    inset -4px -4px rgba(0, 0, 0, 0.22),
+    0 4px 0 rgba(0, 0, 0, 0.28);
 }
 
 .is-bold {
@@ -266,27 +396,31 @@ button:focus {
   grid-template-columns: auto 1fr;
   gap: 2px 12px;
   align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border: 4px solid var(--line);
+  border-radius: 0;
   padding: 13px;
-  background: #f9fafb;
+  background: #b9b9b9;
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.28),
+    inset -4px -4px rgba(0, 0, 0, 0.18);
 }
 
 .contacts-list span {
   grid-row: span 2;
   display: inline-grid;
   place-items: center;
-  width: 42px;
+  width: 44px;
   aspect-ratio: 1;
-  border-radius: 8px;
-  background: var(--teal);
-  color: #ffffff;
-  font-family: "Roboto Mono", monospace;
+  border: 3px solid var(--line);
+  border-radius: 0;
+  background: var(--diamond);
+  color: #07353a;
   font-weight: 800;
 }
 
 .contacts-list small {
   color: var(--muted);
+  font-weight: 700;
 }
 
 @media (max-width: 860px) {
@@ -306,11 +440,16 @@ button:focus {
     flex-direction: column;
   }
 
+  .hero {
+    padding-top: 18px;
+  }
+
   .hero h1 {
     font-size: 3.2rem;
   }
 
-  .panel {
+  .panel,
+  .hero-copy {
     padding: 18px;
   }
 

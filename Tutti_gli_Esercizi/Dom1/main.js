@@ -6,6 +6,8 @@ const colorButton = document.querySelector("#etniabtn");
 const boldButton = document.querySelector("#mcbtn");
 const toggleButton = document.querySelector("#fuckisrael");
 const contactsList = document.querySelector("#contactsList");
+const pageMusic = document.querySelector("#pageMusic");
+const audioToggle = document.querySelector("#audioToggle");
 
 mainHeading.style.color = "#e30613";
 classHeading.classList.add("highlight-title");
@@ -53,3 +55,30 @@ contacts.forEach((contact) => {
   `;
   contactsList.appendChild(item);
 });
+
+const setAudioState = () => {
+  audioToggle.classList.toggle("is-playing", !pageMusic.paused);
+  audioToggle.setAttribute("aria-pressed", String(!pageMusic.paused));
+};
+
+const playMusic = () => {
+  pageMusic.volume = 0.35;
+  pageMusic.muted = false;
+  pageMusic.play().then(setAudioState).catch(setAudioState);
+};
+
+playMusic();
+document.addEventListener("DOMContentLoaded", playMusic);
+window.addEventListener("load", playMusic);
+
+audioToggle.addEventListener("click", () => {
+  if (pageMusic.paused) {
+    playMusic();
+  } else {
+    pageMusic.pause();
+    setAudioState();
+  }
+});
+
+pageMusic.addEventListener("play", setAudioState);
+pageMusic.addEventListener("pause", setAudioState);

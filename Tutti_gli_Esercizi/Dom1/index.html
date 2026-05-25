@@ -7,13 +7,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./media/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="topbar">
     <a class="back-link" href="../../home.html">Torna alla home</a>
+    <button class="audio-toggle" id="audioToggle" type="button" aria-label="Ferma o avvia musica">
+      <img class="page-logo" src="./media/logo.svg" alt="" aria-hidden="true">
+    </button>
     <span class="lesson-badge">JavaScript DOM</span>
   </header>
+
+  <audio id="pageMusic" src="./media/C418  - Sweden - Minecraft Volume Alpha.mp3" autoplay loop preload="auto"></audio>
 
   <main>
     <section class="hero" aria-labelledby="pageTitle">

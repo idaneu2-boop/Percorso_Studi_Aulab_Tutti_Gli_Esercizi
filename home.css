@@ -570,24 +570,29 @@ main {
 .dom-media {
   position: relative;
   overflow: hidden;
-  color: #ffffff;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 2.5rem;
+  image-rendering: pixelated;
   background:
-  linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px),
-  linear-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
-  #171717;
-  background-size: 24px 24px;
+  linear-gradient(180deg, rgba(15, 31, 14, 0.1), rgba(39, 25, 14, 0.34)),
+  url("Tutti_gli_Esercizi/Dom1/media/sfondo.avif") center / cover;
 }
 
-.dom-media span {
+.dom-media::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+  linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+  linear-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.dom-media img {
   position: relative;
   z-index: 1;
-  border: 3px solid #ffffff;
-  border-radius: 8px;
-  padding: 12px 16px;
-  background: #00a88f;
-  box-shadow: 10px 10px 0 #e30613;
+  width: min(96px, 48%);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(7px 7px 0 rgba(0, 0, 0, 0.45));
 }
 
 .pokeball-media {
@@ -823,14 +828,37 @@ main {
 }
 
 .card-dom {
-  --card-bg: #f6f7f8;
-  --card-text: #171717;
-  --card-muted: #5f6874;
-  --card-accent: #00a88f;
-  --card-tag-bg: rgba(227, 6, 19, 0.12);
-  --card-tag-text: #171717;
-  --card-button-bg: #171717;
-  --card-button-hover: #e30613;
+  --card-bg: #efe6c5;
+  --card-text: #201610;
+  --card-muted: #5a432d;
+  --card-accent: #70c044;
+  --card-tag-bg: #f4d77a;
+  --card-tag-text: #201610;
+  --card-button-bg: #4f9a2d;
+  --card-button-text: #13210e;
+  --card-button-hover: #55e3e9;
+  --card-button-hover-text: #07353a;
+  border: 4px solid #23170d;
+  border-radius: 0;
+  box-shadow:
+  inset 4px 4px rgba(255, 255, 255, 0.26),
+  inset -4px -4px rgba(0, 0, 0, 0.16);
+  font-family: "Roboto Mono", Consolas, monospace;
+}
+
+.card-dom::before {
+  height: 8px;
+  background: linear-gradient(90deg, #4f9a2d 0 34%, #8b5a2b 34% 68%, #7d858b 68%);
+}
+
+.card-dom .card-tag,
+.card-dom a {
+  border: 3px solid #23170d;
+  border-radius: 0;
+  box-shadow:
+  inset 3px 3px rgba(255, 255, 255, 0.24),
+  inset -3px -3px rgba(0, 0, 0, 0.18),
+  0 4px 0 rgba(0, 0, 0, 0.22);
 }
 
 .empty-state {
