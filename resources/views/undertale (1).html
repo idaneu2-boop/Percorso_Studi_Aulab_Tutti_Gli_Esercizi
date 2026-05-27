@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizi JS | Undertale</title>
+  <link rel="icon" type="image/jpeg" href="../../public/media/logo.jpg">
+  <link rel="stylesheet" href="../css/undertale (1).css">
+</head>
+<body>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Esercizi JS2">
+        <img class="brand-logo" src="../../public/media/logoundertale.png" alt="Logo Undertale Lab">
+        <span>
+          <strong>Undertale</strong>
+          <small>EserciziJS</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione esercizi">
+        <a href="#eta">Eta</a>
+        <a href="#temperatura">Temperatura</a>
+        <a href="#tabellina">Tabellina</a>
+        <a href="#dispari">Dispari</a>
+        <a href="#bevande">Bevande</a>
+        <a href="#dadi">Dadi</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Not the home button Lol</span>
+          <h1>Esercizi, ma dentro il sottosuolo!</h1>
+          <p>Nyeh heh heh! Ciao Umano! COME?! NON TI SENTO! COME?! VOLEVI CONTROLLARE DEGLI ESERCIZI E SEI CADUTO FIN QUI!? CHE?! NON SAI COME TORNARE A CASA?! TRANQUILLO QUI IL PRESENTE PAPYRUS TI AIUTERA' CERCHIAMO IL TASTO HOME INSIEME!</p>
+        </div>
+
+        <div class="hero-media" aria-label="Banner Esercizi JS2">
+          <img src="../../public/media/header.jpg" alt="Banner pixel art Undertale">
+          <div class="terminal-card" aria-label="Terminale decorativo">
+            <div class="terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p><span>*</span> Benvenuto nel sottosuolo umano!</p>
+              <p><span>*</span> Non c'è un modo per fermare la musica.</p>
+              <p><span>*</span> Ti senti pieno di determinazione?</p>
+              <p><span>*</span> Beh 6 esercizi sono apparsi.</p>
+              <p><span>*</span> Mi raccomando a non attaccarli.</p>
+              <p><span>*</span> Buona Fortuna!</p>
+              <p><span>*</span> Ps. "Trova Sans".</p>
+              <p class="terminal-ok">SAVE READY!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Statistiche pagina">
+        <article>
+          <strong>6</strong>
+          <span>numero esercizi</span>
+        </article>
+        <article>
+          <strong>JS</strong>
+          <span>categoria esercizi</span>
+        </article>
+        <article>
+          <strong>0</strong>
+          <span>chance di trovare il tasto home</span>
+        </article>
+      </section>
+
+      <section class="exercise-grid" aria-label="Esercizi interattivi">
+        <article class="exercise-card" id="eta">
+          <div class="card-header">
+            <span class="chip">if / else</span>
+            <span class="index">01</span>
+          </div>
+          <h2>Controllo eta</h2>
+          <p>Inserisci un'eta e lascia che il box scelga la tua categoria.</p>
+
+          <form data-form="age" class="tool-form">
+            <label for="ageInput">Eta</label>
+            <div class="input-line">
+              <input id="ageInput" name="ageInput" type="number" min="0" max="120" placeholder="Es. 18" required>
+              <button type="submit">Verifica</button>
+            </div>
+          </form>
+
+          <output id="ageResult" class="result">In attesa di un numero.</output>
+        </article>
+
+        <article class="exercise-card" id="temperatura">
+          <div class="card-header">
+            <span class="chip">condizioni</span>
+            <span class="index">02</span>
+          </div>
+          <h2>Temperatura</h2>
+          <p>Scrivi i gradi attuali e misura il clima del sottosuolo.</p>
+
+          <form data-form="temperature" class="tool-form">
+            <label for="temperatureInput">Gradi Celsius</label>
+            <div class="input-line">
+              <input id="temperatureInput" name="temperatureInput" type="number" placeholder="Es. 24" required>
+              <button type="submit">Analizza</button>
+            </div>
+          </form>
+
+          <output id="temperatureResult" class="result">Sensore pronto.</output>
+        </article>
+
+        <article class="exercise-card" id="tabellina">
+          <div class="card-header">
+            <span class="chip">for</span>
+            <span class="index">03</span>
+          </div>
+          <h2>Tabellina</h2>
+          <p>Scegli un numero e genera la sua tabellina da 1 a 10.</p>
+
+          <form data-form="table" class="tool-form">
+            <label for="tableInput">Numero</label>
+            <div class="input-line">
+              <input id="tableInput" name="tableInput" type="number" placeholder="Es. 7" required>
+              <button type="submit">Genera</button>
+            </div>
+          </form>
+
+          <output id="tableResult" class="result list-result">La tabellina comparira qui.</output>
+        </article>
+
+        <article class="exercise-card" id="dispari">
+          <div class="card-header">
+            <span class="chip">cicli</span>
+            <span class="index">04</span>
+          </div>
+          <h2>Numeri dispari</h2>
+          <p>Calcola quanti dispari ci sono da 1 a un limite e la loro media.</p>
+
+          <form data-form="odd" class="tool-form">
+            <label for="oddLimit">Limite</label>
+            <div class="input-line">
+              <input id="oddLimit" name="oddLimit" type="number" min="1" placeholder="Es. 20" required>
+              <button type="submit">Calcola</button>
+            </div>
+          </form>
+
+          <output id="oddResult" class="result">Pronto a contare.</output>
+        </article>
+
+        <article class="exercise-card" id="bevande">
+          <div class="card-header">
+            <span class="chip">switch</span>
+            <span class="index">05</span>
+          </div>
+          <h2>Distributore</h2>
+          <p>Scegli una bevanda come se fossi davanti a un negozio nascosto.</p>
+
+          <form data-form="drink" class="tool-form">
+            <label for="drinkInput">Bevanda</label>
+            <div class="input-line">
+              <select id="drinkInput" name="drinkInput">
+                <option value="1">Acqua</option>
+                <option value="2">Coca Cola</option>
+                <option value="3">Birra</option>
+                <option value="4">Opzione misteriosa</option>
+              </select>
+              <button type="submit">Scegli</button>
+            </div>
+          </form>
+
+          <output id="drinkResult" class="result">Distributore in standby.</output>
+        </article>
+
+        <article class="exercise-card wide" id="dadi">
+          <div class="card-header">
+            <span class="chip">Math.random()</span>
+            <span class="index">06</span>
+          </div>
+          <h2>Sfida ai dadi</h2>
+          <p>Imposta il numero di lanci e lascia partire il piccolo encounter casuale.</p>
+
+          <form data-form="dice" class="tool-form dice-form">
+            <label for="diceRounds">Numero lanci</label>
+            <div class="input-line">
+              <input id="diceRounds" name="diceRounds" type="number" min="1" max="20" value="5" required>
+              <button type="submit">Lancia</button>
+            </div>
+          </form>
+
+          <div class="dice-board" id="diceBoard" aria-live="polite">
+            <div>
+              <strong>Giocatore 1</strong>
+              <span>0</span>
+            </div>
+            <div>
+              <strong>Giocatore 2</strong>
+              <span>0</span>
+            </div>
+          </div>
+
+          <output id="diceResult" class="result">I dadi aspettano il via.</output>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Chiusura pagina">
+      <button class="sans-trigger" type="button" aria-label="Attiva Sans">
+        <img id="sansImage" src="../../public/media/footer.webp" alt="Sans pixel art">
+      </button>
+      <div>
+        <span class="eyebrow">Saving...</span>
+        <h2>Fine pagina.</h2>
+        <p>Hai finito di vedere gli esercizi? Beh? Che ci fai ancora qui? Puoi tornare alla Home...ma dov'è il tasto Home?...No...Non...cliccare su di me...ti supplico...non farlo...non ti riporterà alla Home...o forse si?...Heheheh
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <button class="hanging-dog is-playing" type="button" aria-label="Avvia o ferma Dogsong" aria-pressed="true">
+    <img src="../../public/media/doggo.gif" alt="" aria-hidden="true">
+  </button>
+
+  <div class="annoying-dog-runner" aria-hidden="true">
+    <img src="../../public/media/annoying-dog-undertale.gif" alt="" aria-hidden="true">
+  </div>
+
+  <audio id="dogsong" src="../../public/media/Dogsong (Get Dunked On).mp3" preload="auto" loop autoplay></audio>
+  <audio id="sansSong" src="../../public/media/Undertale Audio Files 091 - mus_intronoise.mp3" preload="auto"></audio>
+
+  <script src="../js/undertale (1).js"></script>
+</body>
+</html>

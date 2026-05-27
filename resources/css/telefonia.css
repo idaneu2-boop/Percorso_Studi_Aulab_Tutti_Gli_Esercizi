@@ -1,0 +1,45 @@
+body{
+    background-color: #212529;
+}
+
+.exercise-home-link{
+    position: fixed;
+    top: 6px;
+    left: 50%;
+    z-index: 9999;
+    padding: 10px 14px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 6px;
+    background: #394047;
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 #dc3545, 0 10px 24px rgba(0,0,0,0.25);
+    transform: translateX(-50%);
+}
+
+.exercise-home-link:hover{
+    color: #ffffff;
+    background: #dc3545;
+}
+
+header {
+    height: 100vh;
+    background: url('../../public/media/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg') center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-decoration-style: solid;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.logo{
+    width: 100px;
+}
+
+.card{
+    background-color: #394047;
+}

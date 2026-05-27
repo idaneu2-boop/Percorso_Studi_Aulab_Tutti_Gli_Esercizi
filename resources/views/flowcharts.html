@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Es-flowchart</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #171717;
+      background: #f6f7f8;
+    }
+
+    main {
+      width: min(1600px, calc(100% - 24px));
+      padding: 32px;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    a {
+      color: #e30613;
+      font-weight: 700;
+    }
+
+    .exercise-home-link {
+      display: inline-flex;
+      justify-content: center;
+      padding: 10px 14px;
+      border: 2px solid #171717;
+      border-radius: 4px;
+      background: #ffffff;
+      color: #171717;
+      text-decoration: none;
+      box-shadow: 4px 4px 0 #e30613;
+    }
+
+    img {
+      width: min(100%, 1180px);
+      max-height: 68vh;
+      min-height: 0;
+      height: auto;
+      object-fit: contain;
+      margin-top: 22px;
+      margin-inline: auto;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      display: block;
+      cursor: zoom-in;
+    }
+
+    .zoom-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: none;
+      padding: clamp(12px, 3vw, 32px);
+      background: rgba(0, 0, 0, 0.88);
+      overflow: auto;
+    }
+
+    .zoom-overlay.is-open {
+      display: grid;
+      place-items: center;
+    }
+
+    .zoom-overlay img {
+      width: min(2400px, 220vw);
+      height: auto;
+      min-height: 0;
+      max-width: none;
+      max-height: none;
+      border: 0;
+      border-radius: 0;
+      cursor: zoom-out;
+      margin: auto;
+    }
+
+    @media (max-width: 700px) {
+      .zoom-overlay {
+        place-items: start center;
+      }
+
+      .zoom-overlay img {
+        width: 300vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="exercise-home-link" href="home.html">Home</a>
+    <h1>Esercizio Flowcharts</h1>
+    <p>Flowcharts di Daniele Pigliacelli.</p>
+    <img id="flowchartImage" src="../../public/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio">
+  </main>
+  <div class="zoom-overlay" id="zoomOverlay" aria-label="Flowchart ingrandito">
+    <img src="../../public/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio ingrandito">
+  </div>
+  <script>
+    const flowchartImage = document.getElementById("flowchartImage");
+    const zoomOverlay = document.getElementById("zoomOverlay");
+
+    flowchartImage.addEventListener("click", function (event) {
+      const rect = flowchartImage.getBoundingClientRect();
+      const clickXRatio = (event.clientX - rect.left) / rect.width;
+      const clickYRatio = (event.clientY - rect.top) / rect.height;
+      const zoomedImage = zoomOverlay.querySelector("img");
+
+      zoomOverlay.classList.add("is-open");
+
+      requestAnimationFrame(function () {
+        const targetX = zoomedImage.offsetWidth * clickXRatio - zoomOverlay.clientWidth / 2;
+        const targetY = zoomedImage.offsetHeight * clickYRatio - zoomOverlay.clientHeight / 2;
+
+        zoomOverlay.scrollLeft = Math.max(0, targetX);
+        zoomOverlay.scrollTop = Math.max(0, targetY);
+      });
+    });
+
+    zoomOverlay.addEventListener("click", function () {
+      zoomOverlay.classList.remove("is-open");
+    });
+  </script>
+</body>
+</html>
