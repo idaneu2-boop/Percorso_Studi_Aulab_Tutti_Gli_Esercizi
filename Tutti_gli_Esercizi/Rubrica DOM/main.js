@@ -18,6 +18,7 @@ const musicPlayer = document.querySelector("#musicPlayer");
 // Stato dell'applicazione
 let editingContactId = null;
 let contattiVisibili = true;
+let current = 0;
 
 // Contatti iniziali
 const frocioni = [
@@ -220,17 +221,20 @@ rastrellailghetto.addEventListener("input", nuovocontattozzov);
 mostranascondicontatti.addEventListener("click", mostraonascondifrocioni);
 musicToggle.addEventListener("click", () => {
     if (musicPlayer.paused) {
+        musicPlayer.currentTime = current;
         musicPlayer.play().then(() => {
             musicToggle.classList.add("is-playing");
             musicToggle.setAttribute("aria-label", "Ferma musica");
         }).catch(() => {});
         return;
     }
+    current = musicPlayer.currentTime;
     musicPlayer.pause();
     musicToggle.classList.remove("is-playing");
     musicToggle.setAttribute("aria-label", "Avvia musica");
 });
 musicPlayer.addEventListener("ended", () => {
+    current = 0;
     musicToggle.classList.remove("is-playing");
     musicToggle.setAttribute("aria-label", "Avvia musica");
 });
