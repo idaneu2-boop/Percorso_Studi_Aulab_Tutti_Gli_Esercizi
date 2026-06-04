@@ -1,0 +1,1312 @@
+:root {
+    /* Palette principale del tema JDM/neon */
+    --violet: #AC00FC;
+    --red: #FC0002;
+    --yellow: #FCC400;
+    --blue: #00137D;
+    --black: #06050a;
+    --white: #ffffff;
+}
+* {
+    box-sizing: border-box;
+    font-family: "LINE Seed JP", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: var(--white);
+    background:
+    linear-gradient(90deg, rgba(252, 196, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(172, 0, 252, 0.08) 1px, transparent 1px),
+    var(--black);
+    background-size: 34px 34px;
+    overflow-x: hidden;
+}
+body.light-mode {
+    color: #100c16;
+    background:
+    linear-gradient(90deg, rgba(172, 0, 252, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(252, 0, 2, 0.08) 1px, transparent 1px),
+    #f8f4ff;
+    background-size: 34px 34px;
+}
+h1,
+h2 {
+    font-family: "Dela Gothic One", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/* Navbar fissa in alto con logo e pulsanti */
+.street-nav {
+    background: rgba(6, 5, 10, 0.78);
+    border-bottom: 2px solid rgba(252, 196, 0, 0.55);
+    backdrop-filter: blur(6px);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.street-nav .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.street-nav.is-scrolled {
+    background: rgba(6, 5, 10, 0.95);
+    box-shadow: 0 10px 30px rgba(252, 0, 2, 0.24);
+}
+/* Gruppo brand: logo rotondo, link Home e link Annunci */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin: 0;
+    padding: 8px 0;
+    color: var(--white);
+    line-height: 1;
+}
+.brand-logo {
+    display: block;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 var(--red), -3px -3px 0 var(--violet);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.brand-sub,
+.brand-annunci,
+.brand-home-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 6px 12px;
+    border: 2px solid;
+    font-size: 0.82rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.brand-sub {
+    color: var(--black);
+    background: var(--yellow);
+    border-color: var(--violet);
+    box-shadow: 5px 5px 0 var(--red);
+}
+.brand-annunci {
+    color: var(--white);
+    background: transparent;
+    border-color: var(--yellow);
+    box-shadow: 5px 5px 0 var(--violet);
+}
+.brand-home-index {
+    color: var(--white);
+    background: var(--blue);
+    border-color: var(--yellow);
+    box-shadow: 5px 5px 0 var(--red);
+}
+.nav-car-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.nav-car-images img {
+    display: block;
+    width: clamp(44px, 5vw, 64px);
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(3px 3px 0 rgba(252, 0, 2, 0.65));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    flex: 1 1 280px;
+    width: clamp(220px, 28vw, 430px);
+    max-width: 430px;
+    min-height: 38px;
+    border: 2px solid var(--yellow);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 5px 5px 0 var(--violet);
+}
+.nav-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 6px 8px;
+    color: var(--white);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+.nav-search input::placeholder {
+    color: rgba(255, 255, 255, 0.72);
+}
+.nav-search button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    color: var(--black);
+    background: var(--yellow);
+    border: 0;
+}
+.cars-dropdown {
+    position: relative;
+    margin-left: auto;
+}
+.cars-dropdown summary {
+    list-style: none;
+}
+.cars-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+.cars-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 38px;
+    padding: 6px 12px;
+    color: var(--white);
+    border: 2px solid #18E0FF;
+    background: var(--violet);
+    box-shadow: 5px 5px 0 var(--red);
+    font-size: 0.82rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cars-dropdown-arrow {
+    transition: transform 0.2s ease;
+}
+.cars-dropdown[open] .cars-dropdown-arrow {
+    transform: rotate(180deg);
+}
+.cars-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    display: grid;
+    gap: 8px;
+    min-width: 170px;
+    padding: 12px;
+    color: var(--white);
+    background: var(--violet);
+    border: 2px solid var(--yellow);
+    box-shadow: 8px 8px 0 var(--yellow), -5px -5px 0 var(--red);
+}
+.cars-dropdown-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: inherit;
+    border: 2px solid rgba(252, 196, 0, 0.72);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 0.82rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    color: var(--black);
+    background: var(--yellow);
+    border: 2px solid var(--violet);
+    box-shadow: 5px 5px 0 var(--red);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+body.light-mode .street-nav {
+    background: rgba(248, 244, 255, 0.86);
+    border-bottom-color: rgba(172, 0, 252, 0.55);
+}
+body.light-mode .street-nav.is-scrolled {
+    background: rgba(248, 244, 255, 0.96);
+    box-shadow: 0 10px 30px rgba(172, 0, 252, 0.18);
+}
+body.light-mode .brand-annunci {
+    color: #100c16;
+    background: rgba(255, 255, 255, 0.58);
+}
+body.light-mode .brand-home-index {
+    color: var(--white);
+    background: var(--blue);
+}
+body.light-mode .cars-dropdown-toggle,
+body.light-mode .cars-dropdown-menu {
+    color: #100c16;
+    background: #ffe96a;
+}
+body.light-mode .theme-toggle {
+    color: var(--white);
+    background: var(--blue);
+}
+body.light-mode .nav-search {
+    background: rgba(255, 255, 255, 0.62);
+}
+body.light-mode .nav-search input {
+    color: #100c16;
+}
+body.light-mode .nav-search input::placeholder {
+    color: rgba(16, 12, 22, 0.62);
+}
+/* Hero iniziale con immagine full screen e overlay neon */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    isolation: isolate;
+    overflow: hidden;
+}
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -3;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    linear-gradient(90deg, rgba(6, 5, 10, 0.92) 0%, rgba(6, 5, 10, 0.58) 48%, rgba(6, 5, 10, 0.08) 100%),
+    linear-gradient(0deg, rgba(6, 5, 10, 0.98) 0%, transparent 48%);
+    z-index: -2;
+}
+body.light-mode .hero::after {
+    background:
+    linear-gradient(90deg, rgba(248, 244, 255, 0.34) 0%, rgba(248, 244, 255, 0.16) 48%, rgba(248, 244, 255, 0.01) 100%),
+    linear-gradient(0deg, rgba(248, 244, 255, 0.26) 0%, transparent 48%);
+}
+.hero-noise {
+    position: absolute;
+    inset: 0;
+    background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 5px),
+    radial-gradient(circle at 82% 24%, rgba(252, 0, 2, 0.42), transparent 23%),
+    radial-gradient(circle at 66% 80%, rgba(172, 0, 252, 0.28), transparent 28%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: -1;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero-poster {
+    position: absolute;
+    top: clamp(86px, 10vh, 118px);
+    right: clamp(18px, 3vw, 46px);
+    z-index: 3;
+    width: clamp(170px, 22vw, 330px);
+}
+.hero-poster img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 4px solid var(--yellow);
+    box-shadow: 10px 10px 0 var(--red), -7px -7px 0 var(--violet);
+    filter: saturate(1.15) contrast(1.08);
+    transform: rotate(3deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Logo quadrato sopra al titolo della hero */
+.hero-logo-kicker {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.hero-logo-kicker::before,
+.hero-logo-kicker::after {
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 4px;
+    background: var(--red);
+    box-shadow: 8px 8px 0 var(--violet);
+}
+.hero-logo-icon {
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+.kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--yellow);
+    font-weight: 950;
+    text-transform: uppercase;
+}
+.kicker::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 4px;
+    background: var(--red);
+    box-shadow: 8px 8px 0 var(--violet);
+}
+.year-badge {
+    margin-bottom: 18px;
+    color: var(--white);
+    background:
+        linear-gradient(rgba(6, 5, 10, 0.18), rgba(6, 5, 10, 0.18)),
+        url("../../public/media/giffozzama2.gif");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--violet);
+    padding: 8px 18px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: clamp(1.3rem, 3vw, 2.4rem);
+    line-height: 1;
+    box-shadow: 8px 8px 0 var(--red), -5px -5px 0 var(--blue);
+    text-shadow: 3px 3px 0 var(--red), -2px -2px 0 var(--violet);
+}
+.toyota-center-copy {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+.toyota-badge {
+    width: fit-content;
+    margin-bottom: 42px;
+    color: var(--white);
+    background:
+        linear-gradient(rgba(6, 5, 10, 0.18), rgba(6, 5, 10, 0.18)),
+        url("../../public/media/giffozzatoyota.gif");
+    background-size: cover;
+    background-position: center 72%;
+    border: 3px solid var(--violet);
+    padding: 8px 18px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: clamp(1.3rem, 3vw, 2.4rem);
+    line-height: 1;
+    box-shadow: 8px 8px 0 var(--red), -5px -5px 0 var(--blue);
+    text-shadow: 3px 3px 0 var(--red), -2px -2px 0 var(--violet);
+}
+.toyota-story {
+    margin: 0;
+    color: var(--white);
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    font-weight: 800;
+    line-height: 1.35;
+    text-align: center;
+    text-shadow: 3px 3px 0 var(--red), -2px -2px 0 var(--violet);
+}
+body.light-mode .toyota-story {
+    color: #100c16;
+    text-shadow: 2px 2px 0 rgba(252, 196, 0, 0.8), -2px -2px 0 rgba(172, 0, 252, 0.3);
+}
+.toyota-supra-img {
+    display: block;
+    width: min(100%, 340px);
+    height: auto;
+    margin-top: 46px;
+    filter:
+    drop-shadow(10px 0 14px rgba(252, 0, 2, 0.72))
+    drop-shadow(-8px -4px 14px rgba(172, 0, 252, 0.68))
+    drop-shadow(0 10px 16px rgba(252, 196, 0, 0.45))
+    drop-shadow(0 -8px 18px rgba(0, 19, 125, 0.72));
+    animation: introImageGlow 3.8s ease-in-out infinite;
+}
+.toyota-engine-img {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    object-position: center;
+    filter:
+    drop-shadow(10px 0 14px rgba(252, 0, 2, 0.72))
+    drop-shadow(-8px -4px 14px rgba(172, 0, 252, 0.68))
+    drop-shadow(0 10px 16px rgba(252, 196, 0, 0.45))
+    drop-shadow(0 -8px 18px rgba(0, 19, 125, 0.72));
+    animation: introImageGlow 3.8s ease-in-out infinite;
+}
+.engine-stats {
+    width: min(100%, 360px);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 24px;
+    color: var(--white);
+    border: 3px solid var(--yellow);
+    border-radius: 22px;
+    background: rgba(6, 5, 10, 0.58);
+    box-shadow: 10px 10px 0 var(--red), -6px -6px 0 var(--violet);
+    backdrop-filter: blur(6px);
+}
+.engine-stats h3 {
+    margin-bottom: 22px;
+    color: var(--yellow);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: clamp(1.7rem, 2.6vw, 3rem);
+    line-height: 1;
+    text-shadow: 4px 4px 0 var(--red), -3px -3px 0 var(--violet);
+}
+.engine-stat + .engine-stat {
+    margin-top: 22px;
+}
+.engine-stat-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 8px;
+    font-size: 1.08rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.engine-stat-head strong {
+    color: var(--yellow);
+    white-space: nowrap;
+}
+.engine-bar {
+    height: 24px;
+    padding: 3px;
+    border: 2px solid var(--violet);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 4px 4px 0 var(--red);
+}
+.engine-bar span {
+    display: block;
+    width: var(--bar-width);
+    height: 100%;
+    background: linear-gradient(90deg, var(--red), var(--yellow), #18E0FF);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.engine-stats.is-visible .engine-bar span {
+    animation: engineBarFill 2.4s ease-out both;
+}
+body.light-mode .engine-stats {
+    color: #100c16;
+    background: rgba(248, 244, 255, 0.68);
+}
+body.light-mode .engine-stat-head strong,
+body.light-mode .engine-stats h3 {
+    color: var(--blue);
+}
+/* Titolo principale: ombra colorata sotto e GIF dentro il testo sopra */
+.title-stack {
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+    width: max-content;
+    max-width: calc(100vw - 32px);
+    padding-right: 48px;
+    margin: 10px 0 18px;
+    overflow: visible;
+}
+.hero h1,
+.title-shadow {
+    display: block;
+    margin: 0;
+    font-size: clamp(3.3rem, 9vw, 8.5rem);
+    line-height: 0.92;
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.title-shadow {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 6px 6px 0 var(--red), -5px -5px 0 var(--violet);
+    pointer-events: none;
+}
+.titolo {
+    position: relative;
+    z-index: 2;
+    background-image: url("../../public/media/giffozzamacchine.gif");
+    background-size: 100% auto;
+    background-position: center 54%;
+    background-repeat: repeat-x;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    filter: saturate(1.35) contrast(1.12);
+}
+.hero-copy {
+    max-width: 680px;
+    font-size: clamp(1.05rem, 2vw, 1.45rem);
+    font-weight: 700;
+}
+/* Barra inferiore con i nomi delle auto */
+.hero-strip {
+    position: absolute;
+    right: -18px;
+    bottom: -4px;
+    left: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(14px, 2.4vw, 34px);
+    min-height: 86px;
+    padding: 10px 24px;
+    color: var(--black);
+    background: var(--yellow);
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--blue);
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: stripEnter 0.85s ease-out 0.35s both, stripPulse 3.4s ease-in-out 1.4s infinite;
+}
+.hero-strip span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 14px;
+    color: var(--black);
+    border: 3px solid var(--violet);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 5px 5px 0 var(--red);
+    text-shadow: 3px 3px 0 var(--red), -3px -2px 0 var(--violet);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hero-strip i {
+    color: var(--red);
+    text-shadow: 2px 2px 0 var(--violet);
+}
+.hero-strip img {
+    display: block;
+    width: clamp(64px, 7vw, 108px);
+    height: 64px;
+    object-fit: contain;
+    filter: drop-shadow(4px 5px 0 rgba(6, 5, 10, 0.42));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.hero-strip-search {
+    display: none;
+}
+/* Sezione sotto la hero con testo di presentazione e immagine auto */
+.section-intro {
+    position: relative;
+    padding: 0;
+    color: var(--white);
+    overflow: hidden;
+}
+/* Blocco first: presentazione del garage e contatore vendite */
+.first {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    min-height: 70vh;
+    margin-left: -50vw;
+    padding: 95px max(12px, calc((100vw - 1140px) / 2 + 12px));
+    align-items: center !important;
+    background:
+    linear-gradient(90deg, rgba(6, 5, 10, 0.9), rgba(6, 5, 10, 0.42)),
+    linear-gradient(0deg, rgba(6, 5, 10, 0.78), rgba(6, 5, 10, 0.1)),
+    url("../../public/media/headerjapansfondo.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.second {
+    position: relative;
+    left: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-height: 92vh;
+    margin-left: -50vw;
+    padding: 132px clamp(14px, 2vw, 34px) 96px;
+    gap: clamp(10px, 1.6vw, 28px);
+    background:
+    linear-gradient(90deg, rgba(6, 5, 10, 1) 0%, rgba(6, 5, 10, 0.84) 45%, rgba(6, 5, 10, 0.48) 100%),
+    radial-gradient(circle at 78% 24%, rgba(252, 0, 2, 0.78), transparent 34%),
+    radial-gradient(circle at 20% 82%, rgba(172, 0, 252, 0.72), transparent 36%),
+    url("../../public/media/Sfondomotoretoyota.webp");
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+}
+/* Colonne della sezione Toyota: motore, contenuto centrale e statistiche */
+.second > * {
+    min-width: 0;
+}
+.toyota-engine-column {
+    order: 1;
+    flex: 0 1 28%;
+    justify-self: center;
+}
+.toyota-center-copy {
+    order: 2;
+    flex: 0 1 38%;
+}
+.toyota-stats-column {
+    order: 3;
+    flex: 0 1 28%;
+    justify-self: center;
+}
+.second::before {
+    content: "Le nostre marche";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    color: var(--black);
+    background:
+    repeating-linear-gradient(135deg, rgba(6, 5, 10, 0.18) 0 16px, transparent 16px 32px),
+    var(--yellow);
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--blue);
+    box-shadow: 0 8px 0 var(--violet);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: clamp(1.3rem, 3vw, 2.6rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 var(--red), -2px -2px 0 var(--violet);
+    z-index: 2;
+}
+/* Light mode della sezione Toyota */
+body.light-mode .second {
+    background:
+    linear-gradient(90deg, rgba(248, 244, 255, 0.86) 0%, rgba(248, 244, 255, 0.48) 45%, rgba(248, 244, 255, 0.16) 100%),
+    radial-gradient(circle at 78% 24%, rgba(252, 196, 0, 0.46), transparent 30%),
+    radial-gradient(circle at 20% 82%, rgba(172, 0, 252, 0.32), transparent 32%),
+    url("../../public/media/Sfondomotoretoyota.webp");
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+}
+body.light-mode .second::before {
+    background:
+    repeating-linear-gradient(135deg, rgba(16, 12, 22, 0.14) 0 16px, transparent 16px 32px),
+    var(--yellow);
+}
+body.light-mode .section-intro {
+    color: #100c16;
+}
+/* Sezione third: call to action verso gli annunci */
+.third {
+    position: relative;
+    min-height: 420px;
+    padding: 96px 0;
+    color: var(--white);
+    background: url("../../public/media/sezionethirdgiffozza.gif");
+    background-size: cover;
+    background-position: center 38%;
+    background-repeat: no-repeat;
+}
+.third::before,
+.site-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 18px;
+    background: repeating-linear-gradient(135deg, var(--yellow) 0 18px, var(--black) 18px 36px);
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    z-index: 2;
+}
+/* Card interna della sezione third */
+.third-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 28px;
+    border: 3px solid var(--yellow);
+    border-radius: 22px;
+    background: url("../../public/media/giffozzamacchine.gif");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 0 var(--red), -6px -6px 0 var(--violet);
+}
+.third-kicker {
+    margin-bottom: 12px;
+}
+.third h2 {
+    margin-bottom: 12px;
+    color: var(--yellow);
+    font-size: clamp(1.8rem, 4vw, 3.4rem);
+    line-height: 1;
+    text-shadow: 4px 4px 0 var(--red), -3px -3px 0 var(--violet);
+}
+.third p {
+    max-width: 680px;
+    margin-bottom: 0;
+    color: var(--white);
+    font-weight: 800;
+}
+.third-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 0 0 auto;
+    min-height: 46px;
+    padding: 10px 16px;
+    color: var(--black);
+    background: var(--yellow);
+    border: 2px solid var(--violet);
+    box-shadow: 6px 6px 0 var(--red);
+    font-weight: 950;
+    text-transform: uppercase;
+}
+/* Footer con logo, nome sito e contatti */
+.site-footer {
+    position: relative;
+    padding: 28px 0;
+    color: var(--white);
+    background: rgba(6, 5, 10, 0.98);
+}
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+.footer-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 var(--red), -3px -3px 0 var(--violet);
+}
+.footer-inner p {
+    margin: 0;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+}
+.footer-links a {
+    color: var(--yellow);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+body.light-mode .third {
+    color: #100c16;
+    background: url("../../public/media/sezionethirdgiffozza.gif");
+    background-size: cover;
+    background-position: center 38%;
+    background-repeat: no-repeat;
+}
+body.light-mode .third-panel {
+    background: url("../../public/media/giffozzamacchine.gif");
+    background-size: cover;
+    background-position: center;
+}
+body.light-mode .site-footer {
+    color: #100c16;
+    background: rgba(248, 244, 255, 0.98);
+}
+body.light-mode .third::before,
+body.light-mode .site-footer::before {
+    background: repeating-linear-gradient(135deg, var(--yellow) 0 18px, #100c16 18px 36px);
+}
+/* Bottoni fixed: torna su a destra e controllo musica a sinistra */
+.back-to-top,
+.music-toggle {
+    position: fixed;
+    bottom: 18px;
+    z-index: 2100;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--black);
+    background: var(--yellow);
+    border: 2px solid var(--violet);
+    border-radius: 50%;
+    box-shadow: 5px 5px 0 var(--red);
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.back-to-top {
+    right: 18px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px) scale(0.92);
+}
+.music-toggle {
+    left: 18px;
+    padding: 0;
+    cursor: pointer;
+}
+.back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+.back-to-top:hover,
+.music-toggle:hover {
+    color: var(--black);
+    transform: scale(1.08);
+    box-shadow: 7px 7px 0 var(--red), -4px -4px 0 var(--violet);
+}
+.music-toggle-stack {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+body.light-mode .back-to-top,
+body.light-mode .music-toggle {
+    color: var(--white);
+    background: var(--blue);
+}
+@media (max-width: 1199px) {
+    .second {
+        flex-wrap: nowrap;
+        min-height: auto;
+        padding-top: 140px;
+    }
+    .toyota-center-copy {
+        flex-basis: 38%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .toyota-engine-column {
+        flex-basis: 27%;
+    }
+    .toyota-stats-column {
+        flex-basis: 29%;
+    }
+    .toyota-engine-img,
+    .engine-stats {
+        width: 100%;
+        margin-left: 0;
+    }
+    .toyota-engine-img,
+    .engine-stats {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+body.light-mode .first {
+    background:
+    linear-gradient(90deg, rgba(248, 244, 255, 0.46), rgba(248, 244, 255, 0.16)),
+    linear-gradient(0deg, rgba(248, 244, 255, 0.3), rgba(248, 244, 255, 0.04)),
+    url("../../public/media/headerjapansfondo.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.first::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    repeating-linear-gradient(90deg, rgba(252, 196, 0, 0.12) 0 2px, transparent 2px 18px),
+    radial-gradient(circle at 18% 80%, rgba(172, 0, 252, 0.32), transparent 28%);
+    pointer-events: none;
+}
+.section-intro .container,
+.first > * {
+    position: relative;
+    z-index: 1;
+}
+/* Immagine intro con ombra colorata adattata alla forma del PNG */
+.intro-car-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+    filter:
+    drop-shadow(10px 0 14px rgba(252, 0, 2, 0.72))
+    drop-shadow(-8px -4px 14px rgba(172, 0, 252, 0.68))
+    drop-shadow(0 10px 16px rgba(252, 196, 0, 0.45))
+    drop-shadow(0 -8px 18px rgba(0, 19, 125, 0.72));
+    animation: introImageGlow 3.8s ease-in-out infinite;
+}
+.section-intro h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1;
+}
+.sales-counter {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--yellow);
+    font-size: clamp(4rem, 9vw, 9rem);
+    line-height: 0.9;
+    text-shadow: 7px 7px 0 var(--red), -5px -5px 0 var(--violet);
+}
+/* Animazioni decorative usate dalla barra auto e dall'immagine intro */
+@keyframes stripEnter {
+    from {
+        opacity: 0;
+        transform: translateY(34px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes stripPulse {
+    0%,
+    100% {
+        filter: saturate(1);
+    }
+    50% {
+        filter: saturate(1.45);
+    }
+}
+@keyframes introImageGlow {
+    0% {
+        filter:
+        drop-shadow(10px 0 14px rgba(252, 0, 2, 0.72))
+        drop-shadow(-8px -4px 14px rgba(172, 0, 252, 0.68))
+        drop-shadow(0 10px 16px rgba(252, 196, 0, 0.45))
+        drop-shadow(0 -8px 18px rgba(0, 19, 125, 0.72));
+    }
+    50% {
+        filter:
+        drop-shadow(-10px 0 18px rgba(172, 0, 252, 0.76))
+        drop-shadow(8px 5px 16px rgba(252, 196, 0, 0.58))
+        drop-shadow(0 -8px 15px rgba(252, 0, 2, 0.55))
+        drop-shadow(-4px 10px 20px rgba(0, 19, 125, 0.82));
+    }
+    100% {
+        filter:
+        drop-shadow(10px 0 14px rgba(252, 0, 2, 0.72))
+        drop-shadow(-8px -4px 14px rgba(172, 0, 252, 0.68))
+        drop-shadow(0 10px 16px rgba(252, 196, 0, 0.45))
+        drop-shadow(0 -8px 18px rgba(0, 19, 125, 0.72));
+    }
+}
+@keyframes engineBarFill {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+/* Adattamenti per tablet e schermi medi */
+@media (max-width: 991px) {
+    .second {
+        flex-wrap: nowrap;
+        padding-top: 132px;
+    }
+    .toyota-center-copy {
+        flex-basis: 38%;
+        max-width: none;
+        margin-bottom: 0;
+    }
+    .toyota-engine-column {
+        flex-basis: 27%;
+    }
+    .toyota-stats-column {
+        flex-basis: 29%;
+    }
+    .toyota-engine-img {
+        width: min(100%, 280px);
+    }
+    .toyota-supra-img {
+        width: min(100%, 260px);
+        margin-top: 28px;
+    }
+    .engine-stats {
+        width: min(100%, 300px);
+        padding: 18px;
+    }
+    .engine-stats h3 {
+        font-size: clamp(1.4rem, 3vw, 2rem);
+    }
+    .hero::after {
+        background:
+        linear-gradient(90deg, rgba(6, 5, 10, 0.9), rgba(6, 5, 10, 0.48)),
+        linear-gradient(0deg, rgba(6, 5, 10, 0.98), transparent 55%);
+    }
+}
+/* Adattamenti per smartphone */
+@media (max-width: 767px) {
+    .street-nav .container-fluid {
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    .nav-car-images {
+        display: none;
+    }
+    .navbar-brand {
+        gap: 8px;
+    }
+    .brand-sub,
+    .brand-annunci,
+    .brand-home-index,
+    .cars-dropdown-toggle {
+        padding: 6px 8px;
+        font-size: 0.72rem;
+    }
+    .theme-toggle {
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+    }
+    .cars-dropdown-menu {
+        min-width: 145px;
+    }
+    .hero-content .row {
+        min-height: 92vh;
+        padding-top: 98px;
+    }
+    .hero-poster {
+        display: none;
+    }
+    .title-stack {
+        position: relative;
+        z-index: 4;
+        display: inline-block;
+        width: max-content;
+        max-width: calc(100vw - 32px);
+        padding-right: 24px;
+        margin: 10px 0 18px;
+        overflow: visible;
+    }
+    .hero h1,
+    .title-shadow {
+        display: block;
+        margin: 0;
+        font-size: clamp(1.95rem, 9vw, 4rem);
+        line-height: 0.92;
+        font-family: "Dela Gothic One", sans-serif;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .title-shadow {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 4px 4px 0 var(--red), -3px -3px 0 var(--violet);
+        pointer-events: none;
+    }
+    .titolo {
+        position: relative;
+        z-index: 2;
+        background-image: url("../../public/media/giffozzamacchine.gif");
+        background-size: 100% auto;
+        background-position: center 54%;
+        background-repeat: repeat-x;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+        filter: saturate(1.35) contrast(1.12);
+    }
+    .hero-strip {
+        right: 0;
+        bottom: -2px;
+        left: 0;
+        justify-content: flex-start;
+        gap: 10px;
+        min-height: 62px;
+        padding: 6px 10px;
+        overflow: hidden;
+    }
+    .hero-strip span {
+        display: none;
+    }
+    .hero-strip img {
+        display: none;
+    }
+    .hero-strip-search {
+        display: flex;
+        align-items: center;
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        min-height: 38px;
+        border: 2px solid var(--violet);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.36);
+        box-shadow: 5px 5px 0 var(--red);
+        overflow: hidden;
+    }
+    .hero-strip-search input {
+        width: 100%;
+        min-width: 0;
+        padding: 6px 8px;
+        color: var(--black);
+        background: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 0.78rem;
+        font-weight: 900;
+    }
+    .hero-strip-search input::placeholder {
+        color: rgba(6, 5, 10, 0.68);
+    }
+    .hero-strip-search button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+        color: var(--white);
+        background: var(--violet);
+        border: 0;
+        border-radius: 50%;
+    }
+    .section-intro {
+        padding: 0;
+    }
+    .first,
+    .second {
+        min-height: auto;
+        padding: 86px 14px 70px;
+    }
+    .second {
+        display: flex !important;
+        flex-direction: column;
+        row-gap: 34px;
+    }
+    .toyota-engine-img,
+    .engine-stats {
+        width: 100%;
+        margin-left: 0;
+    }
+    .toyota-center-copy {
+        flex-basis: auto;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .toyota-badge {
+        position: static;
+        margin-bottom: 24px;
+    }
+    .toyota-story {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+    .toyota-supra-img {
+        width: min(100%, 360px);
+        margin-top: 34px;
+    }
+    .toyota-engine-column {
+        flex-basis: auto;
+    }
+    .toyota-stats-column {
+        flex-basis: auto;
+    }
+    .toyota-engine-img {
+        max-width: 430px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .toyota-engine-column,
+    .toyota-stats-column {
+        display: none;
+    }
+    .engine-stats {
+        max-width: 430px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 22px;
+    }
+    .engine-stats h3 {
+        margin-bottom: 18px;
+        font-size: clamp(2rem, 12vw, 3rem);
+    }
+    .engine-stat + .engine-stat {
+        margin-top: 16px;
+    }
+    .engine-stat-head {
+        font-size: 0.9rem;
+    }
+    .engine-bar {
+        height: 20px;
+    }
+    .second,
+    body.light-mode .second {
+        background-position: center top;
+    }
+    .third {
+        min-height: 360px;
+        padding: 78px 0;
+        background-position: center;
+    }
+    .third-panel {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px;
+    }
+    .third-link {
+        width: 100%;
+    }
+    .footer-inner {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .back-to-top,
+    .music-toggle {
+        right: 12px;
+        bottom: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .music-toggle {
+        right: auto;
+        left: 12px;
+    }
+}

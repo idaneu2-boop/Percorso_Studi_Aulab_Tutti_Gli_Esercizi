@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto JDM Garage</title>
+    <link rel="icon" href="../../public/media/logopresto.avif" type="image/avif">
+    <!-- Librerie esterne e fogli di stile principali -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/presto.css">
+    <link rel="stylesheet" href="../css/annuncipresto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=LINE+Seed+JP&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar fissa: logo e collegamenti principali -->
+    <nav class="navbar fixed-top street-nav">
+        <div class="container-fluid px-lg-5">
+            <div class="navbar-brand">
+                <img class="brand-logo" src="../../public/media/logopresto.avif" alt="Presto" data-aos="zoom-in" data-aos-duration="650">
+                <a class="brand-sub rounded" href="./presto.html">Home</a>
+                <a class="brand-annunci rounded" href="./prestoannunci.html">Annunci</a>
+                <a class="brand-home-index rounded" href="./home.html" aria-label="Torna alla home esercizi">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+            <div class="nav-car-images justify-content-around">
+                <img src="../../public/media/cars1.png" alt="auto">
+                <img src="../../public/media/cars2.png" alt="auto">
+                <form class="nav-search rounded" role="search">
+                    <input type="search" placeholder="Cerca" aria-label="Cerca auto">
+                    <button type="button" aria-label="Cerca">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <img src="../../public/media/cars3.png" alt="auto">
+                <img src="../../public/media/cars4.png" alt="auto">
+            </div>
+            <details class="cars-dropdown">
+                <summary class="cars-dropdown-toggle rounded">
+                    <i class="fa-duotone fa-solid fa-car-rear"></i>
+                    <span>Auto</span>
+                    <i class="fa-solid fa-chevron-down cars-dropdown-arrow"></i>
+                </summary>
+                <div class="cars-dropdown-menu rounded"></div>
+            </details>
+            <button class="theme-toggle rounded" type="button" aria-label="Attiva light mode">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Header compatto della pagina annunci: logo, titolo animato e poster -->
+    <header class="annunci-header" id="pageTop">
+        <div class="annunci-header-inner" data-aos="fade-up" data-aos-duration="700">
+            <img class="annunci-header-logo" src="../../public/media/logoSQUARE.webp" alt="Presto">
+            <div class="annunci-header-title">
+                <div class="annunci-title-stack">
+                    <span class="annunci-title-shadow" aria-hidden="true">お前の妻とヤる</span>
+                    <h1 class="annunci-titolo">お前の妻とヤる</h1>
+                </div>
+                <p>君の妻が発情した雌牛のように俺とヤりたがっているのを見ると、勃起してしまう</p>
+            </div>
+            <img class="annunci-header-poster" src="../../public/media/poster header.jpg" alt="poster auto">
+        </div>
+    </header>
+    <main>
+        <!-- Sezione annunci: titolo, filtro dinamico e card caricate dal JSON -->
+        <section class="annunci-section" id="annunci">
+            <div class="container">
+                <div class="annunci-section-head" data-aos="fade-up" data-aos-duration="700">
+                    <p class="kicker third-kicker">Garage</p>
+                    <h2>Annunci</h2>
+                    <!-- Barra ricerca visibile su tablet/mobile: filtra gli annunci nella sezione -->
+                    <form class="annunci-section-search" role="search">
+                        <input type="search" placeholder="Cerca" aria-label="Cerca auto negli annunci">
+                        <button type="button" aria-label="Cerca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <!-- Gruppo filtri: categoria dal JSON e prezzo massimo calcolato automaticamente -->
+                    <div class="annunci-filters">
+                        <details class="annunci-filter-dropdown">
+                            <summary>
+                                <span>Filtra per tipo</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <div class="annunci-filter-menu" id="categoryWrapper">
+                                <span>Tutte</span>
+                                <span>Coupe</span>
+                                <span>Drift</span>
+                                <span>Turbo</span>
+                            </div>
+                        </details>
+                        <div class="annunci-price-filter">
+                            <label for="priceRange">Prezzo</label>
+                            <input id="priceRange" type="range" min="0" value="0" step="1000">
+                            <span id="priceValue">0 €</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Griglia card: il JS la popola via fetch da public/data/annuncipresto.json -->
+                <div class="annunci-grid" id="cardWrapper"></div>
+            </div>
+        </section>
+        <section class="third">
+            <div class="container">
+                <div class="third-panel" data-aos="fade-up" data-aos-duration="700">
+                    <div>
+                        <p class="kicker third-kicker">Home</p>
+                        <h2>Torna alla Home</h2>
+                    </div>
+                    <a class="third-link" href="./presto.html">
+                        <span>Vai alla Home</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modale personalizzato aperto dal bottone Info delle card -->
+    <div class="annuncio-modal" aria-hidden="true">
+        <div class="annuncio-modal-box" role="dialog" aria-modal="true" aria-labelledby="annuncio-modal-title">
+            <button class="annuncio-modal-close" type="button" aria-label="Chiudi">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="annuncio-modal-title"></h3>
+            <img class="annuncio-modal-img" src="../../public/media/cars1.png" alt="Auto selezionata">
+            <p></p>
+        </div>
+    </div>
+    <!-- Footer: logo del sito e contatti principali -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <img class="footer-logo" src="../../public/media/logopresto.avif" alt="Presto">
+                <p>Presto JDM Garage</p>
+                <div class="footer-links">
+                    <a href="mailto:idaneu2@gmail.com">idaneu2@gmail.com</a>
+                    <a href="tel:+393281022479">3281022479</a>
+                    <a href="https://www.instagram.com/daniele.pigliacelli_/" target="_blank" rel="noopener">@daniele.pigliacelli_</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bottone fixed: torna all'header della pagina -->
+    <a class="back-to-top" href="#pageTop" aria-label="Torna all'inizio della pagina">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- Audio fixed: musica di sottofondo con controllo play/pausa -->
+    <audio class="background-music" src="../../public/media/Tokyo Drift (Fast & Furious)_320k.mp3" preload="auto" loop></audio>
+    <button class="music-toggle" type="button" aria-label="Metti in pausa la musica">
+        <span class="fa-stack music-toggle-stack">
+            <i class="fa-solid fa-music fa-stack-1x"></i>
+            <i class="fa-solid fa-slash fa-stack-1x"></i>
+        </span>
+    </button>
+    <!-- Script: AOS per animazioni allo scroll e logica custom della pagina -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/presto.js"></script>
+    <script src="../js/annuncipresto.js"></script>
+</body>
+</html>

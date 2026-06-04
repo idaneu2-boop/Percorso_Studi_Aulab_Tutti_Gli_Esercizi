@@ -8,6 +8,9 @@ const linkedPagesCount = document.querySelector("#linkedPagesCount");
 const helperButton = document.querySelector("#helperButton");
 const helperBubble = document.querySelector("#helperBubble");
 const helperClose = document.querySelector("#helperClose");
+const scrollTopButton = document.querySelector("#scrollTopButton");
+const homeThemeToggle = document.querySelector("#homeThemeToggle");
+const homeFavicon = document.querySelector("#homeFavicon");
 let selectedCategory = "";
 
 const normalizeText = (text) =>
@@ -16,7 +19,7 @@ const normalizeText = (text) =>
 .normalize("NFD")
 .replace(/[\u0300-\u036f]/g, "");
 
-const categoryOptions = ["Console Unix", "Html", "Css", "Bootstrap", "Flowcharts", "JS"].map((label) => ({
+const categoryOptions = ["Console Unix", "Html", "Css", "Bootstrap", "Flowcharts", "DOM", "JS"].map((label) => ({
   label,
   value: normalizeText(label),
 }));
@@ -151,7 +154,36 @@ searchInput.addEventListener("input", () => {
     }
   });
   
-  helperClose.addEventListener("click", closeHelper);
+helperClose.addEventListener("click", closeHelper);
+
+const updateScrollTopButton = () => {
+  scrollTopButton?.classList.toggle("is-visible", window.scrollY > 220);
+};
+
+updateScrollTopButton();
+window.addEventListener("scroll", updateScrollTopButton);
+
+scrollTopButton?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const setHomeTheme = (isLightMode) => {
+  document.body.classList.toggle("light-mode", isLightMode);
+  localStorage.setItem("home-theme", isLightMode ? "light" : "dark");
+  homeThemeToggle?.setAttribute("aria-label", isLightMode ? "Attiva modalità dark" : "Attiva modalità light");
+  if (homeThemeToggle) {
+    homeThemeToggle.innerHTML = isLightMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  }
+  if (homeFavicon) {
+    homeFavicon.href = isLightMode ? "../../public/media/blackholelogo2.png" : "../../public/media/blackholelogo.webp";
+  }
+};
+
+setHomeTheme(localStorage.getItem("home-theme") === "light");
+
+homeThemeToggle?.addEventListener("click", () => {
+  setHomeTheme(!document.body.classList.contains("light-mode"));
+});
   
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".category-filter")) {

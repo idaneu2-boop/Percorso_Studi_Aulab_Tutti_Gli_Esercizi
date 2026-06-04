@@ -1,0 +1,242 @@
+[
+    {
+        "brand": "Toyota",
+        "model": "Supra MK4",
+        "year": 1998,
+        "price": 78000,
+        "category": "Turbo",
+        "image": "../../public/media/Toyotasupra.png",
+        "alt": "Toyota Supra MK4 tuning",
+        "stats": {
+            "potenza": 92,
+            "handling": 78,
+            "stile": 96
+        },
+        "detail": "Icona turbo con motore 2JZ, assetto ribassato, scarico racing e look street. Perfetta per chi cerca una JDM potente, scenica e pronta per raduni."
+    },
+    {
+        "brand": "Nissan",
+        "model": "Skyline GT-R",
+        "year": 1999,
+        "price": 92000,
+        "category": "Turbo",
+        "image": "../../public/media/ChatGPT Image 27 mag 2026, 17_56_34.png",
+        "alt": "Nissan Skyline GT-R tuning",
+        "stats": {
+            "potenza": 88,
+            "handling": 94,
+            "stile": 90
+        },
+        "detail": "GT-R con anima da pista, trazione precisa e setup aggressivo. Una base leggendaria per tuning pulito, guida veloce e cultura JDM vera."
+    },
+    {
+        "brand": "Mazda",
+        "model": "RX-7 FD",
+        "year": 1997,
+        "price": 64000,
+        "category": "Drift",
+        "image": "../../public/media/mazdarx7-transparent.png",
+        "alt": "Mazda RX-7 FD tuning",
+        "stats": {
+            "potenza": 80,
+            "handling": 96,
+            "stile": 94
+        },
+        "detail": "Rotativo leggero, linea bassa e comportamento affilato. Una RX-7 pensata per chi ama feeling puro, estetica tuning e guida tecnica."
+    },
+    {
+        "brand": "Nissan",
+        "model": "Silvia S15",
+        "year": 2001,
+        "price": 52000,
+        "category": "Drift",
+        "image": "../../public/media/silvias15-transparent.png",
+        "alt": "Nissan Silvia S15 tuning",
+        "stats": {
+            "potenza": 76,
+            "handling": 92,
+            "stile": 89
+        },
+        "detail": "Silvia con setup drift, assetto preciso e look essenziale. Ideale per chi vuole una JDM bilanciata, modificabile e piena di carattere."
+    },
+    {
+        "brand": "Honda",
+        "model": "NSX NA1",
+        "year": 1995,
+        "price": 86000,
+        "category": "Coupe",
+        "image": "../../public/media/nsxna1.png",
+        "alt": "Honda NSX NA1 tuning",
+        "stats": {
+            "potenza": 74,
+            "handling": 95,
+            "stile": 91
+        },
+        "detail": "NSX a motore centrale con assetto pulito, linea bassa e guida precisa. Una coupe JDM rara, tecnica e perfetta per un tuning elegante."
+    },
+    {
+        "brand": "Subaru",
+        "model": "WRX STI",
+        "year": 2004,
+        "price": 39000,
+        "category": "Rally",
+        "image": "../../public/media/wrxsti2004.png",
+        "alt": "Subaru WRX STI tuning",
+        "stats": {
+            "potenza": 84,
+            "handling": 88,
+            "stile": 82
+        },
+        "detail": "WRX STI con trazione integrale, setup rally street e presenza aggressiva. Ottima per chi vuole grip, turbo e carattere da speciale giapponese."
+    },
+    {
+        "brand": "Mitsubishi",
+        "model": "Lancer Evolution VI",
+        "year": 1999,
+        "price": 58000,
+        "category": "Rally",
+        "image": "../../public/media/lancer.png",
+        "alt": "Mitsubishi Lancer Evolution VI tuning",
+        "stats": {
+            "potenza": 86,
+            "handling": 91,
+            "stile": 84
+        },
+        "detail": "Lancer Evolution VI con anima rally, trazione integrale e setup aggressivo. Perfetta per chi cerca una giapponese precisa, turbo e pronta per curve veloci."
+    },
+    {
+        "brand": "Toyota",
+        "model": "AE86 Trueno",
+        "year": 1986,
+        "price": 44000,
+        "category": "Drift",
+        "image": "../../public/media/trueno.png",
+        "alt": "Toyota AE86 Trueno tuning",
+        "stats": {
+            "potenza": 62,
+            "handling": 90,
+            "stile": 88
+        },
+        "detail": "AE86 leggera, essenziale e iconica, con setup drift e look old school. Una base perfetta per chi ama guida pulita, traversi e cultura JDM classica."
+    },
+    {
+        "brand": "Honda",
+        "model": "Civic Type R EK9",
+        "year": 1998,
+        "price": 36000,
+        "category": "Street",
+        "image": "../../public/media/Copilot_20260603_145157.png",
+        "alt": "Honda Civic Type R EK9 tuning",
+        "stats": {
+            "potenza": 68,
+            "handling": 89,
+            "stile": 83
+        },
+        "detail": "Civic Type R EK9 con motore VTEC, assetto leggero e impostazione street racing. Ideale per chi vuole una compatta giapponese precisa e modificabile."
+    },
+    {
+        "brand": "Nissan",
+        "model": "Fairlady Z 350Z",
+        "year": 2003,
+        "price": 34000,
+        "category": "Coupe",
+        "image": "../../public/media/fairladyz350z.png",
+        "alt": "Nissan Fairlady Z 350Z tuning",
+        "stats": {
+            "potenza": 78,
+            "handling": 82,
+            "stile": 86
+        },
+        "detail": "Fairlady Z 350Z con motore V6, carreggiata larga e presenza da coupe moderna. Ottima per setup stance, drift leggero e tuning estetico pulito."
+    },
+    {
+        "brand": "Mitsubishi",
+        "model": "GTO Twin Turbo",
+        "year": 1994,
+        "price": 49000,
+        "category": "Turbo",
+        "image": "../../public/media/gto.png",
+        "alt": "Mitsubishi GTO Twin Turbo tuning",
+        "stats": {
+            "potenza": 85,
+            "handling": 78,
+            "stile": 87
+        },
+        "detail": "GTO Twin Turbo potente e scenica, con linea anni novanta e tanta tecnologia. Una JDM rara per chi cerca presenza, coppia e carattere da gran turismo."
+    },
+    {
+        "brand": "Toyota",
+        "model": "Chaser JZX100",
+        "year": 1998,
+        "price": 47000,
+        "category": "Drift",
+        "image": "../../public/media/Chaser.png",
+        "alt": "Toyota Chaser JZX100 tuning",
+        "stats": {
+            "potenza": 82,
+            "handling": 84,
+            "stile": 88
+        },
+        "detail": "Chaser JZX100 con motore turbo, carrozzeria berlina e anima da drift. Una scelta diversa, comoda e cattiva, perfetta per chi vuole una sleeper JDM."
+    },
+    {
+        "brand": "Mazda",
+        "model": "MX-5 NA",
+        "year": 1993,
+        "price": 23000,
+        "category": "Roadster",
+        "image": "../../public/media/mx5na.png",
+        "alt": "Mazda MX-5 NA tuning",
+        "stats": {
+            "potenza": 55,
+            "handling": 93,
+            "stile": 80
+        },
+        "detail": "MX-5 NA leggera, bassa e divertente, con setup street e guida diretta. Perfetta per chi cerca feeling puro e una base semplice da personalizzare."
+    },
+    {
+        "brand": "Honda",
+        "model": "S2000 AP1",
+        "year": 2000,
+        "price": 46000,
+        "category": "Roadster",
+        "image": "../../public/media/s2000.png",
+        "alt": "Honda S2000 AP1 tuning",
+        "stats": {
+            "potenza": 75,
+            "handling": 94,
+            "stile": 90
+        },
+        "detail": "S2000 AP1 con motore ad alto regime, trazione posteriore e linea pulita. Una roadster JDM tecnica, precisa e perfetta per tuning elegante."
+    },
+    {
+        "brand": "Nissan",
+        "model": "180SX",
+        "year": 1996,
+        "price": 42000,
+        "category": "Drift",
+        "image": "../../public/media/180sx.png",
+        "alt": "Nissan 180SX tuning",
+        "stats": {
+            "potenza": 74,
+            "handling": 90,
+            "stile": 87
+        },
+        "detail": "180SX con fari a scomparsa, trazione posteriore e setup drift. Una delle basi piu amate per chi vuole una JDM semplice, bella e cattiva."
+    },
+    {
+        "brand": "Toyota",
+        "model": "Celica GT-Four",
+        "year": 1994,
+        "price": 41000,
+        "category": "Rally",
+        "image": "../../public/media/Copilot_20260603_150228.png",
+        "alt": "Toyota Celica GT-Four tuning",
+        "stats": {
+            "potenza": 79,
+            "handling": 87,
+            "stile": 84
+        },
+        "detail": "Celica GT-Four con trazione integrale, turbo e spirito rally. Una coupe solida e particolare, pronta per un tuning funzionale e aggressivo."
+    }
+]

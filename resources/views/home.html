@@ -7,8 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Zalando+Sans+SemiExpanded:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/home.css">
-  <link rel="shortcut icon" href="../../public/media/blackholelogo.webp" type="image/x-icon">
+  <link id="homeFavicon" rel="shortcut icon" href="../../public/media/blackholelogo.webp" type="image/x-icon">
 </head>
 <body>
   <header class="site-header">
@@ -26,6 +28,9 @@
         </button>
         <div class="category-filter-menu" id="categoryFilterMenu" hidden></div>
       </div>
+      <button class="home-theme-toggle" id="homeThemeToggle" type="button" aria-label="Attiva modalità light">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </nav>
     
     <section class="hero">
@@ -261,6 +266,18 @@
           </div>
           <a href="rubrica.html">Ritorna ai bei tempi</a>
         </article>
+
+        <article class="exercise-card card-presto" data-title="Presto JDM Garage annunci auto JavaScript JSON">
+          <figure class="card-media presto-media">
+            <img src="../../public/media/logopresto.avif" alt="Logo Presto JDM Garage">
+          </figure>
+          <div>
+            <span class="card-tag">AOS - JSON/DOM</span>
+            <h3>JDM Garage</h3>
+            <p>27.05.2026</p>
+          </div>
+          <a href="presto.html">Acquista la tua Auto Tuning</a>
+        </article>
         
       </div>
       <p class="empty-state" id="emptyState" hidden>Nessun esercizio trovato.</p>
@@ -294,8 +311,12 @@
       <img src="../../public/media/aiutante.gif" alt="">
       <span>Aiuto</span>
     </button>
+    <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Torna all'inizio della pagina">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
   </aside>
   
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../js/home.js"></script>
 </body>
 </html>
