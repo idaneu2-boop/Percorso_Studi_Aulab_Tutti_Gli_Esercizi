@@ -1,11 +1,11 @@
-[
+﻿[
     {
         "brand": "Toyota",
         "model": "Supra MK4",
         "year": 1998,
         "price": 78000,
         "category": "Turbo",
-        "image": "../../public/media/Toyotasupra.png",
+        "image": "/media/Toyotasupra.png",
         "alt": "Toyota Supra MK4 tuning",
         "stats": {
             "potenza": 92,
@@ -20,7 +20,7 @@
         "year": 1999,
         "price": 92000,
         "category": "Turbo",
-        "image": "../../public/media/ChatGPT Image 27 mag 2026, 17_56_34.png",
+        "image": "/media/ChatGPT Image 27 mag 2026, 17_56_34.png",
         "alt": "Nissan Skyline GT-R tuning",
         "stats": {
             "potenza": 88,
@@ -35,7 +35,7 @@
         "year": 1997,
         "price": 64000,
         "category": "Drift",
-        "image": "../../public/media/mazdarx7-transparent.png",
+        "image": "/media/mazdarx7-transparent.png",
         "alt": "Mazda RX-7 FD tuning",
         "stats": {
             "potenza": 80,
@@ -50,7 +50,7 @@
         "year": 2001,
         "price": 52000,
         "category": "Drift",
-        "image": "../../public/media/silvias15-transparent.png",
+        "image": "/media/silvias15-transparent.png",
         "alt": "Nissan Silvia S15 tuning",
         "stats": {
             "potenza": 76,
@@ -65,7 +65,7 @@
         "year": 1995,
         "price": 86000,
         "category": "Coupe",
-        "image": "../../public/media/nsxna1.png",
+        "image": "/media/nsxna1.png",
         "alt": "Honda NSX NA1 tuning",
         "stats": {
             "potenza": 74,
@@ -80,7 +80,7 @@
         "year": 2004,
         "price": 39000,
         "category": "Rally",
-        "image": "../../public/media/wrxsti2004.png",
+        "image": "/media/wrxsti2004.png",
         "alt": "Subaru WRX STI tuning",
         "stats": {
             "potenza": 84,
@@ -95,7 +95,7 @@
         "year": 1999,
         "price": 58000,
         "category": "Rally",
-        "image": "../../public/media/lancer.png",
+        "image": "/media/lancer.png",
         "alt": "Mitsubishi Lancer Evolution VI tuning",
         "stats": {
             "potenza": 86,
@@ -110,7 +110,7 @@
         "year": 1986,
         "price": 44000,
         "category": "Drift",
-        "image": "../../public/media/trueno.png",
+        "image": "/media/trueno.png",
         "alt": "Toyota AE86 Trueno tuning",
         "stats": {
             "potenza": 62,
@@ -125,7 +125,7 @@
         "year": 1998,
         "price": 36000,
         "category": "Street",
-        "image": "../../public/media/Copilot_20260603_145157.png",
+        "image": "/media/Copilot_20260603_145157.png",
         "alt": "Honda Civic Type R EK9 tuning",
         "stats": {
             "potenza": 68,
@@ -140,7 +140,7 @@
         "year": 2003,
         "price": 34000,
         "category": "Coupe",
-        "image": "../../public/media/fairladyz350z.png",
+        "image": "/media/fairladyz350z.png",
         "alt": "Nissan Fairlady Z 350Z tuning",
         "stats": {
             "potenza": 78,
@@ -155,7 +155,7 @@
         "year": 1994,
         "price": 49000,
         "category": "Turbo",
-        "image": "../../public/media/gto.png",
+        "image": "/media/gto.png",
         "alt": "Mitsubishi GTO Twin Turbo tuning",
         "stats": {
             "potenza": 85,
@@ -170,7 +170,7 @@
         "year": 1998,
         "price": 47000,
         "category": "Drift",
-        "image": "../../public/media/Chaser.png",
+        "image": "/media/Chaser.png",
         "alt": "Toyota Chaser JZX100 tuning",
         "stats": {
             "potenza": 82,
@@ -185,7 +185,7 @@
         "year": 1993,
         "price": 23000,
         "category": "Roadster",
-        "image": "../../public/media/mx5na.png",
+        "image": "/media/mx5na.png",
         "alt": "Mazda MX-5 NA tuning",
         "stats": {
             "potenza": 55,
@@ -200,7 +200,7 @@
         "year": 2000,
         "price": 46000,
         "category": "Roadster",
-        "image": "../../public/media/s2000.png",
+        "image": "/media/s2000.png",
         "alt": "Honda S2000 AP1 tuning",
         "stats": {
             "potenza": 75,
@@ -215,7 +215,7 @@
         "year": 1996,
         "price": 42000,
         "category": "Drift",
-        "image": "../../public/media/180sx.png",
+        "image": "/media/180sx.png",
         "alt": "Nissan 180SX tuning",
         "stats": {
             "potenza": 74,
@@ -230,7 +230,7 @@
         "year": 1994,
         "price": 41000,
         "category": "Rally",
-        "image": "../../public/media/Copilot_20260603_150228.png",
+        "image": "/media/Copilot_20260603_150228.png",
         "alt": "Toyota Celica GT-Four tuning",
         "stats": {
             "potenza": 79,

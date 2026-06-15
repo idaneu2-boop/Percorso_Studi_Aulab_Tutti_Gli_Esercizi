@@ -36,7 +36,7 @@ body.light-mode {
 }
 h1,
 h2 {
-    font-family: "Dela Gothic One", sans-serif;
+    font-family: "Dela Gothic One", "LINE Seed JP", sans-serif;
 }
 a {
     text-decoration: none;
@@ -383,7 +383,7 @@ body.light-mode .hero::after {
     background-position: center;
     border: 3px solid var(--violet);
     padding: 8px 18px;
-    font-family: "Dela Gothic One", sans-serif;
+    font-family: "Dela Gothic One", "LINE Seed JP", sans-serif;
     font-size: clamp(1.3rem, 3vw, 2.4rem);
     line-height: 1;
     box-shadow: 8px 8px 0 var(--red), -5px -5px 0 var(--blue);
@@ -538,7 +538,7 @@ body.light-mode .engine-stats h3 {
     margin: 0;
     font-size: clamp(3.3rem, 9vw, 8.5rem);
     line-height: 0.92;
-    font-family: "Dela Gothic One", sans-serif;
+    font-family: "Dela Gothic One", "LINE Seed JP", sans-serif;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -586,7 +586,7 @@ body.light-mode .engine-stats h3 {
     background: var(--yellow);
     border-top: 4px solid var(--red);
     border-bottom: 4px solid var(--blue);
-    font-family: "Dela Gothic One", sans-serif;
+    font-family: "Dela Gothic One", "LINE Seed JP", sans-serif;
     text-transform: uppercase;
     white-space: nowrap;
     animation: stripEnter 0.85s ease-out 0.35s both, stripPulse 3.4s ease-in-out 1.4s infinite;
@@ -1120,7 +1120,7 @@ body.light-mode .first {
         margin: 0;
         font-size: clamp(1.95rem, 9vw, 4rem);
         line-height: 0.92;
-        font-family: "Dela Gothic One", sans-serif;
+        font-family: "Dela Gothic One", "LINE Seed JP", sans-serif;
         text-transform: uppercase;
         white-space: nowrap;
     }

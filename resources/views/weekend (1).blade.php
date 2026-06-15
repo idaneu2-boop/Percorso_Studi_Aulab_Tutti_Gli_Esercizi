@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio JS Interattivo</title>
+  <link rel="stylesheet" href="/css/weekend (1).css">
+</head>
+<body>
+    <a class="exercise-home-link" href="home.html">Home</a>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand" aria-label="Laboratorio JS">
+        <span class="brand-mark">JS</span>
+        <span>
+          <strong>Laboratorio</strong>
+          <small>esercizi extra</small>
+        </span>
+      </div>
+
+    </header>
+
+    <main id="home">
+      <section class="intro">
+        <div class="intro-copy">
+          <span class="kicker">JavaScript playground</span>
+          <h1>Scegli i valori, lancia gli esercizi, guarda il risultato.</h1>
+          <p>Una dashboard interattiva per provare funzioni, array, oggetti, condizioni e numeri senza passare dai prompt del browser.</p>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Statistiche esercizi">
+        <article>
+          <strong>6</strong>
+          <span>esercizi</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>interattivi</span>
+        </article>
+        <article>
+          <strong>0</strong>
+          <span>prompt fastidiosi</span>
+        </article>
+      </section>
+
+      <section class="grid" aria-label="Esercizi interattivi">
+        <article class="exercise-card dog-card" id="eta">
+          <div class="card-top">
+            <span class="pill">Calcolo</span>
+            <span class="code-tag">eta * 7</span>
+          </div>
+          <h2>Eta canina</h2>
+          <p>Inserisci un'eta umana e trasformala nella sua versione canina.</p>
+
+          <form class="tool-form" data-form="dog">
+            <label for="humanAge">Eta umana</label>
+            <div class="input-row">
+              <input id="humanAge" name="humanAge" type="number" min="0" placeholder="Es. 12" required>
+              <button type="submit">Calcola</button>
+            </div>
+          </form>
+
+          <output class="result" id="dogResult">Aspetto un numero.</output>
+        </article>
+
+        <article class="exercise-card traffic-card" id="semaforo">
+          <div class="card-top">
+            <span class="pill">Condizioni</span>
+            <span class="code-tag">switch</span>
+          </div>
+          <h2>Semaforo parlante</h2>
+          <p>Scegli un colore e scopri l'azione corretta.</p>
+
+          <form class="tool-form" data-form="traffic">
+            <label for="trafficColor">Colore</label>
+            <div class="input-row">
+              <select id="trafficColor" name="trafficColor">
+                <option value="rosso">Rosso</option>
+                <option value="giallo">Giallo</option>
+                <option value="verde">Verde</option>
+                <option value="blu">Blu</option>
+              </select>
+              <button type="submit">Controlla</button>
+            </div>
+          </form>
+
+          <output class="result" id="trafficResult">Pronto al cambio colore.</output>
+        </article>
+
+        <article class="exercise-card snack-card" id="snack">
+          <div class="card-top">
+            <span class="pill">Array</span>
+            <span class="code-tag">includes()</span>
+          </div>
+          <h2>Distributore</h2>
+          <p>Seleziona uno snack disponibile e ricevi il messaggio del distributore.</p>
+
+          <form class="tool-form" data-form="snack">
+            <label for="snackChoice">Snack</label>
+            <div class="input-row">
+              <select id="snackChoice" name="snackChoice">
+                <option value="patatine">Patatine</option>
+                <option value="cioccolata">Cioccolata</option>
+                <option value="biscotti">Biscotti</option>
+                <option value="caramelle">Caramelle</option>
+                <option value="pizza">Pizza</option>
+              </select>
+              <button type="submit">Compra</button>
+            </div>
+          </form>
+
+          <output class="result" id="snackResult">Moneta inserita.</output>
+        </article>
+
+        <article class="exercise-card hero-card" id="supereroe">
+          <div class="card-top">
+            <span class="pill">Oggetto</span>
+            <span class="code-tag">template literal</span>
+          </div>
+          <h2>Carta supereroe</h2>
+          <p>Crea una presentazione personalizzata usando proprieta di un oggetto.</p>
+
+          <form class="tool-form stacked" data-form="hero">
+            <div class="field-grid">
+              <label>
+                Nome
+                <input name="heroName" type="text" placeholder="Spider Byte" required>
+              </label>
+              <label>
+                Potere
+                <input name="heroPower" type="text" placeholder="controllare i computer" required>
+              </label>
+              <label>
+                Eta
+                <input name="heroAge" type="number" min="0" placeholder="18" required>
+              </label>
+              <label>
+                Citta
+                <input name="heroCity" type="text" placeholder="Milano" required>
+              </label>
+            </div>
+            <button type="submit">Presenta</button>
+          </form>
+
+          <output class="result" id="heroResult">Identita ancora segreta.</output>
+        </article>
+
+        <article class="exercise-card students-card wide" id="studenti">
+          <div class="card-top">
+            <span class="pill">Array di oggetti</span>
+            <span class="code-tag">filter() + reduce()</span>
+          </div>
+          <h2>Gestionale studenti</h2>
+          <p>Calcola medie, trova i promossi e aggiungi nuovi voti agli studenti.</p>
+
+          <div class="students-layout">
+            <div class="student-actions">
+              <form class="tool-form" data-form="average">
+                <label for="studentAverage">Studente</label>
+                <div class="input-row">
+                  <select id="studentAverage" name="studentAverage"></select>
+                  <button type="submit">Media</button>
+                </div>
+              </form>
+
+              <form class="tool-form" data-form="addGrade">
+                <label for="studentGrade">Nuovo voto</label>
+                <div class="input-row triple">
+                  <select id="studentGrade" name="studentGrade"></select>
+                  <input name="gradeValue" type="number" min="1" max="10" placeholder="Voto" required>
+                  <button type="submit">Aggiungi</button>
+                </div>
+              </form>
+
+              <button class="ghost-button" id="promotedButton" type="button">Mostra promossi</button>
+            </div>
+
+            <div class="student-board" id="studentBoard" aria-live="polite"></div>
+          </div>
+
+          <output class="result" id="studentsResult">Scegli un'azione sul registro.</output>
+        </article>
+
+        <article class="exercise-card nickname-card" id="nickname">
+          <div class="card-top">
+            <span class="pill">Random</span>
+            <span class="code-tag">Math.random()</span>
+          </div>
+          <h2>Nickname fantasy</h2>
+          <p>Combina nome, aggettivo casuale e animale per generare un titolo.</p>
+
+          <form class="tool-form stacked" data-form="nickname">
+            <label>
+              Nome
+              <input name="nickName" type="text" placeholder="Luca" required>
+            </label>
+            <label>
+              Animale
+              <input name="nickAnimal" type="text" placeholder="drago" required>
+            </label>
+            <button type="submit">Genera</button>
+          </form>
+
+          <output class="result" id="nicknameResult">Il nome epico arrivera qui.</output>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/weekend (1).js"></script>
+</body>
+</html>
+

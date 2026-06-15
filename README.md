@@ -1,9 +1,34 @@
--To launch the site go into resources\views\home.html and launch that with Live Server on Visual Studio Code.
+# Esercizi Daniele - Laravel
 
--On VSC you shall have installed the Live Server Extension. 
+Il sito e' stato portato in Laravel mantenendo le pagine originali come viste Blade.
 
--To use it you can press alt + L and after that press alt + o . 
+## Avvio
 
--Otherwise press CTRL + shift + P and select with pressing the Up and Down arrows "Open with Live Server" then press Enter .
+Da terminale entra nella cartella principale del progetto:
 
--Otherwise again with your mouse click "Go Live" on the right bottom of VSC.
+```bash
+cd C:\Users\idane\Desktop\Es-Pigliacelli-Daniele
+```
+
+Poi lancia:
+
+```bash
+php artisan serve
+```
+
+Poi apri:
+
+```text
+http://127.0.0.1:8000
+```
+
+In alternativa puoi avviare `start-laravel.bat` con doppio click dalla cartella del progetto.
+
+La home e' disponibile anche su `/home` e i vecchi link `.html` continuano a funzionare, per esempio `/presto.html` o `/viaggi%20(4).html`.
+
+## Struttura principale
+
+- `routes/web.php`: route Laravel per home e pagine `.html`.
+- `resources/views/*.blade.php`: copie Laravel delle pagine HTML.
+- `public/css` e `public/js`: asset serviti dal browser.
+- `public/media` e `public/data`: immagini, audio, video e JSON originali.
