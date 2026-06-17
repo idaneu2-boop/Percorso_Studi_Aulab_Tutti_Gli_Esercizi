@@ -68,7 +68,7 @@
   </iframe>
 
   <!-- Quinto Tag Aggiungere un Audio -->
-  <audio controls>
+  <audio preload="none" controls>
     <source src="/media/Original Super Mario Bros Soundtrack Full.mp3" type="audio/mpeg">
     Il tuo browser non supporta il tag audio.
   </audio>

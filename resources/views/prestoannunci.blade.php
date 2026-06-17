@@ -6,7 +6,7 @@
     <title>Presto JDM Garage</title>
     <link rel="icon" href="/media/logopresto.avif" type="image/avif">
     <!-- Librerie esterne e fogli di stile principali -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/presto.css">
     <link rel="stylesheet" href="/css/annuncipresto.css">
@@ -20,7 +20,7 @@
     <nav class="navbar fixed-top street-nav">
         <div class="container-fluid px-lg-5">
             <div class="navbar-brand">
-                <img class="brand-logo" src="/media/logopresto.avif" alt="Presto" data-aos="zoom-in" data-aos-duration="650">
+                <img decoding="async" loading="lazy" class="brand-logo" src="/media/logopresto.avif" alt="Presto" data-aos="zoom-in" data-aos-duration="650">
                 <a class="brand-sub rounded" href="./presto.html">Home</a>
                 <a class="brand-annunci rounded" href="./prestoannunci.html">Annunci</a>
                 <a class="brand-home-index rounded" href="./home.html" aria-label="Torna alla home esercizi">
@@ -28,16 +28,16 @@
                 </a>
             </div>
             <div class="nav-car-images justify-content-around">
-                <img src="/media/cars1.png" alt="auto">
-                <img src="/media/cars2.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars1.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars2.png" alt="auto">
                 <form class="nav-search rounded" role="search">
                     <input type="search" placeholder="Cerca" aria-label="Cerca auto">
                     <button type="button" aria-label="Cerca">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-                <img src="/media/cars3.png" alt="auto">
-                <img src="/media/cars4.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars3.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars4.png" alt="auto">
             </div>
             <details class="cars-dropdown">
                 <summary class="cars-dropdown-toggle rounded">
@@ -55,15 +55,15 @@
     <!-- Header compatto della pagina annunci: logo, titolo animato e poster -->
     <header class="annunci-header" id="pageTop">
         <div class="annunci-header-inner" data-aos="fade-up" data-aos-duration="700">
-            <img class="annunci-header-logo" src="/media/logoSQUARE.webp" alt="Presto">
+            <img decoding="async" loading="lazy" class="annunci-header-logo" src="/media/logoSQUARE.webp" alt="Presto">
             <div class="annunci-header-title">
-                <div class="annunci-title-stack">
-                    <span class="annunci-title-shadow" aria-hidden="true">ãŠå‰ã®å¦»ã¨ãƒ¤ã‚‹</span>
-                    <h1 class="annunci-titolo">ãŠå‰ã®å¦»ã¨ãƒ¤ã‚‹</h1>
+                <div class="annunci-title-stack japanese-title">
+                    <span class="annunci-title-shadow" aria-hidden="true">お前の妻とヤる</span>
+                    <h1 class="annunci-titolo">お前の妻とヤる</h1>
                 </div>
-                <p>å›ã®å¦»ãŒç™ºæƒ…ã—ãŸé›Œç‰›ã®ã‚ˆã†ã«ä¿ºã¨ãƒ¤ã‚ŠãŸãŒã£ã¦ã„ã‚‹ã®ã‚’è¦‹ã‚‹ã¨ã€å‹ƒèµ·ã—ã¦ã—ã¾ã†</p>
+                <p class="japanese-copy">君の妻が発情した雌牛のように俺とヤりたがっているのを見ると、勃起してしまう</p>
             </div>
-            <img class="annunci-header-poster" src="/media/poster header.jpg" alt="poster auto">
+            <img decoding="async" loading="lazy" class="annunci-header-poster" src="/media/poster header.jpg" alt="poster auto">
         </div>
     </header>
     <main>
@@ -97,7 +97,7 @@
                         <div class="annunci-price-filter">
                             <label for="priceRange">Prezzo</label>
                             <input id="priceRange" type="range" min="0" value="0" step="1000">
-                            <span id="priceValue">0 â‚¬</span>
+                            <span id="priceValue">0 €</span>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h3 id="annuncio-modal-title"></h3>
-            <img class="annuncio-modal-img" src="/media/cars1.png" alt="Auto selezionata">
+            <img decoding="async" loading="lazy" class="annuncio-modal-img" src="/media/cars1.png" alt="Auto selezionata">
             <p></p>
         </div>
     </div>
@@ -135,7 +135,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-inner">
-                <img class="footer-logo" src="/media/logopresto.avif" alt="Presto">
+                <img decoding="async" loading="lazy" class="footer-logo" src="/media/logopresto.avif" alt="Presto">
                 <p>Presto JDM Garage</p>
                 <div class="footer-links">
                     <a href="mailto:idaneu2@gmail.com">idaneu2@gmail.com</a>
@@ -150,7 +150,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <!-- Audio fixed: musica di sottofondo con controllo play/pausa -->
-    <audio class="background-music" src="/media/Tokyo Drift (Fast & Furious)_320k.mp3" preload="auto" loop></audio>
+    <audio class="background-music" src="/media/Tokyo Drift (Fast & Furious)_320k.mp3" preload="none" loop></audio>
     <button class="music-toggle" type="button" aria-label="Metti in pausa la musica">
         <span class="fa-stack music-toggle-stack">
             <i class="fa-solid fa-music fa-stack-1x"></i>
@@ -163,4 +163,3 @@
     <script src="/js/annuncipresto.js"></script>
 </body>
 </html>
-

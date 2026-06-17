@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- LINK BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="/css/telefonia.css">
@@ -28,7 +28,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container justify-content-around">
-            <a class="navbar-brand" href="telefonia.html"><img class="logo" src="/media/SMART-4.jpg" alt="Immagine Logo"></a>
+            <a class="navbar-brand" href="telefonia.html"><img decoding="async" loading="lazy" class="logo" src="/media/SMART-4.jpg" alt="Immagine Logo"></a>
             
             <a class="text-decoration-none" href="https://www.euronics.it/prenota-e-ritira.html?_gl=1*mtas58*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwzevPBhBaEiwAplAxvlABSHdCajnZfwWHSdFYptGwYHtqlvxnGTi7Xemq_IroQpg87g4CdhoCfwIQAvD_BwE&gbraid=0AAAAACtPrNO7NGMRHyZgVhfFTHGkJQkXG"><h1 class="text-light">Ultime Offerte!</h1></a>
             
@@ -58,7 +58,7 @@
                 <!-- CARD 1 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="/media/apple-iphone-17-pro-max-256gb-arancione-cosmico-garanzia-24-mesi.jpg" class="card-img-top" alt="iPhone 17 Pro Max arancione cosmico">
+                        <img decoding="async" loading="lazy" src="/media/apple-iphone-17-pro-max-256gb-arancione-cosmico-garanzia-24-mesi.jpg" class="card-img-top" alt="iPhone 17 Pro Max arancione cosmico">
                         <div class="card-body">
                             <h5 class="card-title text-light">Iphone 17 Pro Max</h5>
                             <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Dettagli</button>
@@ -69,7 +69,7 @@
                 <!-- CARD 2 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="/media/SAM08073L-bb64aa54cd-0.jpg" class="card-img-top" alt="Samsung Galaxy S25 Ultra">
+                        <img decoding="async" loading="lazy" src="/media/SAM08073L-bb64aa54cd-0.jpg" class="card-img-top" alt="Samsung Galaxy S25 Ultra">
                         <div class="card-body">
                             <h5 class="card-title text-light">Samsung Galaxy S25 Ultra</h5>
                             <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal2">Dettagli</button>
@@ -80,7 +80,7 @@
                 <!-- CARD 3 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="/media/nokia-1.jpg" class="card-img-top" alt="Motorola Edge 70">
+                        <img decoding="async" loading="lazy" src="/media/nokia-1.jpg" class="card-img-top" alt="Motorola Edge 70">
                         <div class="card-body">
                             <h5 class="card-title text-light">Motorola Edge 70</h5>
                             <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#modal3">Dettagli</button>
@@ -96,7 +96,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-danger text-light"><h5>Iphone 17 Pro Max</h5></div>
-                    <div class="modal-body">Lâ€™iPhone 17 Pro Max Ã¨ stato presentato il 09/09/2025 e debutta con un design unibody in alluminio forgiato con camera di vapore. Integra una fotocamera frontale Center Stage da 18 MP, il chip A19 Pro e un sistema di tre fotocamere Fusion da 48 MP con lo zoom di qualità  ottica più¹ lunga mai visto su un iPhone (fino a 8x / 200 mm). Il display Super Retina XDR da 6,9" mantiene ProMotion a 120 Hz e picchi di 3.000 nit, con la migliore autonomia storica su un iPhone.
+                    <div class="modal-body">L’iPhone 17 Pro Max è stato presentato il 09/09/2025 e debutta con un design unibody in alluminio forgiato con camera di vapore. Integra una fotocamera frontale Center Stage da 18 MP, il chip A19 Pro e un sistema di tre fotocamere Fusion da 48 MP con lo zoom di qualità ottica più lunga mai visto su un iPhone (fino a 8x / 200 mm). Il display Super Retina XDR da 6,9" mantiene ProMotion a 120 Hz e picchi di 3.000 nit, con la migliore autonomia storica su un iPhone.
                         
                     </div>
                 </div>
@@ -107,8 +107,8 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-danger text-light"><h5>Samsung Galaxy S25 Ultra</h5></div>
-                    <div class="modal-body">Samsung Galaxy S25 Ultra Ã¨ uno smartphone Android con caratteristiche all'avanguardia che lo rendono una scelta eccellente per ogni tipo di utilizzo, rappresentando uno dei migliori dispositivi mobili mai realizzati. Dispone di un grande display da 6.9 pollici e di una risoluzione da 3120x1440 pixel, fra le piÃ¹ elevate attualmente in circolazione. Nello stilare la scheda tecnica di questo Samsung Galaxy S25 Ultra, notiamo che le funzionalitÃ  offerte sono innumerevoli e tutte al top di gamma. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettivitÃ  Wi-fi e il GPS. La batteria Ã¨ da 5000mAh.
-                        L'eccellenza di questo Samsung Galaxy S25 Ultra Ã¨ completata da una fotocamera con un sensore da ben 200 megapixel che permette di scattare foto di alta qualitÃ  con una risoluzione di 16330x12247 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Veniamo alle dimensioni: lo spessore di 8.2mm Ã¨ contenuto e rende questo Samsung Galaxy S25 Ultra molto interessante. Il tutto sta in un oggetto dal peso di 218g.</div>
+                    <div class="modal-body">Samsung Galaxy S25 Ultra è uno smartphone Android con caratteristiche all'avanguardia che lo rendono una scelta eccellente per ogni tipo di utilizzo, rappresentando uno dei migliori dispositivi mobili mai realizzati. Dispone di un grande display da 6.9 pollici e di una risoluzione da 3120x1440 pixel, fra le più elevate attualmente in circolazione. Nello stilare la scheda tecnica di questo Samsung Galaxy S25 Ultra, notiamo che le funzionalità offerte sono innumerevoli e tutte al top di gamma. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettività Wi-fi e il GPS. La batteria è da 5000mAh.
+                        L'eccellenza di questo Samsung Galaxy S25 Ultra è completata da una fotocamera con un sensore da ben 200 megapixel che permette di scattare foto di alta qualità con una risoluzione di 16330x12247 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Veniamo alle dimensioni: lo spessore di 8.2mm è contenuto e rende questo Samsung Galaxy S25 Ultra molto interessante. Il tutto sta in un oggetto dal peso di 218g.</div>
                     </div>
                 </div>
             </div>
@@ -117,8 +117,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-danger text-light"><h5>Motorola Edge 70</h5></div>
-                        <div class="modal-body">Motorola Edge 70, come emerge dalla sua scheda tecnica, Ã¨ uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.7 pollici con una risoluzione di 2712x1220 pixel. Le funzionalitÃ  offerte da questo Motorola Edge 70 sono veramente tante e all'avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
-                            Questo Motorola Edge 70 Ã¨ un prodotto con pochi competitor per ciÃ² che riguarda la multimedialitÃ  grazie alla fotocamera da ben 50 megapixel che permette al Motorola Edge 70 di scattare foto di alta qualitÃ  con una risoluzione di 8165x6124 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Guardando alle dimensioni, lo spessore di appena 6mm rende questo Motorola Edge 70 un prodotto completo e tra i piÃ¹ sottili sul mercato. Per finire il peso Ã¨ di 159g e abbiamo una batteria da 4800mAh.</div>
+                        <div class="modal-body">Motorola Edge 70, come emerge dalla sua scheda tecnica, è uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.7 pollici con una risoluzione di 2712x1220 pixel. Le funzionalità offerte da questo Motorola Edge 70 sono veramente tante e all'avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+                            Questo Motorola Edge 70 è un prodotto con pochi competitor per ciò che riguarda la multimedialità grazie alla fotocamera da ben 50 megapixel che permette al Motorola Edge 70 di scattare foto di alta qualità con una risoluzione di 8165x6124 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Guardando alle dimensioni, lo spessore di appena 6mm rende questo Motorola Edge 70 un prodotto completo e tra i più sottili sul mercato. Per finire il peso è di 159g e abbiamo una batteria da 4800mAh.</div>
                         </div>
                     </div>
                 </div>
@@ -128,13 +128,13 @@
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="/media/nokia.webp" class="d-block w-100" alt="Smartphone Nokia">
+                                <img decoding="async" loading="lazy" src="/media/nokia.webp" class="d-block w-100" alt="Smartphone Nokia">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="/media/blackb.jpg" class="d-block w-100" alt="Smartphone BlackBerry">
+                                <img decoding="async" loading="lazy" src="/media/blackb.jpg" class="d-block w-100" alt="Smartphone BlackBerry">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="/media/WS-47592_WP.jpg" class="d-block w-100" alt="Wallpaper per smartphone">
+                                <img decoding="async" loading="lazy" src="/media/WS-47592_WP.jpg" class="d-block w-100" alt="Wallpaper per smartphone">
                             </div>
                         </div>
                         <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -155,7 +155,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Qual Ã¨ la garanzia?
+                                    Qual è la garanzia?
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse">
@@ -170,7 +170,7 @@
                                 </button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse">
-                                <div class="accordion-body">SÃ¬, in tutta Italia, con 2 giorni lavorativi per Sicilia, sardegna e Calabria e 3 giorni lavorativi per localitÃ  piÃ¹ difficilmente raggiungibili (es.: localitÃ  montane, isole minori, estreme periferie o zone disagiate).</div>
+                                <div class="accordion-body">Sì, in tutta Italia, con 2 giorni lavorativi per Sicilia, sardegna e Calabria e 3 giorni lavorativi per località più difficilmente raggiungibili (es.: località montane, isole minori, estreme periferie o zone disagiate).</div>
                             </div>
                         </div>
                         
@@ -209,13 +209,13 @@
                     
                     <!-- COPYRIGHT -->
                     <div class="text-center border-top pt-3">
-                        <p class="mb-0">Â© 2026 Telefonia - Tutti i diritti riservati</p>
+                        <p class="mb-0">© 2026 Telefonia - Tutti i diritti riservati</p>
                     </div>
                 </div>
             </footer>
             
             <!-- SCRIPT BOOTSTRAP -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
             
 </body>
 </html>

@@ -11,7 +11,7 @@ console.log(sium);
 // 3. Scrivere un programma che mi permetta di stampare tutti gli elementi contenuti negli array restituiti dagli esercizi precedenti
 let nuov = sium.concat(somm);
 console.log(nuov);
-// 4. Scrivere un programma che mi permetta di sapere qual Ã¨ il numero piÃ¹ piccolo all'interno di un array di numeri
+// 4. Scrivere un programma che mi permetta di sapere qual è il numero più piccolo all'interno di un array di numeri
 let picc = niummeri.find((numeri, i)=> numeri<= 1 );
 console.log(picc);
 // MEDI
@@ -32,12 +32,12 @@ let summa = altrinumeri.reduce((acc, elemento)=> acc + elemento, 0);
 let med = summa / altrinumeri.length;
 console.log(med)
 // DIFFICILI
-// 1. Scrivere una funzione che prenda in ingresso due array ed una stringa. Il valore della stringa dovrÃ  essere uno tra questi:
+// 1. Scrivere una funzione che prenda in ingresso due array ed una stringa. Il valore della stringa dovrà essere uno tra questi:
 // 'somma'
 // 'sottrazione'
 // 'moltiplicazione'
 // 'divisione'
-// La funzione dovrÃ  restituire un nuovo array i cui valori siano quelli dei due array mandati come parametri a cui sia applicata l'operazione indicata tra gli elementi con lo stesso indice.
+// La funzione dovrà restituire un nuovo array i cui valori siano quelli dei due array mandati come parametri a cui sia applicata l'operazione indicata tra gli elementi con lo stesso indice.
 // Es. input= [1,2,3], [4,5,6], 'somma'      output= [5,7,9]
 const calcolaArray = (operazione, ...gliarray) =>{
     let [array1, array2] = gliarray;
@@ -53,7 +53,7 @@ console.log(calcolaArray("somma", [1,2,3], [4,5,6]));
 // FACILI
 // Traccia 1:
 // Scrivere un programma che dato un array contenente dati di qualsiasi tipo, per ogni elemento stampi in console il suo tipo di dato.
-let varidatti = [10, "bella regÃ ", true, undefined, null];
+let varidatti = [10, "bella regà", true, undefined, null];
 let tipidati = varidatti.map((elemento, i)=> typeof elemento);
 console.log(tipidati);
 // Traccia 2:
@@ -76,7 +76,7 @@ let varie = [72, "prima stringa", 69, "seconda stringa", 911, "terza stringa"];
 let scritta = varie.filter((elemento, indice)=> typeof elemento === "string");
 console.log(...scritta);
 // Traccia 6:
-// Scrivere una funzione che prenda in ingresso due array e restituisca l'array che contiene piÃ¹ elementi, in caso in cui gli array contengano lo stesso numero di elementi dovrÃ  restituire la stringa 'Questi array contengono lo stesso numero di elementi'
+// Scrivere una funzione che prenda in ingresso due array e restituisca l'array che contiene più elementi, in caso in cui gli array contengano lo stesso numero di elementi dovrà restituire la stringa 'Questi array contengono lo stesso numero di elementi'
 function arrayPiuLungo(array1, array2) {
     if (array1.length > array2.length) {
     return array1;
@@ -93,7 +93,7 @@ console.log(arrayPiuLungo([1], [2, 3, 4]));
 console.log(arrayPiuLungo([1, 2], ["a", "b"]));
 // DIFFICILI
 // Traccia 7:
-// Scrivere una funzione che prenda in ingresso due array contenenti numeri. Questa funzione dovrÃ  restituire un nuovo array che contenga 2 elementi. Il primo elemento dovrÃ  essere la somma dei numeri del primo array mentre il secondo elemento dovrÃ  essere la somma dei numeri del secondo array.
+// Scrivere una funzione che prenda in ingresso due array contenenti numeri. Questa funzione dovrà restituire un nuovo array che contenga 2 elementi. Il primo elemento dovrà essere la somma dei numeri del primo array mentre il secondo elemento dovrà essere la somma dei numeri del secondo array.
 let naruto = [80, 13, 99];
 let sasuke = [25, 74, 33];
 let somma1 = naruto.reduce((acc, numero)=> acc + numero, 0);
@@ -101,14 +101,14 @@ let somma2 = sasuke.reduce((acc, numero)=> acc + numero, 0);
 let sakura = somma1 + somma2;
 console.log(sakura);
 // Traccia 8:
-// Scrivere una funzione che prenda in ingresso un array. Questa funzione dovrÃ  restituire la media degli elementi numerici dell'array passato (l'array puÃ² potenzialmente contenere anche elementi non numerici)
+// Scrivere una funzione che prenda in ingresso un array. Questa funzione dovrà restituire la media degli elementi numerici dell'array passato (l'array può potenzialmente contenere anche elementi non numerici)
 let goku = [4, "Dragon Ball", 20, "Z", 7, "Dragon Ball GT siamo tutti qui"]
 let junior = goku.filter((elemento)=> typeof elemento === "number");
 let chichi = junior.reduce((acc, numero)=>acc + numero, 0);
 let gohan = chichi / junior.length;
 console.log(gohan);
 // Traccia 9:
-// Scrivere una funzione che prenda in funzione due array numeri. Questa funzione dovrÃ  restituire un nuovo array con tutti i numeri presenti in entrambi gli array, ordinati in maniera crescente e raddoppiati (rivedete anche i metodi visti nella scorsa lezione)
+// Scrivere una funzione che prenda in funzione due array numeri. Questa funzione dovrà restituire un nuovo array con tutti i numeri presenti in entrambi gli array, ordinati in maniera crescente e raddoppiati (rivedete anche i metodi visti nella scorsa lezione)
 // Primo modo function
 function gandalf(array1, array2) {
     return array1.concat(array2).sort((a, b) => a - b)

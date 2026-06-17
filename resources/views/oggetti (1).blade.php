@@ -15,7 +15,7 @@
     <header class="hero">
         <nav class="topbar" aria-label="Navigazione principale">
             <a class="brand" href="#top" aria-label="Aulab Object Lab">
-                <img class="brand-mark" src="/media/fotovalerio.png" alt="Logo Aulab Object Lab">
+                <img decoding="async" loading="lazy" class="brand-mark" src="/media/fotovalerio.png" alt="Logo Aulab Object Lab">
                 <span>Aulab Object Lab</span>
             </a>
             <div class="nav-links">
@@ -67,7 +67,7 @@
             <div class="exercise-grid gpt-solutions">
                 <article class="exercise-card">
                     <div class="gpt-card-head">
-                        <img class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
+                        <img decoding="async" loading="lazy" class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
                         <div>
                             <p class="card-kicker">Esercizio 1</p>
                             <h3>Persona</h3>
@@ -92,7 +92,7 @@
 
                 <article class="exercise-card">
                     <div class="gpt-card-head">
-                        <img class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
+                        <img decoding="async" loading="lazy" class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
                         <div>
                             <p class="card-kicker">Esercizio 2</p>
                             <h3>Garage</h3>
@@ -115,7 +115,7 @@
 
                 <article class="exercise-card">
                     <div class="gpt-card-head">
-                        <img class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
+                        <img decoding="async" loading="lazy" class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
                         <div>
                             <p class="card-kicker">Esercizio 3</p>
                             <h3>Rubrica</h3>
@@ -137,7 +137,7 @@
 
                 <article class="exercise-card">
                     <div class="gpt-card-head">
-                        <img class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
+                        <img decoding="async" loading="lazy" class="card-icon valerio-icon" src="/media/fotovalerio.png" alt="" aria-hidden="true">
                         <div>
                             <p class="card-kicker">Extra</p>
                             <h3>Bowling</h3>

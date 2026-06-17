@@ -524,6 +524,8 @@ body.light-mode .search-box input::placeholder {
   --card-button-text: #ffffff;
   --card-button-hover: var(--aulab-red);
   --card-button-hover-text: #ffffff;
+  content-visibility: auto;
+  contain-intrinsic-size: 245px;
   min-height: 245px;
   position: relative;
   border: 1px solid color-mix(in srgb, var(--card-accent) 42%, var(--line));

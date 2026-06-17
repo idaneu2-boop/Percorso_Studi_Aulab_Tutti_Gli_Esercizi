@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>StreamWorld</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/anime.css">
       <link rel="shortcut icon" href="/media/239e441794f6b6d5e49abdcccdcff298.jpg" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="anime.html">StreamWorld</a>
-    <img class="lanavvi navbar-toggler-icon" src="/media/Logo-Banner-Anime-T-shirt-bianco.webp" alt="Logo StreamWorld">
+    <img decoding="async" loading="lazy" class="lanavvi navbar-toggler-icon" src="/media/Logo-Banner-Anime-T-shirt-bianco.webp" alt="Logo StreamWorld">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,7 +47,7 @@
     <!-- CARD 1 -->
     <div class="col-md-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Vinland-Saga-2-ITA-aaaaaaaaaaa"><div class="card">
-          <img src="/media/Solo leveling.gif" class="card-img-top" alt="Vinland Saga">
+          <img decoding="async" loading="lazy" src="/media/Solo leveling.gif" class="card-img-top" alt="Vinland Saga">
           <div class="card-body">
               <h5 class="card-title text-white-50 text-decoration-none">Vinland Saga: Stagione 2</h5>
             </div>
@@ -58,7 +58,7 @@
     <!-- CARD 2 -->
     <div class="col-md-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Frieren-Beyond-Journeys-End-2"><div class="card">
-        <img src="/media/frieren.gif" class="card-img-top" alt="Frieren">
+        <img decoding="async" loading="lazy" src="/media/frieren.gif" class="card-img-top" alt="Frieren">
         <div class="card-body">
           <h5 class="card-title text-white-50 text-decoration-none">Frieren: Stagione 2</h5>
         </div>
@@ -69,7 +69,7 @@
     <!-- CARD 3 -->
     <div class="col-md-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Jujutsu-Kaisen-3"><div class="card">
-        <img src="/media/gojo.gif" class="card-img-top" alt="Jujutsu Kaisen">
+        <img decoding="async" loading="lazy" src="/media/gojo.gif" class="card-img-top" alt="Jujutsu Kaisen">
         <div class="card-body">
           <h5 class="card-title text-white-50 text-decoration-none">Jujutsu Kaisen: Stagione 3</h5>
         </div>
@@ -80,7 +80,7 @@
     <!-- CARD 4 -->
     <div class="col-md-3 mb-4 ">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Devil-May-Cry-2025-2"><div class="card">
-        <img src="/media/dante.gif" class="card-img-top" alt="Devil May Cry">
+        <img decoding="async" loading="lazy" src="/media/dante.gif" class="card-img-top" alt="Devil May Cry">
         <div class="card-body">
           <h5 class="card-title text-white-50 text-decoration-none">Devil May Cry: Stagione 2</h5>
         </div>
@@ -93,7 +93,7 @@
   <div class="row">
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/la città incantata.gif" alt="La città incantata">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/la città incantata.gif" alt="La città incantata">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">La città incantata</h6>
         </div>
@@ -102,7 +102,7 @@
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/film entei.gif" alt="Pokémon 3">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/film entei.gif" alt="Pokémon 3">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">Pokémon 3: Il Mistero degli Unown</h6>
         </div>
@@ -111,7 +111,7 @@
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/film reze.gif" alt="Chainsaw Man: Reze Arc">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/film reze.gif" alt="Chainsaw Man: Reze Arc">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">Chainsaw Man: Reze Arc</h6>
         </div>
@@ -120,7 +120,7 @@
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/gurren-lagann-simon.gif" alt="Gurren Lagann">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/gurren-lagann-simon.gif" alt="Gurren Lagann">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">Gurren Lagann</h6>
         </div>
@@ -129,7 +129,7 @@
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/broly.gif" alt="Dragon Ball Super: Broly">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/broly.gif" alt="Dragon Ball Super: Broly">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">Dragon Ball Z: Il Super Saiyan della Leggenda</h6>
         </div>
@@ -138,7 +138,7 @@
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img class="rounded" src="/media/naruto.gif" alt="Naruto">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/naruto.gif" alt="Naruto">
         <div class="card-body p-2">
           <h6 class="card-title text-white-50 text-center mb-0">Naruto: Road to Ninja</h6>
         </div>
@@ -153,7 +153,7 @@
   <p>© 2026 StreamWorld Anime - Tutti i diritti riservati</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

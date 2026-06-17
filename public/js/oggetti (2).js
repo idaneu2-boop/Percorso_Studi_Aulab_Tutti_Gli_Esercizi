@@ -17,8 +17,8 @@ persona.saluta();
 
 // Esercizio 2:
 // Realizzare un oggetto che rappresenti un garage:
-// DovrÃ  contenere una lista di automobili.
-// Ciascuna automobile dovrÃ  avere una marca (es. Fiat) ed un modello (es. Panda).
+// Dovrà contenere una lista di automobili.
+// Ciascuna automobile dovrà avere una marca (es. Fiat) ed un modello (es. Panda).
 // Scrivere un metodo che prenda in input una marca e stampi i modelli presenti nel garage di quella stessa marca.
 let garage = {
   "auto": [
@@ -52,7 +52,7 @@ let garage = {
 garage.filtromarche("Fiat");
 
 // Esercizio 3:
-// Crea un oggetto agenda con una proprietÃ  che comprenda una lista di contatti con un nome e un numero di telefono, ed abbia diverse funzionalitÃ  tra cui:
+// Crea un oggetto agenda con una proprietà che comprenda una lista di contatti con un nome e un numero di telefono, ed abbia diverse funzionalità tra cui:
 // mostrare tutti i contatti dell'agenda
 // mostrare un singolo contatto
 // eliminare un contatto dall'agenda
@@ -115,13 +115,13 @@ rubrica.mostracontatti();
 
 // Esercizio Extra:
 // Crea un oggetto bowling con le seguenti caratteristiche:
-// una proprietÃ  che comprenda una lista di giocatori con un nome e i relativi punteggi
-// diverse funzionalitÃ  tra cui:
+// una proprietà che comprenda una lista di giocatori con un nome e i relativi punteggi
+// diverse funzionalità tra cui:
 // creare 10 punteggi casuali per ogni giocatore:
-// Suggerimento: questo metodo dovrÃ  ciclare tutti i giocatori, presenti nell'oggetto bowling, e aggiungere ad ogni proprietÃ  scores, dieci punteggi casuali ad ogni giocatore
+// Suggerimento: questo metodo dovrà ciclare tutti i giocatori, presenti nell'oggetto bowling, e aggiungere ad ogni proprietà scores, dieci punteggi casuali ad ogni giocatore
 // Per generare un punteggio casuale da 1 a 10 -> Math.floor(Math.random() * (10 - 1 + 1) + 1)
 // trovare il punteggio finale per ogni giocatore:
-// Suggerimento: ordinare l'array in ordine decrescente (Attenzione! Ãˆ un array di oggetti: Array.prototype.sort() - JavaScript | MDN)
+// Suggerimento: ordinare l'array in ordine decrescente (Attenzione! È un array di oggetti: Array.prototype.sort() - JavaScript | MDN)
 // aggiungere un nuovo giocatore e creare 10 punti casuali anche per lui
 // determinare il vincitore
 // EXTRA:
@@ -182,7 +182,7 @@ let bowling = {
       return migliore;
     });
 
-    console.log(`Il vincitore Ã¨ ${vincitore.name} con ${this.calcolatotale(vincitore)} punti!`);
+    console.log(`Il vincitore è ${vincitore.name} con ${this.calcolatotale(vincitore)} punti!`);
   }
 };
 

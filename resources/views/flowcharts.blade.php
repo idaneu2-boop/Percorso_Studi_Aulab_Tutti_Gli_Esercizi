@@ -98,10 +98,10 @@
     <a class="exercise-home-link" href="home.html">Home</a>
     <h1>Esercizio Flowcharts</h1>
     <p>Flowcharts di Daniele Pigliacelli.</p>
-    <img id="flowchartImage" src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio">
+    <img decoding="async" loading="lazy" id="flowchartImage" src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio">
   </main>
   <div class="zoom-overlay" id="zoomOverlay" aria-label="Flowchart ingrandito">
-    <img src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio ingrandito">
+    <img decoding="async" loading="lazy" src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart dell'esercizio ingrandito">
   </div>
   <script>
     const flowchartImage = document.getElementById("flowchartImage");

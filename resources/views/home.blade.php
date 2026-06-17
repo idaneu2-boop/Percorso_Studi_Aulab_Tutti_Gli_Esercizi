@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Zalando+Sans+SemiExpanded:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/home.css">
   <link id="homeFavicon" rel="shortcut icon" href="/media/blackholelogo.webp" type="image/x-icon">
 </head>
@@ -17,7 +16,7 @@
     <nav class="nav">
       <div class="brand">
         <a class="brand-mark" href="https://www.instagram.com/daniele.pigliacelli_/" target="_blank" rel="noopener noreferrer" aria-label="Apri Instagram di Daniele Pigliacelli">
-          <img src="/media/danielefoto.jpg" alt="Foto di Daniele Pigliacelli">
+          <img decoding="async" loading="lazy" src="/media/danielefoto.jpg" alt="Foto di Daniele Pigliacelli">
         </a>
         <a class="brand-name" href="https://www.instagram.com/daniele.pigliacelli_/" target="_blank" rel="noopener noreferrer" aria-label="Apri Instagram di Daniele Pigliacelli">Daniele Pigliacelli / Matricola: 7521788692</a>
       </div>
@@ -28,7 +27,7 @@
         </button>
         <div class="category-filter-menu" id="categoryFilterMenu" hidden></div>
       </div>
-      <button class="home-theme-toggle" id="homeThemeToggle" type="button" aria-label="Attiva modalitÃ  light">
+      <button class="home-theme-toggle" id="homeThemeToggle" type="button" aria-label="Attiva modalità light">
         <i class="fa-solid fa-moon"></i>
       </button>
     </nav>
@@ -77,7 +76,7 @@
         
         <article class="exercise-card card-cucina" data-title="Cucina Abruzzese Es-Html ricette cucina">
           <figure class="card-media">
-            <img src="/media/Timballo-scrippelle-teramano-1.jpg" alt="Timballo di scrippelle teramano">
+            <img decoding="async" loading="lazy" src="/media/Timballo-scrippelle-teramano-1.jpg" alt="Timballo di scrippelle teramano">
           </figure>
           <div>
             <span class="card-tag">Html</span>
@@ -89,7 +88,7 @@
         
         <article class="exercise-card card-viaggi" data-title="MSD Viaggi Esercizio Git Daniele Pigliacelli viaggi blog">
           <figure class="card-media">
-            <img src="/media/Immagine Header.png" alt="Aereo in viaggio">
+            <img decoding="async" loading="lazy" src="/media/optimized/home-viaggi.jpg" alt="Aereo in viaggio">
           </figure>
           <div>
             <span class="card-tag">Html + Git-Hub</span>
@@ -101,7 +100,7 @@
         
         <article class="exercise-card card-pokemon-myth" data-title="PokéMitology Pokémon mitologia creazione medioevo presente">
           <figure class="card-media">
-            <img src="/media/gif arceus.gif" alt="Arceus animato">
+            <img decoding="async" loading="lazy" src="/media/gif arceus.gif" alt="Arceus animato">
           </figure>
           <div>
             <span class="card-tag">CSS1 + CSS2</span>
@@ -113,7 +112,7 @@
         
         <article class="exercise-card card-anime" data-title="Blog Anime Blog_Anime StreamWorld anime">
           <figure class="card-media">
-            <img src="/media/chainsaw-man-denji-bound-makimas-eye-live-wallpaper.png" alt="Chainsaw Man">
+            <img decoding="async" loading="lazy" src="/media/chainsaw-man-denji-bound-makimas-eye-live-wallpaper.png" alt="Chainsaw Man">
           </figure>
           <div>
             <span class="card-tag">Bootstrap</span>
@@ -125,7 +124,7 @@
         
         <article class="exercise-card card-tech" data-title="Blog Telefonia Blog_Telefonia smartphone offerte">
           <figure class="card-media">
-            <img src="/media/iphone-17-pro-17-pro-max-hero.png" alt="iPhone 17 Pro Max">
+            <img decoding="async" loading="lazy" src="/media/optimized/home-telefonia.jpg" alt="iPhone 17 Pro Max">
           </figure>
           <div>
             <span class="card-tag">Bootstrap Components</span>
@@ -137,7 +136,7 @@
         
         <article class="exercise-card card-nasa" data-title="Blog Nasa Blog_Nasa spazio bootstrap">
           <figure class="card-media">
-            <img src="/media/header.webp" alt="Scenario spaziale NASA">
+            <img decoding="async" loading="lazy" src="/media/header.webp" alt="Scenario spaziale NASA">
           </figure>
           <div>
             <span class="card-tag">Live Coding</span>
@@ -149,7 +148,7 @@
         
         <article class="exercise-card card-flow" data-title="Es flowchart Es-flowchart diagrammi logica">
           <figure class="card-media">
-            <img src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart">
+            <img decoding="async" loading="lazy" src="/media/Screenshot 2026-05-12 150557.png" alt="Screenshot del flowchart">
           </figure>
           <div>
             <span class="card-tag">Flowcharts</span>
@@ -161,7 +160,7 @@
         
         <article class="exercise-card card-mario" data-title="SuperMario SuperMario_Es super mario gioco esercizio">
           <figure class="card-media">
-            <img src="/media/d9f6x59-83bc7697-99b5-4ab1-b56c-48286f982b2b.gif" alt="Super Mario animato">
+            <img decoding="async" loading="lazy" src="/media/d9f6x59-83bc7697-99b5-4ab1-b56c-48286f982b2b.gif" alt="Super Mario animato">
           </figure>
           <div>
             <span class="card-tag">JS - intro</span>
@@ -173,7 +172,7 @@
         
         <article class="exercise-card card-undertale" data-title="EserciziJS2 Undertale JavaScript seconda parte">
           <figure class="card-media">
-            <img src="/media/footer.webp" alt="Sans da Undertale">
+            <img decoding="async" loading="lazy" src="/media/footer.webp" alt="Sans da Undertale">
           </figure>
           <div>
             <span class="card-tag">JS - Variabili</span>
@@ -221,14 +220,14 @@
         
         <article class="exercise-card card-aulab" data-title="oggetti OggettiEsDP Aulab oggetti JavaScript">
           <figure class="card-media">
-            <img src="/media/object-lab-hero.png" alt="Aulab Object Lab">
+            <img decoding="async" loading="lazy" src="/media/object-lab-hero.png" alt="Aulab Object Lab">
           </figure>
           <div>
             <span class="card-tag">JS - Oggetti</span>
             <h3>Aulab</h3>
             <p>21.05.2026</p>
           </div>
-          <a href="oggetti (1).html">Valerio perderÃ  il lavoro?</a>
+          <a href="oggetti (1).html">Valerio perderà il lavoro?</a>
         </article>
         
         <article class="exercise-card card-weekend" data-title="Weekend EserciziJaWeekend esercizi weekend JavaScript">
@@ -245,7 +244,7 @@
 
         <article class="exercise-card card-dom" data-title="Dom1 DOM JavaScript querySelector classList eventi lista contatti">
           <figure class="card-media dom-media">
-            <img src="/media/logo.svg" alt="">
+            <img decoding="async" loading="lazy" src="/media/logo.svg" alt="">
           </figure>
           <div>
             <span class="card-tag">JS - DOM</span>
@@ -257,7 +256,7 @@
 
         <article class="exercise-card card-rubrica" data-title="Rubrica DOM JavaScript rubrica contatti">
           <figure class="card-media rubrica-media">
-            <img src="/media/logorubrica.png" alt="">
+            <img decoding="async" loading="lazy" src="/media/logorubrica.png" alt="">
           </figure>
           <div>
             <span class="card-tag">JS - DOM</span>
@@ -269,7 +268,7 @@
 
         <article class="exercise-card card-presto" data-title="Presto JDM Garage annunci auto JavaScript JSON">
           <figure class="card-media presto-media">
-            <img src="/media/logopresto.avif" alt="Logo Presto JDM Garage">
+            <img decoding="async" loading="lazy" src="/media/logopresto.avif" alt="Logo Presto JDM Garage">
           </figure>
           <div>
             <span class="card-tag">AOS - JSON/DOM</span>
@@ -299,7 +298,7 @@
   
   <aside class="page-helper" aria-label="Aiutante della pagina">
     <div class="helper-bubble" id="helperBubble" hidden>
-      <button class="helper-close" id="helperClose" type="button" aria-label="Chiudi aiutante">Ã—</button>
+      <button class="helper-close" id="helperClose" type="button" aria-label="Chiudi aiutante">×</button>
       <p class="helper-title">Serve aiuto?</p>
       <ul>
         <li>Usa la barra di ricerca per trovare subito un esercizio.</li>
@@ -308,7 +307,7 @@
       </ul>
     </div>
     <button class="helper-button" id="helperButton" type="button" aria-expanded="false" aria-controls="helperBubble">
-      <img src="/media/aiutante.gif" alt="">
+      <img decoding="async" loading="lazy" src="/media/aiutante.gif" alt="">
       <span>Aiuto</span>
     </button>
     <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Torna all'inizio della pagina">
@@ -316,10 +315,6 @@
     </button>
   </aside>
   
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/js/home.js"></script>
 </body>
 </html>
-
-
-

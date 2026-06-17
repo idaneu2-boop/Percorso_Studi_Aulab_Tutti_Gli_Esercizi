@@ -49,7 +49,7 @@
      <header>
         <h1>MSD Viaggi</h1>
         <figure>
-        <img style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
+        <img decoding="async" loading="lazy" style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
         </figure>
      </header>
      <!-- Fine Header -->
@@ -61,21 +61,21 @@
             <!-- Gaza -->
             <article>
                 <a href="viaggi (1).html" target="_blank">
-                    <img style="width: 30%;" src="/media/Viaggio1.jpg" alt="Immagine Striscia di Gaza">
+                    <img decoding="async" loading="lazy" style="width: 30%;" src="/media/Viaggio1.jpg" alt="Immagine Striscia di Gaza">
                     </a>
                     <h2><a href="viaggi (1).html">Gaza</a></h2>
             </article>
             <!-- New York -->
              <article>
                 <a href="viaggi (2).html" target="_blank">
-                    <img style="width: 30%;" src="/media/Viaggio2.jpg" alt="Immagine delle Torri Gemelle">
+                    <img decoding="async" loading="lazy" style="width: 30%;" src="/media/Viaggio2.jpg" alt="Immagine delle Torri Gemelle">
                </a>
                <h2><a href="viaggi (2).html">New York</a></h2>
              </article>
              <!-- Kiev -->
               <article>
                 <a href="viaggi (3).html" target="_blank">
-                    <img style="width: 30%;" src="/media/Viaggio3.jpg" alt="Immagine di Kiev">
+                    <img decoding="async" loading="lazy" style="width: 30%;" src="/media/Viaggio3.jpg" alt="Immagine di Kiev">
                 </a>
                 <h2><a href="viaggi (3).html">Kiev</a></h2>
               </article>

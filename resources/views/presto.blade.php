@@ -6,7 +6,7 @@
     <title>Presto JDM Garage</title>
     <link rel="icon" href="/media/logopresto.avif" type="image/avif">
     <!-- Librerie esterne e fogli di stile principali -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/css/presto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <nav class="navbar fixed-top street-nav">
         <div class="container-fluid px-lg-5">
             <div class="navbar-brand">
-                <img class="brand-logo" src="/media/logopresto.avif" alt="Presto" data-aos="zoom-in" data-aos-duration="650">
+                <img decoding="async" loading="lazy" class="brand-logo" src="/media/logopresto.avif" alt="Presto" data-aos="zoom-in" data-aos-duration="650">
                 <a class="brand-sub rounded" href="./presto.html">Home</a>
                 <a class="brand-annunci rounded" href="./prestoannunci.html">Annunci</a>
                 <a class="brand-home-index rounded" href="./home.html" aria-label="Torna alla home esercizi">
@@ -27,16 +27,16 @@
                 </a>
             </div>
             <div class="nav-car-images justify-content-around">
-                <img src="/media/cars1.png" alt="auto">
-                <img src="/media/cars2.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars1.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars2.png" alt="auto">
                 <form class="nav-search rounded" role="search">
                     <input type="search" placeholder="Cerca" aria-label="Cerca auto">
                     <button type="button" aria-label="Cerca">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-                <img src="/media/cars3.png" alt="auto">
-                <img src="/media/cars4.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars3.png" alt="auto">
+                <img decoding="async" loading="lazy" src="/media/cars4.png" alt="auto">
             </div>
             <details class="cars-dropdown">
                 <summary class="cars-dropdown-toggle rounded">
@@ -53,29 +53,29 @@
     </nav>
     <!-- Hero principale: immagine di sfondo, logo centrale, titolo animato e barra auto -->
     <header class="hero" id="pageTop">
-        <img class="hero-img" src="/media/jdm-punk-hero.png" alt="Auto sportiva giapponese in una strada neon punk">
+        <img decoding="async" loading="lazy" class="hero-img" src="/media/jdm-punk-hero.png" alt="Auto sportiva giapponese in una strada neon punk">
         <div class="hero-noise"></div>
         <div class="hero-poster" data-aos="zoom-in" data-aos-duration="700">
-            <img class="hero-poster-img" src="/media/poster header.jpg" alt="poster auto">
+            <img decoding="async" loading="lazy" class="hero-poster-img" src="/media/poster header.jpg" alt="poster auto">
         </div>
         <div class="container-fluid px-lg-5 hero-content">
             <div class="row min-vh-100 align-items-center">
                 <div class="col-lg-8 col-xl-7" data-aos="fade-right" data-aos-duration="900">
                     <div class="hero-logo-kicker" data-aos="fade-left" data-aos-duration="900">
-                        <img class="hero-logo-icon" data-aos="fade-left" data-aos-duration="900" src="/media/logoSQUARE.webp" alt="Immagine Logo">
+                        <img decoding="async" loading="lazy" class="hero-logo-icon" data-aos="fade-left" data-aos-duration="900" src="/media/logoSQUARE.webp" alt="Immagine Logo">
                     </div>
-                    <div class="title-stack">
+                    <div class="title-stack japanese-title">
                         <span class="title-shadow" aria-hidden="true">お前の妻とヤる</span>
                         <h1 class="titolo">お前の妻とヤる</h1>
                     </div>
-                    <p class="hero-copy">君の妻が発情した雌牛のように俺とヤりたがっているのを見ると、勃起してしまう</p>
+                    <p class="hero-copy japanese-copy">君の妻が発情した雌牛のように俺とヤりたがっているのを見ると、勃起してしまう</p>
                 </div>
             </div>
             <div class="hero-strip justify-content-around">
                 <span><i class="fa-solid fa-bolt rounded"></i> Silvia</span>
-                <img src="/media/barra1.png" alt="logo">
+                <img decoding="async" loading="lazy" src="/media/barra1.png" alt="logo">
                 <span><i class="fa-solid fa-dollar-sign rounded"></i> Skyline</span>
-                <img src="/media/barra2.png" alt="logo">
+                <img decoding="async" loading="lazy" src="/media/barra2.png" alt="logo">
                 <form class="hero-strip-search" role="search">
                     <input type="search" placeholder="Cerca" aria-label="Cerca auto">
                     <button type="button" aria-label="Cerca">
@@ -83,11 +83,11 @@
                     </button>
                 </form>
                 <span><i class="fa-solid fa-fire-flame-curved"></i> Supra</span>
-                <img src="/media/barra 3.png" alt="logo">
+                <img decoding="async" loading="lazy" src="/media/barra 3.png" alt="logo">
                 <span><i class="fa-solid fa-sun"></i> RX-7</span>
-                <img src="/media/barra4.png" alt="logo">
+                <img decoding="async" loading="lazy" src="/media/barra4.png" alt="logo">
                 <span><i class="fa-solid fa-circle-dot"></i> NSX</span>
-                <img src="/media/barra5.png" alt="logo">
+                <img decoding="async" loading="lazy" src="/media/barra5.png" alt="logo">
                 <span><i class="fa-solid fa-flag-checkered"></i> WRX STI</span>
             </div>
         </div>
@@ -103,7 +103,7 @@
                         <h2 class="sales-title">Numero di auto vendute:<br><span class="sales-counter" data-target="11287">0</span></h2>
                     </div>
                     <div class="col-lg-5" data-aos="fade-left" data-aos-duration="700" data-aos-delay="50">
-                        <img class="intro-car-img" src="/media/ChatGPT Image 27 mag 2026, 17_56_34.png" alt="Immagine Auto Skyline" loading="lazy">
+                        <img decoding="async" class="intro-car-img" src="/media/ChatGPT Image 27 mag 2026, 17_56_34.png" alt="Immagine Auto Skyline" loading="lazy">
                         <p class="lead mb-0">Ogni macchina passa da controllo: telaio, tagliando, storia, import e setup estetico. Tu immagini l'auto, noi la rendiamo realtà.</p>
                     </div>
                 </div>
@@ -112,10 +112,10 @@
                     <div class="toyota-center-copy" data-aos="fade-up" data-aos-duration="700">
                         <p class="kicker toyota-badge rounded">Toyota</p>
                         <p class="toyota-story">Nata dal Giappone industriale, Toyota ha costruito la sua leggenda unendo affidabilita, precisione meccanica e una cultura ingegneristica ossessiva. Dalle sportive leggere alle icone turbo come Supra, Celica e MR2, ha portato lo spirito JDM dalla strada alla pista, creando motori amati per resistenza, potenziale e carattere.</p>
-                        <img class="toyota-supra-img" src="/media/Toyotasupra.png" alt="Toyota Supra">
+                        <img decoding="async" loading="lazy" class="toyota-supra-img" src="/media/Toyotasupra.png" alt="Toyota Supra">
                     </div>
                     <div class="toyota-engine-column" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">
-                        <img class="toyota-engine-img" src="/media/Motoretoyota.jpg" alt="Motore Toyota">
+                        <img decoding="async" loading="lazy" class="toyota-engine-img" src="/media/Motoretoyota.jpg" alt="Motore Toyota">
                     </div>
                     <div class="toyota-stats-column" data-aos="fade-left" data-aos-duration="700" data-aos-delay="120">
                         <div class="engine-stats">
@@ -174,7 +174,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-inner">
-                <img class="footer-logo" src="/media/logopresto.avif" alt="Presto">
+                <img decoding="async" loading="lazy" class="footer-logo" src="/media/logopresto.avif" alt="Presto">
                 <p>Presto JDM Garage</p>
                 <div class="footer-links">
                     <a href="mailto:idaneu2@gmail.com">idaneu2@gmail.com</a>
@@ -189,7 +189,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <!-- Audio fixed: musica di sottofondo con controllo play/pausa -->
-    <audio class="background-music" src="/media/Tokyo Drift (Fast & Furious)_320k.mp3" preload="auto" loop></audio>
+    <audio class="background-music" src="/media/Tokyo Drift (Fast & Furious)_320k.mp3" preload="none" loop></audio>
     <button class="music-toggle" type="button" aria-label="Metti in pausa la musica">
         <span class="fa-stack music-toggle-stack">
             <i class="fa-solid fa-music fa-stack-1x"></i>
@@ -201,4 +201,3 @@
     <script src="/js/presto.js"></script>
 </body>
 </html>
-

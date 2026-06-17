@@ -1,6 +1,6 @@
 ﻿// Es-1
 // Crea 5 variabili contenenti un numero e scrivi un programma in modo da ottenere la somma tra questi numeri e la media.
-// In console poi mostra la seguente frase: â€˜La somma tra i numeri equivale a â€¦ e la media equivale aâ€¦â€™
+// In console poi mostra la seguente frase: ‘La somma tra i numeri equivale a … e la media equivale a…’
 console.log(`ESERCIZIO 1`)
 let numero1 = 1;
 let numero2 = 2;
@@ -27,7 +27,7 @@ function tabelozza(numeroTabellina) {
 tabelozza(numeroTabellina)
 console.log(`ESERCIZIO 3`);
 // Es-3
-// Scrivi un programma che, dato il numero (N) dei tiri da effettuare per ciascun giocatore, simuli un gioco di dadi tra due utenti, stampando il giocatore che ha totalizzato piÃ¹ punti. Supponendo che ogni dado abbia al massimo 6 facce, ogni giocatore tirerÃ  il dado N volte, ciÃ² significa che verrÃ  generato un numero casuale ad ogni tiro che sarÃ  sommato ai precedenti per calcolare il punteggio del giocatore 
+// Scrivi un programma che, dato il numero (N) dei tiri da effettuare per ciascun giocatore, simuli un gioco di dadi tra due utenti, stampando il giocatore che ha totalizzato più punti. Supponendo che ogni dado abbia al massimo 6 facce, ogni giocatore tirerà il dado N volte, ciò significa che verrà generato un numero casuale ad ogni tiro che sarà sommato ai precedenti per calcolare il punteggio del giocatore 
 // Usiamo questa formula per generare un numero random Math.floor(Math.random() * (max - min + 1) + min);
 let N = 5;
 let min = 1;
@@ -77,32 +77,32 @@ console.log(`ESERCIZIO 4`);
 // Prova a farlo prima senza funzione e poi con la funzione
 // Scrivi un programma che, dato un numero intero compreso tra 1 a 7
 // visualizzi il corrispondente giorno della settimana. Sapendo che:
-// 1 = lunedÃ¬
-// 2 = martedÃ¬
-// 3 = mercoledÃ¬
+// 1 = lunedì
+// 2 = martedì
+// 3 = mercoledì
 // ...
 // 7 = domenica
 // Esempi:
 // Input: numero = 6
 // Output: "Sabato"
 // Input: numero = 10
-// Output: â€œErrore! Giorno della settimana non valido!"
+// Output: “Errore! Giorno della settimana non valido!"
 let numero = 6;
 switch (numero) {
     case 1:
-        console.log("LunedÃ¬");
+        console.log("Lunedì");
         break;
     case 2:
-        console.log("MartedÃ¬");
+        console.log("Martedì");
         break;
     case 3:
-        console.log("MercoledÃ¬");
+        console.log("Mercoledì");
         break;
     case 4:
-        console.log("GiovedÃ¬");
+        console.log("Giovedì");
         break;
     case 5:
-        console.log("VenerdÃ¬");
+        console.log("Venerdì");
         break;
     case 6:
         console.log("Sabato");
@@ -126,7 +126,7 @@ function scegliGiorno(s) {
         `domenica`
     ];
     if (s >= 1 && s <= 7) {
-        alert(`Hai selezionato ${s} Ã¨ ${giorni[s - 1]}`);
+        alert(`Hai selezionato ${s} è ${giorni[s - 1]}`);
     } else {
         alert(`Hai selezionato un numero sbagliato o una lettera. Riprova!`);
     }
@@ -135,7 +135,7 @@ scegliGiorno(s);
 console.log(`ESERCIZIO 5`)
 // Es-5
 // Scrivi una funzione che permetta di stampare in console tutti i numeri da 1 a N: 
-// N dovraâ€™ rappresentare il parametro formale della funzione.
+// N dovra’ rappresentare il parametro formale della funzione.
 // Tutti i numeri multipli di 3 saranno sostituiti dalla stringa 'Fizz' 
 // Tutti i numeri multipli di 5 saranno sostituiti dalla stringa 'Buzz'
 // Tutti i numeri multipli di 15 saranno sostituiti dalla stringa 'fizzBuzz'
@@ -163,9 +163,9 @@ let risultatoFizzBuzz = creaFizzBuzz(30);
 stampaArray(risultatoFizzBuzz);
 console.log(`ESERCIZIO 6`);
 // Es-6
-// Scrivi una funzione che dato un numero intero (massimo 9999) conti da quante cifre Ã¨ formato.
-// Esempio: Input : 9 â†’ output: 1 cifra Input : 99 â†’ output: 2 cifre 
-// HINT: le stringhe hanno la proprietÃ  .length che conta da quante cifre Ã© composta (vedi dalla documentazione)
+// Scrivi una funzione che dato un numero intero (massimo 9999) conti da quante cifre è formato.
+// Esempio: Input : 9 → output: 1 cifra Input : 99 → output: 2 cifre 
+// HINT: le stringhe hanno la proprietà .length che conta da quante cifre é composta (vedi dalla documentazione)
 function massimoDalema(n) {
    return String(n);
 }
@@ -197,7 +197,7 @@ console.log(`ESERCIZIO 8`);
 // Dati i seguenti array mischiati e confusi:
 // let array_1 =[ ['un', 'per', 'incatenarli.'], ['Anello', 'trovarli,'], ['ghermirli', 'e'], ['gondor', 'mark'], ];
 // let array_2 = [ [['trovarli,']], ['tu,', 'sciocchi'], ['tu,', 'sciocchi', ['padron', 'Sauron']], ['nel', ['fuggite', 'gandalf']], [['domarli,', 'passare'], 'buio'] ];
-// Stampa a schermo la frase: "Un Anello per domarli, un Anello per trovarli, un Anello per ghermirli e nel buio incatenarli.â€œ
+// Stampa a schermo la frase: "Un Anello per domarli, un Anello per trovarli, un Anello per ghermirli e nel buio incatenarli.“
 // HINT Non tutte le parole sono necessarie per la frase; Occhio agli array annidati
 let array_1 =[ ['un', 'per', 'incatenarli.'], ['Anello', 'trovarli,'], ['ghermirli', 'e'], ['gondor', 'mark'], ];
 let array_2 = [ [['trovarli,']], ['tu,', 'sciocchi'], ['tu,', 'sciocchi', ['padron', 'Sauron']], ['nel', ['fuggite', 'gandalf']], [['domarli,', 'passare'], 'buio'] ];
@@ -218,7 +218,7 @@ return b-a})
  console.log(pippobaudo);
  console.log(`ESERCIZIO 10`);
 //  Es-10
-// Scrivere un programma che permetta di ottenere un nuovo array che abbia come valori i numeri del primo array sommati con i valori del secondo array: let numbers1 = [10, 20, 30]; let numbers2 = [40, 50, 60]; dovraâ€™ restituire come risultato, let newArray = [50, 70, 90]
+// Scrivere un programma che permetta di ottenere un nuovo array che abbia come valori i numeri del primo array sommati con i valori del secondo array: let numbers1 = [10, 20, 30]; let numbers2 = [40, 50, 60]; dovra’ restituire come risultato, let newArray = [50, 70, 90]
 let desica = [10, 20, 30]; 
 let boldi = [40, 50, 60]; 
 let enzosalvi = [];
@@ -228,8 +228,8 @@ for (let i = 0; i < desica.length; i++) {
 console.log(enzosalvi);
 console.log(`ESERCIZIO 11`);
 // Es-11
-// Scrivi una funzione che prenda in input una stringa e restituisca TRUE se Ã¨ palindroma, FALSE se non lo Ã¨. Primo step: eliminare gli spazi e i segni di punteggiatura:
-// HINT Puoi eliminare spazi e segni di punteggiatura usando â†’ str.replace(/\W/g, "") Esempio: Input: â€œi topi non avevano nipotiâ€ 
+// Scrivi una funzione che prenda in input una stringa e restituisca TRUE se è palindroma, FALSE se non lo è. Primo step: eliminare gli spazi e i segni di punteggiatura:
+// HINT Puoi eliminare spazi e segni di punteggiatura usando → str.replace(/\W/g, "") Esempio: Input: “i topi non avevano nipoti” 
 let napoletani = `I topi non avevano nipoti`;
 function notaio() {
     let pugliesi = napoletani.replace(/\W/g, "").toLowerCase();

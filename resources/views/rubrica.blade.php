@@ -6,7 +6,7 @@
     <title>Rubrica DOM</title>
     <link rel="icon" type="image/png" href="/media/logorubrica.png">
     <!-- Link Boots -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Link Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Link CSS -->
@@ -30,12 +30,12 @@
                                 <div class="music-control">
                                     <i class="fa-solid fa-bell"></i>
                                     <button id="musicToggle" type="button" class="music-button" aria-label="Avvia musica">
-                                        <img src="/media/logorubrica.png" alt="">
+                                        <img decoding="async" loading="lazy" src="/media/logorubrica.png" alt="">
                                     </button>
                                     <i class="fa-solid fa-bell-slash"></i>
                                 </div>
                             </div>
-                            <audio id="musicPlayer" src="/media/Erika (Rare Version).mp3"></audio>
+                            <audio preload="none" id="musicPlayer" src="/media/Erika (Rare Version).mp3"></audio>
                         </header>
                         
                         <!-- Card e contenuti della rubrica -->
@@ -110,7 +110,7 @@
         </section>
     </main>
     <!-- Link JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Link JS -->
     <script src="/js/rubrica.js"></script>
 </body>

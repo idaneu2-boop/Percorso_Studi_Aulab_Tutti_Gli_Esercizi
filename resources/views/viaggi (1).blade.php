@@ -49,14 +49,14 @@
      <header>
         <h1>MSD Viaggi</h1>
         <figure>
-        <img style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
+        <img decoding="async" loading="lazy" style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
         </figure>
      </header>
      <!-- Fine Header -->
     <!-- Inizio Main -->
      <main>
         <h1>La Striscia di Gaza</h1>
-        <img style="width: 40%;" src="/media/Icona Gaza.jpg" alt="Immagine della Striscia di Gaza">
+        <img decoding="async" loading="lazy" style="width: 40%;" src="/media/Icona Gaza.jpg" alt="Immagine della Striscia di Gaza">
         <ol>Varie tappe di Gaza che vi porteremo a esplorare:
             <li>Soggiorno a Tel Aviv;</li>
             <li>Case Distrutte 1;</li>
@@ -67,13 +67,13 @@
         </ol>
         <h2>Storia e cultura del luogo:</h2>
         <p>La Striscia di Gaza ha una storia complessa e un patrimonio culturale segnato da secoli di passaggi, conflitti e tradizioni.</p>
-        <p>Oggi Ã¨ un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
+        <p>Oggi è un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
 
         <h2>Prezzo del viaggio:</h2>
         <h3>300 sbleuri solo andata</h3>
         <!-- Fine Main -->
          <!-- Inizio Footer -->
-         <video style="width: 50%;" src="/media/Video Gaza.mp4" controls></video>
+         <video preload="metadata" style="width: 50%;" src="/media/Video Gaza.mp4" controls></video>
             <footer>
         <h3>Contatti:</h3>
             <ul>

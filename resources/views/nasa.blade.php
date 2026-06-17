@@ -12,10 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Bootstrap 2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap-->    <!-- Bootstrap 2-->
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/nasa.css">
     <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
@@ -30,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <img class="logo" src="/media/logo2.png" alt="Logo Nasa">
+                    <img decoding="async" loading="lazy" class="logo" src="/media/logo2.png" alt="Logo Nasa">
                     <li class="nav-item">
                         <a class="botton1 nav-link text-third fw-bold fs-nav-link" aria-current="page" href="https://www.nasa.gov/">Home Nasa</a>
                     </li>
@@ -53,7 +51,7 @@
                             <li><a class="dropdown-item text-third" href="nasa1.html">Login</a></li>
                         </ul>
                     </li>
-                    <img class="logo2" src="/media/Logo3.png" alt="Logo Nasa">
+                    <img decoding="async" loading="lazy" class="logo2" src="/media/Logo3.png" alt="Logo Nasa">
                 </ul>
             </div>
         </div>
@@ -62,7 +60,7 @@
     <header class="container-fluid">
         <section class="row vh-100 bg-header align-items-center justify-content-between">
             <article class="col-4">
-                <img class="img-custom d-block" src="/media/logo.png" alt="Nasa Logo">
+                <img decoding="async" loading="lazy" class="img-custom d-block" src="/media/logo.png" alt="Nasa Logo">
             </article>
             <article class="col-8 col-md-4">
                 <h1 class="text-sec text-center h1-font">National <div class="text-main">Aeronautics</div> <div class="text-third">and Space</div> Administration</h1>
@@ -77,7 +75,7 @@
                     <h2 class="h1 text-center mb-5 botton3">LAST DISCOVERIES</h2>
                 </article>
                 <article class="col-12 col-md-6">
-                    <img src="/media/pulsar.gif" alt="Pulsar gif" class="img-custom d-block mx-auto mx-md-0 ms-md-auto">
+                    <img decoding="async" loading="lazy" src="/media/pulsar.gif" alt="Pulsar gif" class="img-custom d-block mx-auto mx-md-0 ms-md-auto">
                 </article>
                 <article class="col-12 col-md-6 d-flex flex-column justify-content-center">
                     <h3 class="h2 botton1 fw-bold">Pulsar</h3>
@@ -86,7 +84,7 @@
             </div>
             <div class="row my-3 text-third">
                 <article class="col-12 col-md-6">
-                    <img src="/media/magnetar.gif" alt="Magnetar Star gif" class="img-custom d-block mx-auto mx-md-0">
+                    <img decoding="async" loading="lazy" src="/media/magnetar.gif" alt="Magnetar Star gif" class="img-custom d-block mx-auto mx-md-0">
                 </article>
                 <article class="col-12 col-md-6 d-flex flex-column justify-content-center order-md-first align-items-end">
                     <h3 class="h2 botton2 fw-bold">Magnetar</h3>
@@ -95,11 +93,11 @@
             </div>
             <div class="row text-third">
                 <article class="col-12 col-md-6">
-                    <img src="/media/supernovae.gif" alt="Ultra Massive Black Hole gif" class="img-custom d-block mx-auto mx-md-0 ms-md-auto">
+                    <img decoding="async" loading="lazy" src="/media/supernovae.gif" alt="Ultra Massive Black Hole gif" class="img-custom d-block mx-auto mx-md-0 ms-md-auto">
                 </article>
                 <article class="col-12 col-md-6 d-flex flex-column justify-content-center">
                     <h3 class="h2 botton3 fw-bold">UMBHs</h3>
-                    <p class="lead">Ultramassive black holes (UMBHs) are the most massive known objects in the universe, typically defined as having masses exceeding 10 billion solar masses (\(10^{10}\ M_\odot\)). They reside at the centers of massive galaxies, representing the upper limit of black hole growth and are 10,000+ times heavier than our Milky Wayâ€™s central black hole.</p>
+                    <p class="lead">Ultramassive black holes (UMBHs) are the most massive known objects in the universe, typically defined as having masses exceeding 10 billion solar masses (\(10^{10}\ M_\odot\)). They reside at the centers of massive galaxies, representing the upper limit of black hole growth and are 10,000+ times heavier than our Milky Way’s central black hole.</p>
                 </article>
             </div>
         </section>
@@ -131,16 +129,16 @@
                 </article>
                 <article class="col-12 col-md-3 px-3">
                     <div class="card card-custom">
-                        <img src="/media/ton618.gif" class="card-img-top img-leader" alt="Ton 618 gif">
+                        <img decoding="async" loading="lazy" src="/media/ton618.gif" class="card-img-top img-leader" alt="Ton 618 gif">
                         <div class="card-body">
                             <h5 class="card-title h3 fw-bold text-center text-sec">Ton 618</h5>
-                            <p class="card-text">TON 618 is an extremely luminous, distant quasar and one of the largest known supermassive black holes in the universe. Located 18.2 billion light-years away in the Canes Venatici constellation, it weighs an estimated 66 billion solar masses, measuring roughly 30â€“40 times the size of our solar system.</p>
+                            <p class="card-text">TON 618 is an extremely luminous, distant quasar and one of the largest known supermassive black holes in the universe. Located 18.2 billion light-years away in the Canes Venatici constellation, it weighs an estimated 66 billion solar masses, measuring roughly 30–40 times the size of our solar system.</p>
                         </div>
                     </div>
                 </article>
                 <article class="col-12 col-md-3 px-3">
                     <div class="card card-custom">
-                        <img src="/media/sirio.gif" class="card-img-top img-leader" alt="Sirius b Star gif">
+                        <img decoding="async" loading="lazy" src="/media/sirio.gif" class="card-img-top img-leader" alt="Sirius b Star gif">
                         <div class="card-body">
                             <h5 class="card-title h3 fw-bold text-center text-sec">Sirius b</h5>
                             <p class="card-text">It is a white dwarf, a remnant of an intermediate-mass star that has exhausted its fuel, and is the closest example to Earth. It is the secondary component of the Sirius binary system, of which the 'A' component is the brightest star in the night sky.[11] Sirius B, on the other hand, cannot be seen to the naked eye as its luminosity is only 2% that of the Sun. Sirius is the fifth-nearest star system to the Sun, 8.6 light-years distant</p>
@@ -149,10 +147,10 @@
                 </article>
                 <article class="col-12 col-md-3 px-3">
                     <div class="card card-custom">
-                        <img src="/media/antares.gif" class="card-img-top img-leader" alt="Antares Star gif">
+                        <img decoding="async" loading="lazy" src="/media/antares.gif" class="card-img-top img-leader" alt="Antares Star gif">
                         <div class="card-body">
                             <h5 class="card-title h3 fw-bold text-center text-sec">Antares</h5>
-                            <p class="card-text">Antares (Alpha Scorpii) is a massive, red supergiant star located roughly 550â€“600 light-years away, acting as the bright, reddish heart of the constellation Scorpius. As one of the largest known starsâ€”approx. 700 times the sunâ€™s diameterâ€”it is a dying star, shining 10,000 times brighter than the Sun, and is often considered a future supernova candidate</p>
+                            <p class="card-text">Antares (Alpha Scorpii) is a massive, red supergiant star located roughly 550–600 light-years away, acting as the bright, reddish heart of the constellation Scorpius. As one of the largest known stars—approx. 700 times the sun’s diameter—it is a dying star, shining 10,000 times brighter than the Sun, and is often considered a future supernova candidate</p>
                         </div>
                     </div>
                 </article>
@@ -181,11 +179,11 @@
                 </div>
             </div>
             <div class="text-center border-top pt-3">
-                <p class="mb-0">Â© 2026 Nasa - All rights are reserved.</p>
+                <p class="mb-0">© 2026 Nasa - All rights are reserved.</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

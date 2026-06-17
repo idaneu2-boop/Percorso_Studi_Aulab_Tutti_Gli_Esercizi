@@ -170,7 +170,7 @@ scrollTopButton?.addEventListener("click", () => {
 const setHomeTheme = (isLightMode) => {
   document.body.classList.toggle("light-mode", isLightMode);
   localStorage.setItem("home-theme", isLightMode ? "light" : "dark");
-  homeThemeToggle?.setAttribute("aria-label", isLightMode ? "Attiva modalitÃ  dark" : "Attiva modalitÃ  light");
+  homeThemeToggle?.setAttribute("aria-label", isLightMode ? "Attiva modalità dark" : "Attiva modalità light");
   if (homeThemeToggle) {
     homeThemeToggle.innerHTML = isLightMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
   }

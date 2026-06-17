@@ -99,37 +99,37 @@
       </div>
       <div class="terminal-body">Il primo passo.</div>
         <div>-Riguardare la lezione, per ricordare meglio i comandi.</div>
-          <div>-Riguardare la parte finale della lezione dove spiego come consegnare gli esercizi (questo ci servirÃ  da domani)
+          <div>-Riguardare la parte finale della lezione dove spiego come consegnare gli esercizi (questo ci servirà da domani)
 Esercitarsi con la console</div>
 <div>Installare GitBash (solo per windows) - trovate il link per scaricalo, allegato alla lezione di ieri
 Usare il terminale pre-installato (per mac o linux)</div>
 <div>Seguite le istruzioni indicate e cercate di associare i comandi richiesti, studiati durante la lezione di ieri </div>
 <div>-Aprire il terminale e assicurarsi di essere nella tilde ~</div>
 <div>-Creare la cartella "wa" e spostarsi al suo interno </div>
-<div>-Creare una cartella allâ€™interno di wa e chiamarla â€œtest-comandiâ€</div>
+<div>-Creare una cartella all’interno di wa e chiamarla “test-comandi”</div>
 <div>entrare nella cartella appena creata </div>
-<div>-Nella cartella "test comandi" creare un file chiamato â€œciao.txtâ€</div>
+<div>-Nella cartella "test comandi" creare un file chiamato “ciao.txt”</div>
 <div>-Scrivere nel file appena creato, tramite vim, e salvare </div>
 <div>-Vedere il contenuto del file da console.</div> 
 <div>-Rimanendo nella cartella corrente "test-comandi", creare tre cartelle:</div>
-<div>â€œmusicaâ€</div>
-<div>â€œimmaginiâ€</div>
-<div>â€œtestiâ€</div>
-<div>e spostare il file â€œciao.txtâ€ nella cartella â€œtestiâ€</div>
-<div>-Rimanendo nella cartella corrente "test comandi", creare un nuovo file, chiamato â€œbrani.txtâ€ </div>
-<div>-Copiare il file â€œbrani.txtâ€ nella cartella â€œmusicaâ€, rimanendo nella cartella corrente </div>
+<div>“musica”</div>
+<div>“immagini”</div>
+<div>“testi”</div>
+<div>e spostare il file “ciao.txt” nella cartella “testi”</div>
+<div>-Rimanendo nella cartella corrente "test comandi", creare un nuovo file, chiamato “brani.txt” </div>
+<div>-Copiare il file “brani.txt” nella cartella “musica”, rimanendo nella cartella corrente </div>
 <div>-Spostarsi nella cartella "musica e vedere il contenuto della cartella, accertandoci della presenza del file appena copiato </div>
-<div>-Rimanendo nella cartella â€œmusicaâ€, eliminare il file â€œbrani.txtâ€ presente nella cartella padre â€œtest-comandiâ€. </div>
-<div>-Tornare indietro, nella cartella â€œtest-comandiâ€ </div>
-<div>-Nella cartella "test comandi", creare una nuova cartella di nome â€œlogsâ€ </div>
+<div>-Rimanendo nella cartella “musica”, eliminare il file “brani.txt” presente nella cartella padre “test-comandi”. </div>
+<div>-Tornare indietro, nella cartella “test-comandi” </div>
+<div>-Nella cartella "test comandi", creare una nuova cartella di nome “logs” </div>
 <div>-Entrare nella cartella "logs"</div>
-<div>- creare 2 cartelle â€œbrowserâ€ e â€œserverâ€. </div>
-<div>-Nella cartella "logs", creare un file chiamato â€œlogs.txtâ€</div>
+<div>- creare 2 cartelle “browser” e “server”. </div>
+<div>-Nella cartella "logs", creare un file chiamato “logs.txt”</div>
 <div>- Copiare contemporaneamente il file logs.txt, nelle cartelle "browser" e "server" con un solo comando </div>
 <div>Suggerimento: cp nome_file destinazione && cp nome_file destinazione </div>
 <div>-Accertarsi che nelle cartelle "browser" e "server" ci sia il file "logs.txt"</div>
 <div>-Tornare nella cartella "test-comandi"</div>
-<div>-Infine, eliminare la cartella â€œlogsâ€ con tutto il suo contenuto (attenzione che Ã© una cartella piena)</div>
+<div>-Infine, eliminare la cartella “logs” con tutto il suo contenuto (attenzione che é una cartella piena)</div>
       <div></div>
     </section>
   </main>

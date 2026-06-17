@@ -60,7 +60,7 @@ function playz() {
         }
       }
     } else if(counter >= 5) {
-      alert(`Hai superato il numero massimo di tentativi. Riprova con piÃ¹ calma.`);
+      alert(`Hai superato il numero massimo di tentativi. Riprova con più calma.`);
     } else {
       alert(`Partita annullata. Alla prossima!`);
     } 

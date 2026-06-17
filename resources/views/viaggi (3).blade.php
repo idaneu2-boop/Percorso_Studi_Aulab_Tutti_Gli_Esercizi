@@ -49,14 +49,14 @@
      <header>
         <h1>MSD Viaggi</h1>
         <figure>
-        <img style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
+        <img decoding="async" loading="lazy" style="width:40% ;" src="/media/Immagine Header.png" alt="Immagine Aeroplano">
         </figure>
      </header>
      <!-- Fine Header -->
             <!-- Inizio Main -->
     <main>
         <h1>Kiev</h1>
-        <img style="width: 40%;" src="/media/Kiev Icona.jpg" alt="Immagine di Kiev">
+        <img decoding="async" loading="lazy" style="width: 40%;" src="/media/Kiev Icona.jpg" alt="Immagine di Kiev">
         <ol>Vieni a scoprire alcune tappe importanti di Kiev:
             <li>Cattedrale di Santa Sofia;</li>
             <li>Landscape Alley;</li>
@@ -65,13 +65,13 @@
             <li>Arsenale di Mystetskyi.</li>
         </ol>
         <h2>Il Muro d'Europa:</h2>
-        <p>Capitale dell'Ucraina attraversata dal fiume Dnepr, Kiev dopo un passato turbolento sta vivendo un periodo di tranquillitÃ  ed Ã¨ diventata una localitÃ  moderna dove divertirsi e scoprire la sua storia. Ricca di contrasti e tradizioni, di monasteri, cattedrali, palazzi e musei, ha un patrimonio culturale ricco che vale la pena di essere vissuto.</p>
+        <p>Capitale dell'Ucraina attraversata dal fiume Dnepr, Kiev dopo un passato turbolento sta vivendo un periodo di tranquillità ed è diventata una località moderna dove divertirsi e scoprire la sua storia. Ricca di contrasti e tradizioni, di monasteri, cattedrali, palazzi e musei, ha un patrimonio culturale ricco che vale la pena di essere vissuto.</p>
         <h2>Prezzo del viaggio:</h2>
         <h3>1000 sbleuri per un viaggio ricco di storia.</h3>
         </main>
         <!-- Fine Main -->
          <!-- Inizio Footer -->
-          <video style="width: 40%;" src="/media/Video Kiev.mp4" controls></video>
+          <video preload="metadata" style="width: 40%;" src="/media/Video Kiev.mp4" controls></video>
             <footer>
         <h3>Contatti:</h3>
             <ul>

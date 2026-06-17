@@ -542,6 +542,13 @@ body.light-mode .engine-stats h3 {
     text-transform: uppercase;
     white-space: nowrap;
 }
+.japanese-title .titolo,
+.japanese-title .title-shadow,
+.japanese-copy {
+    font-family: "LINE Seed JP", "Yu Gothic", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
 .title-shadow {
     position: absolute;
     inset: 0;

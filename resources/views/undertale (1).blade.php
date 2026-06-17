@@ -12,7 +12,7 @@
   <div class="site-shell">
     <header class="topbar">
       <a class="brand" href="#home" aria-label="Esercizi JS2">
-        <img class="brand-logo" src="/media/logoundertale.png" alt="Logo Undertale Lab">
+        <img decoding="async" loading="lazy" class="brand-logo" src="/media/logoundertale.png" alt="Logo Undertale Lab">
         <span>
           <strong>Undertale</strong>
           <small>EserciziJS</small>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="hero-media" aria-label="Banner Esercizi JS2">
-          <img src="/media/header.jpg" alt="Banner pixel art Undertale">
+          <img decoding="async" loading="lazy" src="/media/header.jpg" alt="Banner pixel art Undertale">
           <div class="terminal-card" aria-label="Terminale decorativo">
             <div class="terminal-top">
               <span></span>
@@ -47,7 +47,7 @@
             </div>
             <div class="terminal-body">
               <p><span>*</span> Benvenuto nel sottosuolo umano!</p>
-              <p><span>*</span> Non c'Ã¨ un modo per fermare la musica.</p>
+              <p><span>*</span> Non c'è un modo per fermare la musica.</p>
               <p><span>*</span> Ti senti pieno di determinazione?</p>
               <p><span>*</span> Beh 6 esercizi sono apparsi.</p>
               <p><span>*</span> Mi raccomando a non attaccarli.</p>
@@ -209,27 +209,27 @@
 
     <footer class="site-footer" aria-label="Chiusura pagina">
       <button class="sans-trigger" type="button" aria-label="Attiva Sans">
-        <img id="sansImage" src="/media/footer.webp" alt="Sans pixel art">
+        <img decoding="async" loading="lazy" id="sansImage" src="/media/footer.webp" alt="Sans pixel art">
       </button>
       <div>
         <span class="eyebrow">Saving...</span>
         <h2>Fine pagina.</h2>
-        <p>Hai finito di vedere gli esercizi? Beh? Che ci fai ancora qui? Puoi tornare alla Home...ma dov'Ã¨ il tasto Home?...No...Non...cliccare su di me...ti supplico...non farlo...non ti riporterÃ  alla Home...o forse si?...Heheheh
+        <p>Hai finito di vedere gli esercizi? Beh? Che ci fai ancora qui? Puoi tornare alla Home...ma dov'è il tasto Home?...No...Non...cliccare su di me...ti supplico...non farlo...non ti riporterà alla Home...o forse si?...Heheheh
         </p>
       </div>
     </footer>
   </div>
 
   <button class="hanging-dog is-playing" type="button" aria-label="Avvia o ferma Dogsong" aria-pressed="true">
-    <img src="/media/doggo.gif" alt="" aria-hidden="true">
+    <img decoding="async" loading="lazy" src="/media/doggo.gif" alt="" aria-hidden="true">
   </button>
 
   <div class="annoying-dog-runner" aria-hidden="true">
-    <img src="/media/annoying-dog-undertale.gif" alt="" aria-hidden="true">
+    <img decoding="async" loading="lazy" src="/media/annoying-dog-undertale.gif" alt="" aria-hidden="true">
   </div>
 
-  <audio id="dogsong" src="/media/Dogsong (Get Dunked On).mp3" preload="auto" loop autoplay></audio>
-  <audio id="sansSong" src="/media/Undertale Audio Files 091 - mus_intronoise.mp3" preload="auto"></audio>
+  <audio id="dogsong" src="/media/Dogsong (Get Dunked On).mp3" preload="none" loop></audio>
+  <audio id="sansSong" src="/media/Undertale Audio Files 091 - mus_intronoise.mp3" preload="none"></audio>
 
   <script src="/js/undertale (1).js"></script>
 </body>

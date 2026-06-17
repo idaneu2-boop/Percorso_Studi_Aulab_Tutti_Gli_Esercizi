@@ -11,7 +11,7 @@
 <body>
     <a class="exercise-home-link" href="home.html">Home</a>
     <button class="play-button" id="playButton" type="button">Play</button>
-    <audio id="musica" loop>
+    <audio preload="none" id="musica" loop>
         <source src="/media/Original Super Mario Bros Soundtrack Full.mp3" type="audio/mpeg">
     </audio>
     <button class="music-button" id="musicButton" type="button" onclick="musica.paused ? (musica.play(), this.textContent = 'Pausa') : (musica.pause(), this.textContent = 'Musica')">Musica</button>
@@ -28,7 +28,7 @@
         <h2>Peccato!</h2>
         <p>Hai perso la partita.</p>
     </section>
-    <img class="sup" src="/media/d9f6x59-83bc7697-99b5-4ab1-b56c-48286f982b2b.gif" alt="gif di super mario che salta sopra un tubo">
+    <img decoding="async" loading="lazy" class="sup" src="/media/d9f6x59-83bc7697-99b5-4ab1-b56c-48286f982b2b.gif" alt="gif di super mario che salta sopra un tubo">
 </body>
 <script src="/js/supermario.js"></script>
 </html>

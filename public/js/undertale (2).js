@@ -1,6 +1,6 @@
 ﻿// Es.1
 
-// let v = Number(prompt(`Inserisci un numero per verificare la fascia d'etÃ `));
+// let v = Number(prompt(`Inserisci un numero per verificare la fascia d'età`));
 
 // if(v >= 0 && v < 18){
 //     console.log(`Sei minorenne`);
@@ -22,7 +22,7 @@
 // let c = Number(prompt(`Inserisci la temperatura attuale in gradi C.`));
 
 // if(c >= 0 && c <= 19){
-//     console.log(`non ci sono piÃ¹ le mezze stagioni`);   
+//     console.log(`non ci sono più le mezze stagioni`);   
 // }else if(c >= 30){
 //     console.log(`lu mare, lu sule e lu ientu`);
 // }else if(c <= 29 && c >= 20){
@@ -36,7 +36,7 @@
 
 // Es.3
 
-// let tabellina = Number(prompt(`Inserisci il numero che verrÃ  moltiplicato per 2`))
+// let tabellina = Number(prompt(`Inserisci il numero che verrà moltiplicato per 2`))
 // console.log(tabellina);
 
 // for(let i = 2; i <= 10; i++){
@@ -66,7 +66,7 @@
 
 // switch (bevande){
 //     case 1:
-//         alert(`E' stata selezionata lâ€™acqua`);
+//         alert(`E' stata selezionata l’acqua`);
 //         break;
 //     case 2:
 //         alert(`E' stata selezionata coca cola`);

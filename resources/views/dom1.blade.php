@@ -14,12 +14,12 @@
   <header class="topbar">
     <a class="back-link" href="home.html">Torna alla home</a>
     <button class="audio-toggle" id="audioToggle" type="button" aria-label="Ferma o avvia musica">
-      <img class="page-logo" src="/media/logo.svg" alt="" aria-hidden="true">
+      <img decoding="async" loading="lazy" class="page-logo" src="/media/logo.svg" alt="" aria-hidden="true">
     </button>
     <span class="lesson-badge">JavaScript DOM</span>
   </header>
 
-  <audio id="pageMusic" src="/media/C418  - Sweden - Minecraft Volume Alpha.mp3" autoplay loop preload="auto"></audio>
+  <audio id="pageMusic" src="/media/C418  - Sweden - Minecraft Volume Alpha.mp3" loop preload="none"></audio>
 
   <main>
     <section class="hero" aria-labelledby="pageTitle">
@@ -48,7 +48,7 @@
       <article class="panel intro-panel">
         <p class="panel-kicker">Esercizi 1-3</p>
         <h2 id="mainHeading">Viva il Duce!</h2>
-        <h3 id="classHeading">Il lavoro e la LibertÃ !</h3>
+        <h3 id="classHeading">Il lavoro e la Libertà!</h3>
         <h3 id="textHeading">Viva Lenin!</h3>
       </article>
 

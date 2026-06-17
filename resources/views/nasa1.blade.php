@@ -12,10 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Bootstrap 2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap-->    <!-- Bootstrap 2-->
+    <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/nasa.css">
     <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
@@ -30,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <img class="logo" src="/media/logo2.png" alt="Logo Nasa">
+                    <img decoding="async" loading="lazy" class="logo" src="/media/logo2.png" alt="Logo Nasa">
                     <li class="nav-item">
                         <a class="botton1 nav-link text-third fw-bold fs-nav-link" aria-current="page" href="https://www.nasa.gov/">Home Nasa</a>
                     </li>
@@ -53,7 +51,7 @@
                             <li><a class="dropdown-item text-third" href="nasa1.html">Login</a></li>
                         </ul>
                     </li>
-                    <img class="logo2" src="/media/Logo3.png" alt="Logo Nasa">
+                    <img decoding="async" loading="lazy" class="logo2" src="/media/Logo3.png" alt="Logo Nasa">
                 </ul>
             </div>
         </div>
@@ -98,11 +96,11 @@
                 </div>
             </div>
             <div class="text-center border-top pt-3">
-                <p class="mb-0">Â© 2026 Nasa - All rights are reserved.</p>
+                <p class="mb-0">© 2026 Nasa - All rights are reserved.</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

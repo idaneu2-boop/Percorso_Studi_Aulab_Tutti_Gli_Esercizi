@@ -39,7 +39,7 @@
     <li><a href="I Fantastici 5.html">Ricerca tag Html</a></li>
     <div>
       <a href="Ricette_cucina.html" aria-label="Torna alla pagina principale delle ricette">
-        <img src="/media/titolo.jpg" style="width: 50%;" alt="Logo Ricette Abruzzesi">
+        <img decoding="async" loading="lazy" src="/media/titolo.jpg" style="width: 50%;" alt="Logo Ricette Abruzzesi">
       </a>
     </div>
     <ul>
@@ -52,10 +52,10 @@
   <header>
     <h1>La Cucina Teramana</h1>
     <h2>Scopri nuove ricette abruzzesi mai viste prima</h2>
-    <img style="width: 300px;" src="/media/Arrosticini_360x300.jpg" alt="Immagine degli arrosticini">
-    <img style="width: 300px;" src="/media/agnello-cacio-e-ova-600x600.jpg" alt="Immagine agnello cacio e ova">
-    <img style="width: 300px;" src="/media/pasta_alla_pecorara-627x376.jpg" alt="Immagine pasta alla pecorara">
-    <img style="width: 300px;" src="/media/Pallotte-cacio-e-ova_450x300.jpg" alt="Immagine pallotte cacio e ova">
+    <img decoding="async" loading="lazy" style="width: 300px;" src="/media/Arrosticini_360x300.jpg" alt="Immagine degli arrosticini">
+    <img decoding="async" loading="lazy" style="width: 300px;" src="/media/agnello-cacio-e-ova-600x600.jpg" alt="Immagine agnello cacio e ova">
+    <img decoding="async" loading="lazy" style="width: 300px;" src="/media/pasta_alla_pecorara-627x376.jpg" alt="Immagine pasta alla pecorara">
+    <img decoding="async" loading="lazy" style="width: 300px;" src="/media/Pallotte-cacio-e-ova_450x300.jpg" alt="Immagine pallotte cacio e ova">
   </header>
 
   <main>
@@ -65,14 +65,14 @@
       <article>
         <h4>Timballo alla Teramana</h4>
         <a href="https://blog.giallozafferano.it/emimettoaifornelli/ricetta-del-timballo-abruzzese/">
-          <img style="width: 400px;" src="/media/cca-086-timballo-1-1300x867.jpg" alt="Immagine timballo alla Teramana">
+          <img decoding="async" loading="lazy" style="width: 400px;" src="/media/cca-086-timballo-1-1300x867.jpg" alt="Immagine timballo alla Teramana">
         </a>
         <p>
-          <strong>Il timballo di scrippelle alla Teramana</strong> Ã¨ una ricetta tipica abruzzese
+          <strong>Il timballo di scrippelle alla Teramana</strong> è una ricetta tipica abruzzese
           che si realizza per le ricorrenze importanti, come ad esempio per il pranzo di Natale o di Pasqua.
         </p>
         <p>
-          Questo timballo Ã¨ caratterizzato da strati composti dalle scrippelle, simili alle crepes,
+          Questo timballo è caratterizzato da strati composti dalle scrippelle, simili alle crepes,
           condite con il sugo di pallottine, parmigiano e mozzarella. Al posto della besciamella,
           viene utilizzato un composto fatto di uova sbattute con il latte.
         </p>
@@ -81,11 +81,11 @@
       <article>
         <h4>Scrippelle Mbusse</h4>
         <a href="https://ricette.giallozafferano.it/Scrippelle-mbusse.html">
-          <img style="width: 400px;" src="/media/scrippelle-mbusse-ricetta.jpg" alt="Immagine scrippelle mbusse">
+          <img decoding="async" loading="lazy" style="width: 400px;" src="/media/scrippelle-mbusse-ricetta.jpg" alt="Immagine scrippelle mbusse">
         </a>
         <p>
           <strong>Le Scrippelle Mbusse</strong> sono un piatto tipico abruzzese,
-          piÃ¹ precisamente del Teramano.
+          più precisamente del Teramano.
         </p>
         <p>
           Sono delle crespelle a base di uova, farina e acqua. Si prepara una pastella fluida,
@@ -97,7 +97,7 @@
       <article>
         <h4>Caggiunitt Teramani</h4>
         <a href="https://blog.giallozafferano.it/melacannellaefantasia/caggiunitt-teramani/">
-          <img style="width: 400px;" src="/media/caggiunitt-teramani.jpg" alt="Immagine caggiunitt Teramani">
+          <img decoding="async" loading="lazy" style="width: 400px;" src="/media/caggiunitt-teramani.jpg" alt="Immagine caggiunitt Teramani">
         </a>
         <p>
           <strong>Li Caggiunitt</strong> sono un antico dolce abruzzese, chiamato anche
@@ -105,7 +105,7 @@
         </p>
         <p>
           Sono piccoli dolcetti di pasta friabilissima a base di farina, olio e vino,
-          con un ripieno che puÃ² variare dalla cioccolata alla marmellata, poi fritti in padella.
+          con un ripieno che può variare dalla cioccolata alla marmellata, poi fritti in padella.
         </p>
       </article>
     </section>

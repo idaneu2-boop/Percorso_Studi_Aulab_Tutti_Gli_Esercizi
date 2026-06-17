@@ -9,12 +9,12 @@ console.log(canzonisingole);
 // Esercizio 2 - Accesso al cinema
 // E' uscito da poco il nuovo film Horror che tutti vogliono vedere.
 // Crea una funzione che restituisce:
-// "PuÃ² vedere il film" se lâ€™etÃ  Ã¨ almeno 14
-// "Non puÃ² vedere il film" se l'etÃ  Ã¨ sotto i 14
+// "Può vedere il film" se l’età è almeno 14
+// "Non può vedere il film" se l'età è sotto i 14
 let varieeta = [12, 24, 10, 60];
 function buttafuori(numeri) {
     if (numeri >= 14) {
-        return "PuÃ² vedere il film";
+        return "Può vedere il film";
     } else { 
         return "Smamma giovanotto!";
     }
@@ -25,7 +25,7 @@ console.log(accesso);
 // Esercizio 3
 // Devi andare a fare una partita di calcetto ma manca il portiere.
 // Hai questo array:
-// Crea una funzione che aggiunga "Pagliuca" allâ€™inizio dellâ€™array.
+// Crea una funzione che aggiunga "Pagliuca" all’inizio dell’array.
 let squadra = ["Luca", "Marco", "Giovanni"];
 let forzanapoliuagliu = squadra.unshift("Pagliuca");
 console.log(squadra);
@@ -34,35 +34,35 @@ console.log(squadra);
 // Esercizio 4
 // Nicola Menonna ha troppa fame ma deve rimanere a dieta!
 // Parti da questo array:
-// Crea una funzione che rimuova lâ€™ultimo snack e restituisca lâ€™array aggiornato.
+// Crea una funzione che rimuova l’ultimo snack e restituisca l’array aggiornato.
 let snack = ["popcorn", "patatine", "nachos"];
 let dieta = snack.pop();
 console.log(snack);
 
 
-//  Esercizio 5- Matteo puÃ² andare in battaglia? 
-// Matteo deve partecipare a un LARP medievale ma Ã¨ sempre in ritardo e rischia di dimenticare pezzi dellâ€™armatura.
+//  Esercizio 5- Matteo può andare in battaglia? 
+// Matteo deve partecipare a un LARP medievale ma è sempre in ritardo e rischia di dimenticare pezzi dell’armatura.
 // Parti da questo array vuoto:
 let armatura = [];
 // Crea una funzione preparaMatteo(armatura) che:
-// Aggiunga allâ€™array i seguenti pezzi:
+// Aggiunga all’array i seguenti pezzi:
 // "elmo"
 // "corazza"
 // "spada"
 // "scudo"
 // "stivali"
 // Dopo di che bisogna controllare se Matteo possiede almeno l'elmo e la spada.
-// Hint: Ã¨ incluso?
-// Se sÃ¬, allora:
-// "Matteo Ã¨ pronto per la battaglia!" se ha tutti i pezzi fondamentali
-// "Matteo Ã¨ stato sconfitto ancora prima di iniziare" se non ha elmo e spada
-// Infine stampi tutti i pezzi dellâ€™armatura uno per uno con un ciclo for classico. 
+// Hint: è incluso?
+// Se sì, allora:
+// "Matteo è pronto per la battaglia!" se ha tutti i pezzi fondamentali
+// "Matteo è stato sconfitto ancora prima di iniziare" se non ha elmo e spada
+// Infine stampi tutti i pezzi dell’armatura uno per uno con un ciclo for classico. 
 function drip(armaturozza) {
     armaturozza.push("elmo", "corazza", "spada", "scudo", "stivali");
     if (armaturozza.includes("elmo") && armaturozza.includes("spada")){
-        return "Matteo Ã¨ pronto per la battaglia!";
+        return "Matteo è pronto per la battaglia!";
     } else {
-        return "Matteo Ã¨ stato sconfitto ancora prima di iniziare";
+        return "Matteo è stato sconfitto ancora prima di iniziare";
     }
 }
 let controllo = drip(armatura);
@@ -70,17 +70,17 @@ console.log(controllo);
 
 
 // Esercizio 6
-// Donato Ã¨ il mega boss finale da battere su Yakuza: Like a Dragon.
+// Donato è il mega boss finale da battere su Yakuza: Like a Dragon.
 // Si narra che i suoi punti ferita raggiungano i 1000LP
 // Hai questo array che rappresenta i danni che puoi fare con i tuoi attacchi da nabbo:
 let danni = [15, 30, 25, 10, 40, 120, 200];
 // Crea una funzione che sommi tutti i danni che puoi fare e restituisca:
-// "Donato Ã¨ stato sconfitto" se il totale dei tuoi attacchi supera i LP di Donato
-// "Donato vive, Donato regna" se non puoi farci nulla. Donato Ã¨ troppo potente per noi comuni mortali
+// "Donato è stato sconfitto" se il totale dei tuoi attacchi supera i LP di Donato
+// "Donato vive, Donato regna" se non puoi farci nulla. Donato è troppo potente per noi comuni mortali
 function calcolaDanni(numeroattacchi) {
     let mazzatetirate = numeroattacchi.reduce((acc, danno) => acc + danno, 0);
     if (mazzatetirate >= 1000){
-        return "Donato Ã¨ stato sconfitto";
+        return "Donato è stato sconfitto";
     } else {
         return "Donato resiste ancora";
     }
@@ -91,20 +91,20 @@ console.log(battaglia);
 
 // Esercizio 7
 // Devi battere il capopalestra Valerio di Violapoli.
-// E' risaputo che il suo Pidgeot Ã¨ imbattibile!
+// E' risaputo che il suo Pidgeot è imbattibile!
 // Serve una squadra bilanciata nei livelli.
-// Partendo da questo array, con i livelli dei pokÃ©mon nella tua squadra:
+// Partendo da questo array, con i livelli dei pokémon nella tua squadra:
 let livelliPokemon = [30, 20, 6, 12, 18];
 // Crea una funzione che calcoli la media della squadra e restituisca:
-// "Team adatto a battere Valerio" - Se la media del team Ã¨ almeno 15
-// "Allena di piÃ¹ i tuoi pokÃ©mon" - Se la media del team Ã¨ inferiore a 15
+// "Team adatto a battere Valerio" - Se la media del team è almeno 15
+// "Allena di più i tuoi pokémon" - Se la media del team è inferiore a 15
 function imiegoats(troppofortipervalerio) {
     let sommalivelli = troppofortipervalerio.reduce((somma, livello)=> somma + livello, 0);
     let medialivelli = sommalivelli / troppofortipervalerio.length;
     if (medialivelli >= 15){
         return "Team adatto a battere Valerio";
     } else {
-        return "Allena di piÃ¹ i tuoi PokÃ©mon";
+        return "Allena di più i tuoi Pokémon";
     }
 }
 let squadraz = imiegoats(livelliPokemon);
@@ -112,7 +112,7 @@ console.log(squadraz);
 
 
 // Esercizio 8 - Voglio tutto con la N
-// Marco Dentamaro sta cominciando a collezionare Anime e Manga, ma va proprio matto per quelli che iniziano con la lettera N... chissÃ  perchÃ©...
+// Marco Dentamaro sta cominciando a collezionare Anime e Manga, ma va proprio matto per quelli che iniziano con la lettera N... chissà perché...
 // Partendo da questi due array:
 let anime = ["Naruto", "One Piece", "Bleach"];
 let manga = ["Berserk", "Death Note", "Dragon Ball"];
@@ -133,9 +133,9 @@ console.log(titoliN);
 // Dati questi ingredienti:
 let ingredienti = ["ketchup", "patatine", "insalata"];
 // Crea una funzione che:
-// aggiunga "maionese" alla fine dellâ€™array
-// aggiunga "hamburger" allâ€™inizio dellâ€™array
-// restituisca lâ€™array aggiornato
+// aggiunga "maionese" alla fine dell’array
+// aggiunga "hamburger" all’inizio dell’array
+// restituisca l’array aggiornato
 function preparaHamburger(robazozza) {
   robazozza.push("maionese");
   robazozza.unshift("hamburger");
@@ -146,7 +146,7 @@ console.log(paninopronto);
 
 
 // Esercizio 10
-// Reietto... cioÃ¨, volevo dire, Valerio Vacca deve preparare la coreografia per il suo prossimo concerto.
+// Reietto... cioè, volevo dire, Valerio Vacca deve preparare la coreografia per il suo prossimo concerto.
 let coreografia = ['intro', 'ballata triste', 'stage diving pauroso', 'pausa imbarazzante', 'gran finale'];
 // Crea una funzione che:
 // rimuova il primo brano
@@ -171,7 +171,7 @@ console.log(coreografiafinale);
 // Crea una funzione che: 
 // trasformi tutte le serie in maiuscolo
 // stampare in console il nuovo array con i titoli in maiuscolo
-// ora che Roberto puÃ² leggere meglio i titoli delle serie, chiedere a Roberto che serie vuole guardare
+// ora che Roberto può leggere meglio i titoli delle serie, chiedere a Roberto che serie vuole guardare
 // stampare la scelta di Roberto in console.
 let serie = ["game of thrones", "The Boys", "the witcher", "rick e morty", "upload"];
 function seriedascegliere(umamusume){
@@ -192,9 +192,9 @@ function seriedascegliere(umamusume){
 
 
 // Esercizio 12
-// Federica Ã¨ il Dungeon Master e sta creando il suo party per DnD
+// Federica è il Dungeon Master e sta creando il suo party per DnD
 // Creare una funzione che:
-// controlli se nel party Ã¨ presente il mago
+// controlli se nel party è presente il mago
 // restituisca la posizione esatta del mago nell'array
 // se il mago non esiste, restituisca: Federica ha dimenticato il mago 
 let squadrozzissima = ["guerriero", "mago", "ladro", "stregone"];
@@ -212,7 +212,7 @@ console.log(cestannotutti);
 
 // Esercizio 13
 // Nicola Menonna ha deciso di farsi crescere i capelli per arrivare ad una chioma degna di un protagonista Anime.
-// Ha scoperto che esiste un nuovo prodotto che si chiama Gocce MadÃ² che permettono la crescita dei capelli di tot cm a settimana.
+// Ha scoperto che esiste un nuovo prodotto che si chiama Gocce Madò che permettono la crescita dei capelli di tot cm a settimana.
 // Ogni numero dell'array, rappresenta quanti centimetri sono cresciuti i suoi capelli in una settimana. 
 // Nicola parte da una lunghezza iniziale di 2cm.
 // Crea una funzione che:
@@ -220,7 +220,7 @@ console.log(cestannotutti);
 // aggiunga al totale, la lunghezza iniziale di 4cm
 // stampi in console la lunghezza finale
 // infine restituisca:
-// Nicola puÃ² fare il codino da samurai - se la lunghezza finale Ã¨ almeno 12cm
+// Nicola può fare il codino da samurai - se la lunghezza finale è almeno 12cm
 // Nicola deve ancora aspettare che crescano - in caso contrario
 let crescitaSettimanale = [1, 2, 1, 3, 2];
 function capellozzinicola(preghiere){
@@ -229,9 +229,9 @@ function capellozzinicola(preghiere){
     let capellitot = crescitatot + capelliiniz;
     console.log("L'amore mio Nicola ha " + capellitot + " cm. di capelli");
     if (capellitot >= 12) {
-        return "Nicola puÃ² fare il codino da samurai";
+        return "Nicola può fare il codino da samurai";
     }else{
-        return "Nicola ti spalmo io le Gocce MadÃ²";
+        return "Nicola ti spalmo io le Gocce Madò";
     }
 }
 let quindicapelli = capellozzinicola(crescitaSettimanale);
@@ -247,10 +247,10 @@ console.log(quindicapelli);
 // controlli se Valerio possiede la bacchetta magica
 // se NON la possiede:
 // controlli se ha abbastanza soldi per comprarla
-// se puÃ² comprarla, sottragga 30 euro ai soldi e restituisca quanti soldi rimangono a Valerio
+// se può comprarla, sottragga 30 euro ai soldi e restituisca quanti soldi rimangono a Valerio
 // ordini i vinili alfabeticamente
 // restituisca l'array ordinato
-// se NON puÃ² comprarla, restituisca: "Valerio dovrÃ  ordinare i vinili a mano"
+// se NON può comprarla, restituisca: "Valerio dovrà ordinare i vinili a mano"
 let vinili = ["Queen", "Nirvana", "Beatles", "Muse"];
 let haBacchettaMagica = false;
 let soldi = 40;
@@ -258,11 +258,11 @@ function spennemoisordi(dischi, haBacchetta, isordi) {
     if(!haBacchetta){
         if (isordi >= 30) {
             isordi -= 30;
-            console.log("Valerio puÃ² comprare la bacchetta. Soldi rimasti: " + isordi + " â‚¬");
+            console.log("Valerio può comprare la bacchetta. Soldi rimasti: " + isordi + " €");
             let dischiord = dischi.sort();
             return dischiord;
         }else{
-            return "Valerio Ã¨ sempre disordinato";
+            return "Valerio è sempre disordinato";
         }
     }else{
         let dischiord = dischi.sort();
@@ -281,14 +281,14 @@ console.log(avemospeso);
 // aggiunga 50 euro bonus ad ogni incasso da almeno 100 euro (bravo Donato, te lo sei meritato)
 // calcoli il totale finale di questi incassi e restituisca:
 // "Successo Clamoroso" - se il totale di questi incassi supera 1000 euri
-// "Film di nicchia ma dignitoso" - se il totale Ã¨ tra 500 e 1000 euri
-// "Donato deve andare a vivere sotto un pontos" - se il totale Ã¨ sotto i 500 euri
+// "Film di nicchia ma dignitoso" - se il totale è tra 500 e 1000 euri
+// "Donato deve andare a vivere sotto un pontos" - se il totale è sotto i 500 euri
 let incassi = [120, 80, 300, 50, 400, 90];
 function contadeisordi(incas){
     let beisordi = incas.filter((sordi)=> sordi >= 100);
     let sordiinpiu = beisordi.map((sordi)=> sordi + 50);
     let tuttisordi = beisordi.reduce((tutti, sordi)=> tutti + sordi, 0);
-    console.log("I sordi in piÃ¹ sono stati: " + sordiinpiu);
+    console.log("I sordi in più sono stati: " + sordiinpiu);
     console.log("Ha guadagnato in totale: " + tuttisordi);
     if (tuttisordi < 1000){
         return "Grandeeee viva er DUCCE";
@@ -303,13 +303,13 @@ console.log(comeannata);
 
 
 // Esercizio finale
-// Traccia finale â€” Il Festival del Codice di Aulab - extra
+// Traccia finale — Il Festival del Codice di Aulab - extra
 // Aulab organizza un festival nerd dove ogni partecipante porta una performance diversa.
 // Hai questo array:
 // Ogni stringa contiene:
 // "nome - performance - voto"
 // Crea una funzione festivalDelCodice(partecipanti) che:
-// trasformi ogni stringa in una frase leggibile cosÃ¬:
+// trasformi ogni stringa in una frase leggibile così:
 // "Marco Dentamaro si esibisce con karaoke anime e prende 7"
 let partecipanti = [
   "Marco Dentamaro - karaoke anime - 7",
@@ -506,7 +506,7 @@ if (grigliaEsercizi && contatoreEsercizi && bottoneEseguiTutto) {
 }
 
 
-////////////////////////////////////////// Musica PokÃ©dex ///////////////////////////////////////////
+////////////////////////////////////////// Musica Pokédex ///////////////////////////////////////////
 let bottoneMusica = document.querySelector("#musicButton");
 let audioPokemon = document.querySelector("#pokemonAudio");
 
