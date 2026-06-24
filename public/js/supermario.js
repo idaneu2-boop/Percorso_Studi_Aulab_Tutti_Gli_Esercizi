@@ -24,13 +24,13 @@ function playz() {
   }
   
   if (startGame === `1`) {
-    alert(`Viva il Duce!`);
+    alert(`Partenza! Raccogli le stelle e supera i nemici.`);
     let victory = 0;
     let attempts = 0;
     let gameOver = false;
     let gameWin = false;
     while (!gameOver && attempts < 5 && !gameWin && victory < 5){
-      let enemy = prompt(`Attento c'e' un nemico! Premi: \n (1) Salta e corri \n (2) Salta sopra al nemico ed eliminalo \n (3) Saluta il Duce`);
+      let enemy = prompt(`Attento c'e' un nemico! Premi: \n (1) Salta e corri \n (2) Salta sopra al nemico \n (3) Raccogli una stella`);
       switch (enemy) {
         case `1`:
         alert(`C'e' mancato poco! Sei riuscito a schivare il nemico!`);
@@ -40,9 +40,9 @@ function playz() {
         break;
         case `3`:
         victory++;
-        alert(`Vincere e Vinceremo! \n Saluti fatti: ${5 - victory}`);
+        alert(`Stella raccolta! \n Stelle mancanti: ${5 - victory}`);
         
-        if (victory == 5) {alert(`Hai sradicato il comunismo`)
+        if (victory == 5) {alert(`Hai completato il livello!`)
           gameWin = true;
           vincere();
           break;
@@ -53,7 +53,7 @@ function playz() {
         if (attempts < 5){
           alert(`Colpito! \n Tentativi rimasti: ${5 - attempts}`)
         }else{
-          alert(`Peccato, il comunismo ha vinto... GAME OVER!`);
+          alert(`Peccato, il nemico ti ha fermato... GAME OVER!`);
           gameOver = true;
           perdere(); }
           break;
@@ -67,8 +67,8 @@ function playz() {
   }
   
   function vincere() {
-    const VINCEREEVINCEREMO = document.getElementById("cardvictory");
-    VINCEREEVINCEREMO.classList.add("win-card-show");
+    const victoryCard = document.getElementById("cardvictory");
+    victoryCard.classList.add("win-card-show");
   }
   
   function perdere() {
@@ -77,9 +77,9 @@ function playz() {
   }
   
   function nascondereCard() {
-    const VINCEREEVINCEREMO = document.getElementById("cardvictory");
+    const victoryCard = document.getElementById("cardvictory");
     const GAMEOVER = document.getElementById("cardgameover");
-    VINCEREEVINCEREMO.classList.remove("win-card-show");
+    victoryCard.classList.remove("win-card-show");
     GAMEOVER.classList.remove("win-card-show");
   }
   

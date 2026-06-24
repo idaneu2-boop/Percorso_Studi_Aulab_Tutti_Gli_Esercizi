@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=LINE+Seed+JP&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <!-- Navbar fissa: logo e collegamenti principali -->
@@ -71,25 +72,25 @@
                     <p class="hero-copy japanese-copy">君の妻が発情した雌牛のように俺とヤりたがっているのを見ると、勃起してしまう</p>
                 </div>
             </div>
-            <div class="hero-strip justify-content-around">
-                <span><i class="fa-solid fa-bolt rounded"></i> Silvia</span>
-                <img decoding="async" loading="lazy" src="/media/barra1.png" alt="logo">
-                <span><i class="fa-solid fa-dollar-sign rounded"></i> Skyline</span>
-                <img decoding="async" loading="lazy" src="/media/barra2.png" alt="logo">
-                <form class="hero-strip-search" role="search">
-                    <input type="search" placeholder="Cerca" aria-label="Cerca auto">
-                    <button type="button" aria-label="Cerca">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <span><i class="fa-solid fa-fire-flame-curved"></i> Supra</span>
-                <img decoding="async" loading="lazy" src="/media/barra 3.png" alt="logo">
-                <span><i class="fa-solid fa-sun"></i> RX-7</span>
-                <img decoding="async" loading="lazy" src="/media/barra4.png" alt="logo">
-                <span><i class="fa-solid fa-circle-dot"></i> NSX</span>
-                <img decoding="async" loading="lazy" src="/media/barra5.png" alt="logo">
-                <span><i class="fa-solid fa-flag-checkered"></i> WRX STI</span>
-            </div>
+        </div>
+        <div class="hero-strip justify-content-around">
+            <span><i class="fa-solid fa-bolt rounded"></i> Silvia</span>
+            <img decoding="async" loading="lazy" src="/media/barra1.png" alt="logo">
+            <span><i class="fa-solid fa-dollar-sign rounded"></i> Skyline</span>
+            <img decoding="async" loading="lazy" src="/media/barra2.png" alt="logo">
+            <form class="hero-strip-search" role="search">
+                <input type="search" placeholder="Cerca" aria-label="Cerca auto">
+                <button type="button" aria-label="Cerca">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <span><i class="fa-solid fa-fire-flame-curved"></i> Supra</span>
+            <img decoding="async" loading="lazy" src="/media/barra 3.png" alt="logo">
+            <span><i class="fa-solid fa-sun"></i> RX-7</span>
+            <img decoding="async" loading="lazy" src="/media/barra4.png" alt="logo">
+            <span><i class="fa-solid fa-circle-dot"></i> NSX</span>
+            <img decoding="async" loading="lazy" src="/media/barra5.png" alt="logo">
+            <span><i class="fa-solid fa-flag-checkered"></i> WRX STI</span>
         </div>
     </header>
     <main>
@@ -199,5 +200,6 @@
     <!-- Script: AOS per animazioni allo scroll e logica custom della pagina -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/presto.js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>

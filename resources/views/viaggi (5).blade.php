@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,6 +34,7 @@
             color: #ffffff;
         }
     </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
             <a class="exercise-home-link" href="home.html">Home</a>
@@ -61,14 +62,14 @@
         <label for="Email">Email</label><br>
         <input type="email" id="email" name="email" placeholder="nome@email.com" required> <br> <br>
 
-        <label for="citta">CittÃ :</label><br>
+        <label for="citta">Città:</label><br>
         <select name="citta" id="citta">
             <option value="Gaza">Gaza</option>
             <option value="New York">New York</option>
             <option value="Kiev">Kiev</option>
         </select> <br><br>
 
-        <label for="messaggio">Dicci di piÃ¹:</label><br>
+        <label for="messaggio">Dicci di più:</label><br>
         <input type="text" id="messaggio" name="messaggio" placeholder="Parlaci di cosa vuoi sapere.." required><br> <br>
         
         <label for="dati">Trattamento dei dati</label>
@@ -87,8 +88,7 @@
             </ul>
         </footer>
 <!-- Fine Footer -->
-
-    
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

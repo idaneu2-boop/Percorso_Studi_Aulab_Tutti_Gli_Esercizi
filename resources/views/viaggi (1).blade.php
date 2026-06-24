@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,6 +34,7 @@
             color: #ffffff;
         }
     </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
             <a class="exercise-home-link" href="home.html">Home</a>
@@ -67,7 +68,7 @@
         </ol>
         <h2>Storia e cultura del luogo:</h2>
         <p>La Striscia di Gaza ha una storia complessa e un patrimonio culturale segnato da secoli di passaggi, conflitti e tradizioni.</p>
-        <p>Oggi è un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
+        <p>Oggi � un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
 
         <h2>Prezzo del viaggio:</h2>
         <h3>300 sbleuri solo andata</h3>
@@ -84,6 +85,7 @@
         </footer>
 <!-- Fine Footer -->
      </main>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

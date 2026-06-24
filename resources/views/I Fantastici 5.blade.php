@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Primo Tag Cambio di Stile del Carattere -->
 <html lang="it">
 <head>
@@ -29,6 +29,7 @@
       box-shadow: 3px 3px 0 #222;
     }
   </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
   <li><a href="Ricette_cucina.html">Blog di Cucina</a></li>
@@ -72,6 +73,7 @@
     <source src="/media/Original Super Mario Bros Soundtrack Full.mp3" type="audio/mpeg">
     Il tuo browser non supporta il tag audio.
   </audio>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

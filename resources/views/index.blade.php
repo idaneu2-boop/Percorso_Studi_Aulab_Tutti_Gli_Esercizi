@@ -1,4 +1,4 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -85,6 +85,7 @@
       color: #e30613;
     }
   </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
   <main>
@@ -99,40 +100,41 @@
       </div>
       <div class="terminal-body">Il primo passo.</div>
         <div>-Riguardare la lezione, per ricordare meglio i comandi.</div>
-          <div>-Riguardare la parte finale della lezione dove spiego come consegnare gli esercizi (questo ci servir√† da domani)
+          <div>-Riguardare la parte finale della lezione dove spiego come consegnare gli esercizi (questo ci servir‡ da domani)
 Esercitarsi con la console</div>
 <div>Installare GitBash (solo per windows) - trovate il link per scaricalo, allegato alla lezione di ieri
 Usare il terminale pre-installato (per mac o linux)</div>
 <div>Seguite le istruzioni indicate e cercate di associare i comandi richiesti, studiati durante la lezione di ieri </div>
 <div>-Aprire il terminale e assicurarsi di essere nella tilde ~</div>
 <div>-Creare la cartella "wa" e spostarsi al suo interno </div>
-<div>-Creare una cartella all‚Äôinterno di wa e chiamarla ‚Äútest-comandi‚Äù</div>
+<div>-Creare una cartella allíinterno di wa e chiamarla ìtest-comandiî</div>
 <div>entrare nella cartella appena creata </div>
-<div>-Nella cartella "test comandi" creare un file chiamato ‚Äúciao.txt‚Äù</div>
+<div>-Nella cartella "test comandi" creare un file chiamato ìciao.txtî</div>
 <div>-Scrivere nel file appena creato, tramite vim, e salvare </div>
 <div>-Vedere il contenuto del file da console.</div> 
 <div>-Rimanendo nella cartella corrente "test-comandi", creare tre cartelle:</div>
-<div>‚Äúmusica‚Äù</div>
-<div>‚Äúimmagini‚Äù</div>
-<div>‚Äútesti‚Äù</div>
-<div>e spostare il file ‚Äúciao.txt‚Äù nella cartella ‚Äútesti‚Äù</div>
-<div>-Rimanendo nella cartella corrente "test comandi", creare un nuovo file, chiamato ‚Äúbrani.txt‚Äù </div>
-<div>-Copiare il file ‚Äúbrani.txt‚Äù nella cartella ‚Äúmusica‚Äù, rimanendo nella cartella corrente </div>
+<div>ìmusicaî</div>
+<div>ìimmaginiî</div>
+<div>ìtestiî</div>
+<div>e spostare il file ìciao.txtî nella cartella ìtestiî</div>
+<div>-Rimanendo nella cartella corrente "test comandi", creare un nuovo file, chiamato ìbrani.txtî </div>
+<div>-Copiare il file ìbrani.txtî nella cartella ìmusicaî, rimanendo nella cartella corrente </div>
 <div>-Spostarsi nella cartella "musica e vedere il contenuto della cartella, accertandoci della presenza del file appena copiato </div>
-<div>-Rimanendo nella cartella ‚Äúmusica‚Äù, eliminare il file ‚Äúbrani.txt‚Äù presente nella cartella padre ‚Äútest-comandi‚Äù. </div>
-<div>-Tornare indietro, nella cartella ‚Äútest-comandi‚Äù </div>
-<div>-Nella cartella "test comandi", creare una nuova cartella di nome ‚Äúlogs‚Äù </div>
+<div>-Rimanendo nella cartella ìmusicaî, eliminare il file ìbrani.txtî presente nella cartella padre ìtest-comandiî. </div>
+<div>-Tornare indietro, nella cartella ìtest-comandiî </div>
+<div>-Nella cartella "test comandi", creare una nuova cartella di nome ìlogsî </div>
 <div>-Entrare nella cartella "logs"</div>
-<div>- creare 2 cartelle ‚Äúbrowser‚Äù e ‚Äúserver‚Äù. </div>
-<div>-Nella cartella "logs", creare un file chiamato ‚Äúlogs.txt‚Äù</div>
+<div>- creare 2 cartelle ìbrowserî e ìserverî. </div>
+<div>-Nella cartella "logs", creare un file chiamato ìlogs.txtî</div>
 <div>- Copiare contemporaneamente il file logs.txt, nelle cartelle "browser" e "server" con un solo comando </div>
 <div>Suggerimento: cp nome_file destinazione && cp nome_file destinazione </div>
 <div>-Accertarsi che nelle cartelle "browser" e "server" ci sia il file "logs.txt"</div>
 <div>-Tornare nella cartella "test-comandi"</div>
-<div>-Infine, eliminare la cartella ‚Äúlogs‚Äù con tutto il suo contenuto (attenzione che √© una cartella piena)</div>
+<div>-Infine, eliminare la cartella ìlogsî con tutto il suo contenuto (attenzione che È una cartella piena)</div>
       <div></div>
     </section>
   </main>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

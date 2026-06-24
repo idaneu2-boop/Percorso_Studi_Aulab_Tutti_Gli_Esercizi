@@ -1,4 +1,4 @@
-﻿/* Palette rubate */
+﻿/* Palette rubrica */
 :root {
     --page-bg: #070c26;
     --panel-bg: #180e59;
@@ -14,7 +14,7 @@
 /* Base pagina */
 body {
     min-height: 100vh;
-    background: var(--page-bg) url("/media/birkenau-402324-1280-1-Elena-Libardi-1_imagefullwide.jpg") center / cover fixed no-repeat;
+    background: var(--page-bg) url("/media/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg") center / cover fixed no-repeat;
     color: var(--text-main);
 }
 .app-shell {
@@ -209,7 +209,8 @@ body {
     font-size: 1.05rem;
     font-weight: 700;
 }
-.contact-info a {
+.contact-info a,
+.contact-phone {
     display: flex;
     gap: 8px;
     align-items: center;

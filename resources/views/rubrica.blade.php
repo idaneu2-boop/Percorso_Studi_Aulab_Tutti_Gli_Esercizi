@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="/css/rubrica.css">
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <!-- Contenitore principale della pagina -->
@@ -21,55 +22,55 @@
                     <div class="main-card">
                         <!-- Titolo pagina -->
                         <header class="app-header mb-4">
-                            <h1 class="display-5 fw-bold mb-2">卍 La mia Rubrica 卍</h1>
+                            <h1 class="display-5 fw-bold mb-2">La mia Rubrica</h1>
                             <div class="header-actions">
                                 <a class="home-button" href="home.html">
                                     <i class="fa-solid fa-house"></i>
                                     <span>Home</span>
                                 </a>
                                 <div class="music-control">
-                                    <i class="fa-solid fa-bell"></i>
+                                    <i class="fa-solid fa-volume-high"></i>
                                     <button id="musicToggle" type="button" class="music-button" aria-label="Avvia musica">
                                         <img decoding="async" loading="lazy" src="/media/logorubrica.png" alt="">
                                     </button>
-                                    <i class="fa-solid fa-bell-slash"></i>
+                                    <i class="fa-solid fa-volume-xmark"></i>
                                 </div>
                             </div>
-                            <audio preload="none" id="musicPlayer" src="/media/Erika (Rare Version).mp3"></audio>
+                            <audio preload="none" id="musicPlayer" src="/media/C418  - Sweden - Minecraft Volume Alpha.mp3"></audio>
                         </header>
                         
                         <!-- Card e contenuti della rubrica -->
                         <div class="row g-4">
                             <div class="col-12">
                                 <!-- Form per aggiungere o modificare un contatto -->
-                                <form id="scrivicontatto" class="contact-panel">
-                                    <h2 id="titolezzo" class="h4 fw-bold mb-3">Nuovo contatto</h2>
+                                <form id="contactForm" class="contact-panel">
+                                    <h2 id="formTitle" class="h4 fw-bold mb-3">Nuovo contatto</h2>
                                     
                                     <!-- Nome -->
                                     <div class="mb-3">
-                                        <label for="scrivinome" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="scrivinome" placeholder="Heinrich" required>
+                                        <label for="firstNameInput" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="firstNameInput" placeholder="Luca" required>
                                     </div>
                                     
                                     <!-- Cognome -->
                                     <div class="mb-3">
-                                        <label for="scrivicognome" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" id="scrivicognome" placeholder="Himmler" required>
+                                        <label for="lastNameInput" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="lastNameInput" placeholder="Rossi" required>
                                     </div>
                                     
                                     <!-- Numero e errore -->
                                     <div class="mb-4">
-                                        <label for="scrivinumerozzo" class="form-label">Numero</label>
-                                        <input type="tel" class="form-control" id="scrivinumerozzo" placeholder="333 123 4567" pattern="[0-9+ ]+" required>
-                                        <p id="haisbagliatonumerozzo" class="error-message d-none">Inserisci solo numeri coglione.</p>
+                                        <label for="phoneInput" class="form-label">Numero</label>
+                                        <input type="tel" class="form-control" id="phoneInput" placeholder="333 123 4567" pattern="[0-9+ ]+" required>
+                                        <p id="phoneError" class="error-message d-none">Inserisci solo numeri validi.</p>
                                     </div>
                                     
                                     <!-- Bottoni -->
                                     <div class="d-grid gap-2">
-                                        <button id="buttanone" type="submit" class="btn btn-primary">
+                                        <button id="submitButton" type="submit" class="btn btn-primary">
                                             <i class="fa-solid fa-plus me-2"></i>Aggiungi contatto
                                         </button>
-                                        <button id="cancellacontattozzo" type="button" class="btn btn-outline-light d-none">
+                                        <button id="cancelEditButton" type="button" class="btn btn-outline-light d-none">
                                             Annulla modifica
                                         </button>
                                     </div>
@@ -82,14 +83,14 @@
                                     <div class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-md-center mb-3">
                                         <div>
                                             <h2 class="h4 fw-bold mb-1">Contatti</h2>
-                                            <p id="contadeifrocioni" class="text-secondary mb-0">Ti odiano tutti</p>
+                                            <p id="contactsCounter" class="text-secondary mb-0">Nessun contatto salvato</p>
                                         </div>
                                         <button id="mostranascondicontatti" type="button" class="btn btn-primary">
                                             Nascondi contatti
                                         </button>
                                         <div class="search-box">
                                             <i class="fa-solid fa-magnifying-glass"></i>
-                                            <input type="search" id="rastrellailghetto" class="form-control" placeholder="Cerca contatto">
+                                            <input type="search" id="contactSearch" class="form-control" placeholder="Cerca contatto">
                                         </div>
                                     </div>
                                     
@@ -100,7 +101,7 @@
                                     </div>
                                     
                                     <!-- Lista creata con il DOM -->
-                                    <div id="listafrocioni" class="contacts-list"></div>
+                                    <div id="contactsList" class="contacts-list"></div>
                                 </section>
                             </div>
                         </div>
@@ -113,6 +114,6 @@
     <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Link JS -->
     <script src="/js/rubrica.js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
-

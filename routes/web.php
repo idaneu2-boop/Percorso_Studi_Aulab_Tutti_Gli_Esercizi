@@ -1,48 +1,33 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\ExerciseDashboardController;
+use App\Http\Controllers\InfoRequestController;
+use App\Http\Controllers\LegacyPageController;
+use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', [ExerciseDashboardController::class, 'index'])->name('home');
+
+Route::get('/home', [ExerciseDashboardController::class, 'index']);
+Route::get('/categorie/{category}', [ExerciseDashboardController::class, 'category'])
+    ->name('home.category');
+
+Route::prefix('gta-6')->group(function (): void {
+    Route::get('/', [PublicController::class, 'home'])->name('gta.home');
+
+    Route::get('/annunci/json/{announcement}', [AnnouncementController::class, 'showStatic'])
+        ->name('announcements.static.show');
+
+    Route::resource('annunci', AnnouncementController::class)
+        ->only(['index', 'create', 'store', 'show'])
+        ->parameters(['annunci' => 'announcement'])
+        ->names('announcements');
+
+    Route::get('/richiedi-info', [InfoRequestController::class, 'create'])->name('info.create');
+    Route::post('/richiedi-info', [InfoRequestController::class, 'store'])->name('info.store');
 });
 
-Route::view('/home', 'home');
-
-$pages = [
-    'anime',
-    'dom1',
-    'flowcharts',
-    'funzioni (1)',
-    'home',
-    'I Fantastici 5',
-    'index',
-    'mattutini',
-    'nasa',
-    'nasa1',
-    'nasa2',
-    'oggetti (1)',
-    'pokedex',
-    'pokemitology (1)',
-    'pokemitology (2)',
-    'pokemitology (3)',
-    'pokemitology (4)',
-    'presto',
-    'prestoannunci',
-    'Ricette_cucina',
-    'rubrica',
-    'supermario',
-    'telefonia',
-    'undertale (1)',
-    'viaggi (1)',
-    'viaggi (2)',
-    'viaggi (3)',
-    'viaggi (4)',
-    'viaggi (5)',
-    'weekend (1)',
-];
-
-Route::get('/{page}.html', function (string $page) use ($pages) {
-    abort_unless(in_array($page, $pages, true), 404);
-
-    return view($page);
-})->where('page', '.*');
+Route::get('/{page}.html', [LegacyPageController::class, 'show'])
+    ->where('page', '.*')
+    ->name('pages.show');

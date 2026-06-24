@@ -543,7 +543,12 @@ body.light-mode .engine-stats h3 {
     white-space: nowrap;
 }
 .japanese-title .titolo,
-.japanese-title .title-shadow,
+.japanese-title .title-shadow {
+    font-family: "Dela Gothic One", "LINE Seed JP", "Yu Gothic", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: 0;
+}
 .japanese-copy {
     font-family: "LINE Seed JP", "Yu Gothic", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     text-transform: none;
@@ -583,6 +588,7 @@ body.light-mode .engine-stats h3 {
     right: -18px;
     bottom: -4px;
     left: -18px;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;

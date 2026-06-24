@@ -1,9 +1,9 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pok√©Mitology</title>
+    <title>PokÈMitology</title>
     
     <!-- Icona Sito -->
     <link rel="shortcut icon" href="/media/ArceusIcon.jpg" type="image/x-icon">
@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/css/pokemitology (1).css">
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <a class="exercise-home-link" href="home.html">Torna agli esercizi</a>
@@ -42,7 +43,7 @@
             <img decoding="async" loading="lazy" class="giffona1" src="/media/mew gif 2.gif" alt="gif di mewche balla">
             <a class="titolone" href="https://www.pokemon.com/it">
                 
-                <h1 class="title"> Pok√©Mitology </h1>
+                <h1 class="title"> PokÈMitology </h1>
                 
             </a>
             <img decoding="async" loading="lazy" class="giffona2" src="/media/Dittoballa.gif" alt="gif di Ditto che balla">
@@ -60,9 +61,9 @@
             <a class="righette1" href="https://www.pokemonmillennium.net/rubriche/252203-arceus-e-la-creazione-del-mondo-pokemon/">
                 <div class="cardhome1">
                     <img decoding="async" loading="lazy" src="/media/gif arceus.gif" alt="gif di arceus" class="gifarceus">
-                    <h2 class="titolazzo">Di cosa parla Pok√©Mitology?</h2>
+                    <h2 class="titolazzo">Di cosa parla PokÈMitology?</h2>
                     <div>
-                        <p class="testo1">Su questa pagina, parleremo di tutta la storia raccontata nei giochi <strong>Pok√©mon</strong>, dalla <strong>Creazione</strong> al <strong>Presente</strong>, parlando anche delle ispirazioni tratte dalla cultura folkloristica e storica reale.
+                        <p class="testo1">Su questa pagina, parleremo di tutta la storia raccontata nei giochi <strong>PokÈmon</strong>, dalla <strong>Creazione</strong> al <strong>Presente</strong>, parlando anche delle ispirazioni tratte dalla cultura folkloristica e storica reale.
                         </p>
                     </div>
             </div>
@@ -72,7 +73,7 @@
                 <div class="cardhome2">
                     <img decoding="async" loading="lazy" src="/media/mew gif.gif" alt="gif di mew" class="gifarceus">
                     <h2 class="titolazzo1">Quali sono le fonti?</h2>
-                    <p class="testo1">Tutto quello che viene raccolto su questo sito, √® tratto dai <strong>Giochi Principali</strong>, dal famoso <strong>Teraleak</strong> e da interviste fatte ai producer di <strong>Gamefreak</strong>, come <strong>Junichi Masuda</strong>, <strong>Shigeki Morimoto</strong> e <strong>Ken Sugimori</strong>.
+                    <p class="testo1">Tutto quello che viene raccolto su questo sito, Ë tratto dai <strong>Giochi Principali</strong>, dal famoso <strong>Teraleak</strong> e da interviste fatte ai producer di <strong>Gamefreak</strong>, come <strong>Junichi Masuda</strong>, <strong>Shigeki Morimoto</strong> e <strong>Ken Sugimori</strong>.
                     </p>
                 </div>
             </a>
@@ -81,7 +82,7 @@
                 <div class="cardhome3">
                     <img decoding="async" loading="lazy" src="/media/hooh gif.gif" alt="gif di ho oh" class="gifarceus">
                     <h2 class="titolazzo2">E la Serie invece?</h2>
-                    <p class="testo1">La serie televisiva, i Film e i videogiochi prodotti da case sviluppatrici come <strong>ILCA</strong>, non verranno trattati. In quanto, <strong>NON SEGUONO IL CANON</strong> dei giochi principali, perch√© non c'√® <strong>Shigeru Ohmori</strong> dietro la scrittura.
+                    <p class="testo1">La serie televisiva, i Film e i videogiochi prodotti da case sviluppatrici come <strong>ILCA</strong>, non verranno trattati. In quanto, <strong>NON SEGUONO IL CANON</strong> dei giochi principali, perchÈ non c'Ë <strong>Shigeru Ohmori</strong> dietro la scrittura.
                     </p>
                 </div>
             </a>
@@ -91,7 +92,7 @@
                     <img decoding="async" loading="lazy" src="/media/meowth gif.gif" alt="gif di meowth che piange" class="gifarceus">
                     <h2 class="titolazzo3">Piccola Donazione?</h2>
                     <p class="testo1">Se questo progetto vi piace, trovate un <strong>Link</strong> per donare su <strong>Buy Me a Coffee</strong>, nella pagina contatti o direttamente cliccando su <strong>Meowth</strong>.
-                        Ci tengo a precisare che ogni contenuto su questo sito,  appartiene esclusivamente a <strong>The Pok√©mon Company</strong>.
+                        Ci tengo a precisare che ogni contenuto su questo sito,  appartiene esclusivamente a <strong>The PokÈmon Company</strong>.
                     </p>
                 </div>
             </a>
@@ -108,6 +109,7 @@
             diglettGif.src = diglettSrc + "?restart=" + Date.now();
         }, 6000);
     </script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

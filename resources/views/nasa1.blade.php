@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,6 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/nasa.css">
     <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
+  <x-fluid-assets target="head" />
 </head>
 <body class="bg-sec bg-header">
     <a class="exercise-home-link" href="home.html">Home</a>
@@ -96,11 +97,12 @@
                 </div>
             </div>
             <div class="text-center border-top pt-3">
-                <p class="mb-0">© 2026 Nasa - All rights are reserved.</p>
+                <p class="mb-0">� 2026 Nasa - All rights are reserved.</p>
             </div>
         </div>
     </footer>
     <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

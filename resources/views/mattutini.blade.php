@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -246,6 +246,7 @@
             }
         }
     </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <a class="exercise-home-link" href="home.html">Home</a>
@@ -423,6 +424,7 @@
 
         renderExercises();
     </script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

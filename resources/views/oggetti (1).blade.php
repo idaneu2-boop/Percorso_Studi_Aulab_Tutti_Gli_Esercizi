@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/oggetti (1).css">
     <script defer src="/js/oggetti (1).js"></script>
     <script defer src="/js/oggetti (2).js"></script>
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <a class="exercise-home-link" href="home.html">Home</a>
@@ -184,6 +185,7 @@
         <span>Aulab Object Lab</span>
         <span>Esercizi JavaScript sugli oggetti</span>
     </footer>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

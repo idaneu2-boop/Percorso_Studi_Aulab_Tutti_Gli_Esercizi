@@ -2,16 +2,16 @@
 const classHeading = document.querySelector("#classHeading");
 const textHeading = document.querySelector("#textHeading");
 const paragraphs = document.querySelectorAll("#paragraphList p");
-const colorButton = document.querySelector("#etniabtn");
-const boldButton = document.querySelector("#mcbtn");
-const toggleButton = document.querySelector("#fuckisrael");
+const colorButton = document.querySelector("#colorButton");
+const boldButton = document.querySelector("#boldButton");
+const toggleButton = document.querySelector("#toggleParagraphs");
 const contactsList = document.querySelector("#contactsList");
 const pageMusic = document.querySelector("#pageMusic");
 const audioToggle = document.querySelector("#audioToggle");
 
 mainHeading.style.color = "#e30613";
 classHeading.classList.add("highlight-title");
-textHeading.textContent = "Ritorneremo prima o dopo!";
+textHeading.textContent = "Testo aggiornato dal DOM!";
 
 const getRandomColor = () => {
   const red = Math.floor(Math.random() * 205) + 30;

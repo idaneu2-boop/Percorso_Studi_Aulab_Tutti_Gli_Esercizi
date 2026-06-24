@@ -1,4 +1,4 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,6 +34,7 @@
             color: #ffffff;
         }
     </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
             <a class="exercise-home-link" href="home.html">Home</a>
@@ -64,8 +65,8 @@
             <li>Liberty Island;</li>
             <li>Il World Trade Center Memorial.</li>
         </ol>
-        <h2>La citt√† migliore del mondo:</h2>
-        <p>New York City, soprannominata "Grande Mela", √® la citt√† pi√π popolosa degli Stati Uniti (circa 8,8 milioni di abitanti) e un principale centro economico e culturale globale. Situata alla foce del fiume Hudson, si divide in cinque distretti: Manhattan, Brooklyn, Queens, Bronx e Staten Island.</p>
+        <h2>La citt‡ migliore del mondo:</h2>
+        <p>New York City, soprannominata "Grande Mela", Ë la citt‡ pi˘ popolosa degli Stati Uniti (circa 8,8 milioni di abitanti) e un principale centro economico e culturale globale. Situata alla foce del fiume Hudson, si divide in cinque distretti: Manhattan, Brooklyn, Queens, Bronx e Staten Island.</p>
         <h2>Prezzo del viaggio:</h2>
         <h3>9000 sbleuri in un appartamento di 2 metri quadri!</h3>
         </main>
@@ -81,6 +82,7 @@
             </ul>
         </footer>
         <!-- Fine Footer -->
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

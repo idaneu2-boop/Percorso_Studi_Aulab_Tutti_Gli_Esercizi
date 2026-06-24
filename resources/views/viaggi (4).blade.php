@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
             color: #ffffff;
         }
     </style>
-
+  <x-fluid-assets target="head" />
 </head>
 <body>
         <a class="exercise-home-link" href="home.html">Home</a>
@@ -92,6 +92,7 @@
             </ul>
       </footer>
       <!-- Fine Footer -->
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

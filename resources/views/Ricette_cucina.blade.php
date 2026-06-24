@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -31,6 +31,7 @@
       color: #fff3d6;
     }
   </style>
+  <x-fluid-assets target="head" />
 </head>
 <body>
   <a class="exercise-home-link" href="home.html">Home</a>
@@ -68,11 +69,11 @@
           <img decoding="async" loading="lazy" style="width: 400px;" src="/media/cca-086-timballo-1-1300x867.jpg" alt="Immagine timballo alla Teramana">
         </a>
         <p>
-          <strong>Il timballo di scrippelle alla Teramana</strong> Ã¨ una ricetta tipica abruzzese
+          <strong>Il timballo di scrippelle alla Teramana</strong> è una ricetta tipica abruzzese
           che si realizza per le ricorrenze importanti, come ad esempio per il pranzo di Natale o di Pasqua.
         </p>
         <p>
-          Questo timballo Ã¨ caratterizzato da strati composti dalle scrippelle, simili alle crepes,
+          Questo timballo è caratterizzato da strati composti dalle scrippelle, simili alle crepes,
           condite con il sugo di pallottine, parmigiano e mozzarella. Al posto della besciamella,
           viene utilizzato un composto fatto di uova sbattute con il latte.
         </p>
@@ -85,7 +86,7 @@
         </a>
         <p>
           <strong>Le Scrippelle Mbusse</strong> sono un piatto tipico abruzzese,
-          piÃ¹ precisamente del Teramano.
+          più precisamente del Teramano.
         </p>
         <p>
           Sono delle crespelle a base di uova, farina e acqua. Si prepara una pastella fluida,
@@ -105,7 +106,7 @@
         </p>
         <p>
           Sono piccoli dolcetti di pasta friabilissima a base di farina, olio e vino,
-          con un ripieno che puÃ² variare dalla cioccolata alla marmellata, poi fritti in padella.
+          con un ripieno che può variare dalla cioccolata alla marmellata, poi fritti in padella.
         </p>
       </article>
     </section>
@@ -124,6 +125,7 @@
       <p>Email: idaneu2@gmail.com</p>
     </section>
   </footer>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

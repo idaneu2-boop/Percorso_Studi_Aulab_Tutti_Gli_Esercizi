@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funzioni Array | Violet Lab</title>
   <link rel="stylesheet" href="/css/funzioni (1).css">
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <a class="exercise-home-link" href="home.html">Array Hub</a>
@@ -289,6 +290,7 @@
   </div>
 
   <script src="/js/funzioni (1).js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

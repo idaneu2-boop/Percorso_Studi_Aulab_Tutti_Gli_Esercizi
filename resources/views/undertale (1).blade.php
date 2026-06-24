@@ -1,4 +1,4 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <title>Esercizi JS | Undertale</title>
   <link rel="icon" type="image/jpeg" href="/media/logo.jpg">
   <link rel="stylesheet" href="/css/undertale (1).css">
+  <x-fluid-assets target="head" />
 </head>
 <body>
 
@@ -47,7 +48,7 @@
             </div>
             <div class="terminal-body">
               <p><span>*</span> Benvenuto nel sottosuolo umano!</p>
-              <p><span>*</span> Non c'√® un modo per fermare la musica.</p>
+              <p><span>*</span> Non c'Ë un modo per fermare la musica.</p>
               <p><span>*</span> Ti senti pieno di determinazione?</p>
               <p><span>*</span> Beh 6 esercizi sono apparsi.</p>
               <p><span>*</span> Mi raccomando a non attaccarli.</p>
@@ -214,7 +215,7 @@
       <div>
         <span class="eyebrow">Saving...</span>
         <h2>Fine pagina.</h2>
-        <p>Hai finito di vedere gli esercizi? Beh? Che ci fai ancora qui? Puoi tornare alla Home...ma dov'√® il tasto Home?...No...Non...cliccare su di me...ti supplico...non farlo...non ti riporter√† alla Home...o forse si?...Heheheh
+        <p>Hai finito di vedere gli esercizi? Beh? Che ci fai ancora qui? Puoi tornare alla Home...ma dov'Ë il tasto Home?...No...Non...cliccare su di me...ti supplico...non farlo...non ti riporter‡ alla Home...o forse si?...Heheheh
         </p>
       </div>
     </footer>
@@ -232,6 +233,7 @@
   <audio id="sansSong" src="/media/Undertale Audio Files 091 - mus_intronoise.mp3" preload="none"></audio>
 
   <script src="/js/undertale (1).js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 

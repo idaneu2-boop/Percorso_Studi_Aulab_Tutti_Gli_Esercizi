@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/supermario.css">
     <link rel="shortcut icon" href="/media/images.png" type="image/x-icon">
     <title>Super Mario JS</title>
-    
+  <x-fluid-assets target="head" />
 </head>
 <body>
     <a class="exercise-home-link" href="home.html">Home</a>
@@ -29,7 +29,7 @@
         <p>Hai perso la partita.</p>
     </section>
     <img decoding="async" loading="lazy" class="sup" src="/media/d9f6x59-83bc7697-99b5-4ab1-b56c-48286f982b2b.gif" alt="gif di super mario che salta sopra un tubo">
+    <script src="/js/supermario.js"></script>
+  <x-fluid-assets target="body" />
 </body>
-<script src="/js/supermario.js"></script>
 </html>
-

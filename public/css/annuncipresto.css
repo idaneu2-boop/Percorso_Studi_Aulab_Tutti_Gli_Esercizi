@@ -47,7 +47,12 @@
     white-space: nowrap;
 }
 .japanese-title .annunci-titolo,
-.japanese-title .annunci-title-shadow,
+.japanese-title .annunci-title-shadow {
+    font-family: "Dela Gothic One", "LINE Seed JP", "Yu Gothic", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: 0;
+}
 .japanese-copy {
     font-family: "LINE Seed JP", "Yu Gothic", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     text-transform: none;

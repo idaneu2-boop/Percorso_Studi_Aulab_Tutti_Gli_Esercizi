@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/anime.css">
       <link rel="shortcut icon" href="/media/239e441794f6b6d5e49abdcccdcff298.jpg" type="image/x-icon">
-
+  <x-fluid-assets target="head" />
 </head>
 <body>
 <a class="exercise-home-link" href="home.html">Home</a>
@@ -93,18 +93,18 @@
   <div class="row">
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img decoding="async" loading="lazy" class="rounded" src="/media/la cittÃ  incantata.gif" alt="La cittÃ  incantata">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/la città incantata.gif" alt="La città incantata">
         <div class="card-body p-2">
-          <h6 class="card-title text-white-50 text-center mb-0">La cittÃ  incantata</h6>
+          <h6 class="card-title text-white-50 text-center mb-0">La città incantata</h6>
         </div>
       </div>
     </div>
 
     <div class="col-md-2 mb-3">
       <div class="card border border-danger">
-        <img decoding="async" loading="lazy" class="rounded" src="/media/film entei.gif" alt="PokÃ©mon 3">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/film entei.gif" alt="Pokémon 3">
         <div class="card-body p-2">
-          <h6 class="card-title text-white-50 text-center mb-0">PokÃ©mon 3: Il Mistero degli Unown</h6>
+          <h6 class="card-title text-white-50 text-center mb-0">Pokémon 3: Il Mistero degli Unown</h6>
         </div>
       </div>
     </div>
@@ -150,10 +150,11 @@
 
 <!-- FOOTER -->
 <footer class="bg-dark text-center p-4 mt-5">
-  <p>Â© 2026 StreamWorld Anime - Tutti i diritti riservati</p>
+  <p>© 2026 StreamWorld Anime - Tutti i diritti riservati</p>
 </footer>
 
 <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <x-fluid-assets target="body" />
 </body>
 </html>
 
