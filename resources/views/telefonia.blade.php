@@ -96,7 +96,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-danger text-light"><h5>Iphone 17 Pro Max</h5></div>
-                    <div class="modal-body">LíiPhone 17 Pro Max Ë stato presentato il 09/09/2025 e debutta con un design unibody in alluminio forgiato con camera di vapore. Integra una fotocamera frontale Center Stage da 18 MP, il chip A19 Pro e un sistema di tre fotocamere Fusion da 48 MP con lo zoom di qualit‡ ottica pi˘ lunga mai visto su un iPhone (fino a 8x / 200 mm). Il display Super Retina XDR da 6,9" mantiene ProMotion a 120 Hz e picchi di 3.000 nit, con la migliore autonomia storica su un iPhone.
+                    <div class="modal-body">L‚ÄôiPhone 17 Pro Max √® stato presentato il 09/09/2025 e debutta con un design unibody in alluminio forgiato con camera di vapore. Integra una fotocamera frontale Center Stage da 18 MP, il chip A19 Pro e un sistema di tre fotocamere Fusion da 48 MP con lo zoom di qualit√† ottica pi√π lunga mai visto su un iPhone (fino a 8x / 200 mm). Il display Super Retina XDR da 6,9" mantiene ProMotion a 120 Hz e picchi di 3.000 nit, con la migliore autonomia storica su un iPhone.
                         
                     </div>
                 </div>
@@ -107,8 +107,8 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-danger text-light"><h5>Samsung Galaxy S25 Ultra</h5></div>
-                    <div class="modal-body">Samsung Galaxy S25 Ultra Ë uno smartphone Android con caratteristiche all'avanguardia che lo rendono una scelta eccellente per ogni tipo di utilizzo, rappresentando uno dei migliori dispositivi mobili mai realizzati. Dispone di un grande display da 6.9 pollici e di una risoluzione da 3120x1440 pixel, fra le pi˘ elevate attualmente in circolazione. Nello stilare la scheda tecnica di questo Samsung Galaxy S25 Ultra, notiamo che le funzionalit‡ offerte sono innumerevoli e tutte al top di gamma. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettivit‡ Wi-fi e il GPS. La batteria Ë da 5000mAh.
-                        L'eccellenza di questo Samsung Galaxy S25 Ultra Ë completata da una fotocamera con un sensore da ben 200 megapixel che permette di scattare foto di alta qualit‡ con una risoluzione di 16330x12247 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Veniamo alle dimensioni: lo spessore di 8.2mm Ë contenuto e rende questo Samsung Galaxy S25 Ultra molto interessante. Il tutto sta in un oggetto dal peso di 218g.</div>
+                    <div class="modal-body">Samsung Galaxy S25 Ultra √® uno smartphone Android con caratteristiche all'avanguardia che lo rendono una scelta eccellente per ogni tipo di utilizzo, rappresentando uno dei migliori dispositivi mobili mai realizzati. Dispone di un grande display da 6.9 pollici e di una risoluzione da 3120x1440 pixel, fra le pi√π elevate attualmente in circolazione. Nello stilare la scheda tecnica di questo Samsung Galaxy S25 Ultra, notiamo che le funzionalit√† offerte sono innumerevoli e tutte al top di gamma. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente, passando per la connettivit√† Wi-fi e il GPS. La batteria √® da 5000mAh.
+                        L'eccellenza di questo Samsung Galaxy S25 Ultra √® completata da una fotocamera con un sensore da ben 200 megapixel che permette di scattare foto di alta qualit√† con una risoluzione di 16330x12247 pixel e di registrare video in 8K alla risoluzione di 7680x4320 pixel. Veniamo alle dimensioni: lo spessore di 8.2mm √® contenuto e rende questo Samsung Galaxy S25 Ultra molto interessante. Il tutto sta in un oggetto dal peso di 218g.</div>
                     </div>
                 </div>
             </div>
@@ -117,8 +117,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-danger text-light"><h5>Motorola Edge 70</h5></div>
-                        <div class="modal-body">Motorola Edge 70, come emerge dalla sua scheda tecnica, Ë uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.7 pollici con una risoluzione di 2712x1220 pixel. Le funzionalit‡ offerte da questo Motorola Edge 70 sono veramente tante e all'avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
-                            Questo Motorola Edge 70 Ë un prodotto con pochi competitor per ciÚ che riguarda la multimedialit‡ grazie alla fotocamera da ben 50 megapixel che permette al Motorola Edge 70 di scattare foto di alta qualit‡ con una risoluzione di 8165x6124 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Guardando alle dimensioni, lo spessore di appena 6mm rende questo Motorola Edge 70 un prodotto completo e tra i pi˘ sottili sul mercato. Per finire il peso Ë di 159g e abbiamo una batteria da 4800mAh.</div>
+                        <div class="modal-body">Motorola Edge 70, come emerge dalla sua scheda tecnica, √® uno smartphone Android avanzato e completo sotto tutti i punti di vista con alcune eccellenze. Dispone di un grande display da 6.7 pollici con una risoluzione di 2712x1220 pixel. Le funzionalit√† offerte da questo Motorola Edge 70 sono veramente tante e all'avanguardia. A cominciare dal modulo 5G che permette un trasferimento dati e una navigazione in internet eccellente.
+                            Questo Motorola Edge 70 √® un prodotto con pochi competitor per ci√≤ che riguarda la multimedialit√† grazie alla fotocamera da ben 50 megapixel che permette al Motorola Edge 70 di scattare foto di alta qualit√† con una risoluzione di 8165x6124 pixel e di registrare video in 4K alla risoluzione di 3840x2160 pixel. Guardando alle dimensioni, lo spessore di appena 6mm rende questo Motorola Edge 70 un prodotto completo e tra i pi√π sottili sul mercato. Per finire il peso √® di 159g e abbiamo una batteria da 4800mAh.</div>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Qual Ë la garanzia?
+                                    Qual √® la garanzia?
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse">
@@ -170,7 +170,7 @@
                                 </button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse">
-                                <div class="accordion-body">SÏ, in tutta Italia, con 2 giorni lavorativi per Sicilia, sardegna e Calabria e 3 giorni lavorativi per localit‡ pi˘ difficilmente raggiungibili (es.: localit‡ montane, isole minori, estreme periferie o zone disagiate).</div>
+                                <div class="accordion-body">S√¨, in tutta Italia, con 2 giorni lavorativi per Sicilia, sardegna e Calabria e 3 giorni lavorativi per localit√† pi√π difficilmente raggiungibili (es.: localit√† montane, isole minori, estreme periferie o zone disagiate).</div>
                             </div>
                         </div>
                         
@@ -209,7 +209,7 @@
                     
                     <!-- COPYRIGHT -->
                     <div class="text-center border-top pt-3">
-                        <p class="mb-0">© 2026 Telefonia - Tutti i diritti riservati</p>
+                        <p class="mb-0">¬© 2026 Telefonia - Tutti i diritti riservati</p>
                     </div>
                 </div>
             </footer>

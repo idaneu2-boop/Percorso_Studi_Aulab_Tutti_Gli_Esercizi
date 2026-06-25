@@ -9,7 +9,7 @@
       <link rel="shortcut icon" href="/media/239e441794f6b6d5e49abdcccdcff298.jpg" type="image/x-icon">
   <x-fluid-assets target="head" />
 </head>
-<body>
+<body class="anime-page">
 <a class="exercise-home-link" href="home.html">Home</a>
 
 <!-- NAVBAR -->
@@ -43,9 +43,9 @@
 <div class="container mt-5">
 
   <h3 class="mb-4">Popolari</h3>
-  <div class="row">
+  <div class="row anime-card-grid anime-popular-grid">
     <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
+    <div class="col-lg-6 col-xl-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Vinland-Saga-2-ITA-aaaaaaaaaaa"><div class="card">
           <img decoding="async" loading="lazy" src="/media/Solo leveling.gif" class="card-img-top" alt="Vinland Saga">
           <div class="card-body">
@@ -56,7 +56,7 @@
     </div>
 
     <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
+    <div class="col-lg-6 col-xl-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Frieren-Beyond-Journeys-End-2"><div class="card">
         <img decoding="async" loading="lazy" src="/media/frieren.gif" class="card-img-top" alt="Frieren">
         <div class="card-body">
@@ -67,7 +67,7 @@
     </div>
 
     <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
+    <div class="col-lg-6 col-xl-3 mb-4">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Jujutsu-Kaisen-3"><div class="card">
         <img decoding="async" loading="lazy" src="/media/gojo.gif" class="card-img-top" alt="Jujutsu Kaisen">
         <div class="card-body">
@@ -78,7 +78,7 @@
     </div>
 
     <!-- CARD 4 -->
-    <div class="col-md-3 mb-4 ">
+    <div class="col-lg-6 col-xl-3 mb-4 ">
       <a class="text-decoration-none" href="https://www.animesaturn.cx/anime/Devil-May-Cry-2025-2"><div class="card">
         <img decoding="async" loading="lazy" src="/media/dante.gif" class="card-img-top" alt="Devil May Cry">
         <div class="card-body">
@@ -90,26 +90,26 @@
   </div>
 
   <h3 class="mb-4">Film</h3>
-  <div class="row">
-    <div class="col-md-2 mb-3">
+  <div class="row anime-card-grid anime-movie-grid">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
-        <img decoding="async" loading="lazy" class="rounded" src="/media/la città incantata.gif" alt="La città incantata">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/la cittÃ  incantata.gif" alt="La cittÃ  incantata">
         <div class="card-body p-2">
-          <h6 class="card-title text-white-50 text-center mb-0">La città incantata</h6>
+          <h6 class="card-title text-white-50 text-center mb-0">La cittÃ  incantata</h6>
         </div>
       </div>
     </div>
 
-    <div class="col-md-2 mb-3">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
-        <img decoding="async" loading="lazy" class="rounded" src="/media/film entei.gif" alt="Pokémon 3">
+        <img decoding="async" loading="lazy" class="rounded" src="/media/film entei.gif" alt="PokÃ©mon 3">
         <div class="card-body p-2">
-          <h6 class="card-title text-white-50 text-center mb-0">Pokémon 3: Il Mistero degli Unown</h6>
+          <h6 class="card-title text-white-50 text-center mb-0">PokÃ©mon 3: Il Mistero degli Unown</h6>
         </div>
       </div>
     </div>
 
-    <div class="col-md-2 mb-3">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
         <img decoding="async" loading="lazy" class="rounded" src="/media/film reze.gif" alt="Chainsaw Man: Reze Arc">
         <div class="card-body p-2">
@@ -118,7 +118,7 @@
       </div>
     </div>
 
-    <div class="col-md-2 mb-3">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
         <img decoding="async" loading="lazy" class="rounded" src="/media/gurren-lagann-simon.gif" alt="Gurren Lagann">
         <div class="card-body p-2">
@@ -127,7 +127,7 @@
       </div>
     </div>
 
-    <div class="col-md-2 mb-3">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
         <img decoding="async" loading="lazy" class="rounded" src="/media/broly.gif" alt="Dragon Ball Super: Broly">
         <div class="card-body p-2">
@@ -136,7 +136,7 @@
       </div>
     </div>
 
-    <div class="col-md-2 mb-3">
+    <div class="col-md-6 col-xl-4 mb-4">
       <div class="card border border-danger">
         <img decoding="async" loading="lazy" class="rounded" src="/media/naruto.gif" alt="Naruto">
         <div class="card-body p-2">
@@ -149,12 +149,11 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-center p-4 mt-5">
-  <p>© 2026 StreamWorld Anime - Tutti i diritti riservati</p>
+<footer class="anime-footer bg-dark text-center p-4 mt-5" data-no-fluid>
+  <p>Â© 2026 StreamWorld Anime - Tutti i diritti riservati</p>
 </footer>
 
 <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <x-fluid-assets target="body" />
 </body>
 </html>
-

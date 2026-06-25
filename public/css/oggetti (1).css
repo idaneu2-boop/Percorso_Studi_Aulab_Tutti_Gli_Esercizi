@@ -94,8 +94,12 @@ button {
 }
 
 .brand-mark {
+    flex: 0 0 42px;
     width: 42px;
     height: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    aspect-ratio: 1 / 1;
     display: block;
     border-radius: 50%;
     object-fit: cover;
@@ -269,16 +273,26 @@ h3 {
 }
 
 .card-icon {
+    flex: 0 0 58px;
     width: 58px;
     height: 58px;
+    min-width: 58px;
+    min-height: 58px;
+    aspect-ratio: 1 / 1;
     border-radius: 8px;
     position: relative;
     background: var(--panel-strong);
     border: 1px solid var(--line);
+    overflow: hidden;
 }
 
 .valerio-icon {
     display: block;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    min-height: 58px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--teal);

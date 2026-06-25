@@ -111,8 +111,12 @@ body.light-mode .annunci-header {
     url("/media/Sfondoannuncitoyota.gif");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+}
+body.fluid-enhanced .annunci-section.fluid-reveal {
+    opacity: 1 !important;
+    transform: none !important;
 }
 .annunci-section-head {
     position: relative;
@@ -447,7 +451,7 @@ body.light-mode .annunci-section {
     url("/media/Sfondoannuncitoyota.gif");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 body.light-mode .annuncio-card {

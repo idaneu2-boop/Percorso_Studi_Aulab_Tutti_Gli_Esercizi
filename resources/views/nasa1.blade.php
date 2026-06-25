@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
   <x-fluid-assets target="head" />
 </head>
-<body class="bg-sec bg-header">
+<body class="nasa-page bg-sec bg-header">
     <a class="exercise-home-link" href="home.html">Home</a>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-sec shadow-sm sticky-top">
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="text-center border-top pt-3">
-                <p class="mb-0">© 2026 Nasa - All rights are reserved.</p>
+                <p class="mb-0">Â© 2026 Nasa - All rights are reserved.</p>
             </div>
         </div>
     </footer>
@@ -105,4 +105,3 @@
   <x-fluid-assets target="body" />
 </body>
 </html>
-

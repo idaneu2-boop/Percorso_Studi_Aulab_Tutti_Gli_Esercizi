@@ -16,10 +16,11 @@ body{
 }
 
 .exercise-home-link{
-    position: fixed;
-    top: 50%;
-    left: 16px;
+    position: static;
     z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    align-self: stretch;
     padding: 10px 14px;
     border: 2px solid #70667768;
     border-radius: 20px;
@@ -30,12 +31,11 @@ body{
     text-decoration: none;
     text-shadow: 2px 2px 8px #08070968;
     box-shadow: 6px 6px 10px #00000068;
-    transform: translateY(-50%);
     transition: 0.4s ease;
 }
 
 .exercise-home-link:hover{
-    transform: translateY(-50%) scale(1.05);
+    transform: scale(1.05);
     background-color: #a89890;
 }
 
@@ -268,6 +268,8 @@ body{
 .sezionericerca{
     display: flex;
     justify-content:center;
+    align-items: center;
+    gap: 16px;
 }
 
 .sezionericerca input{
@@ -313,14 +315,32 @@ body{
 
 /* Card */ 
 
-.righette1{
+.righette1,
+.righette2,
+.righette3,
+.righette4{
+    color: #080709;
     text-decoration: none;
 }
-.righette1:visited{
-    color: black;
+
+.righette1:visited,
+.righette2:visited,
+.righette3:visited,
+.righette4:visited,
+.righette1:hover,
+.righette2:hover,
+.righette3:hover,
+.righette4:hover,
+.righette1:focus,
+.righette2:focus,
+.righette3:focus,
+.righette4:focus{
+    color: #080709;
 }
 
 .cardhome1{
+    --card-text-color: #32d596;
+    --card-text-hover-color: rgb(169, 28, 28);
     width: 230px;
     padding: 10px;
     margin: 50px ;
@@ -360,24 +380,31 @@ body{
 
 .testo1{
     font-family: "PT Sans", sans-serif;
+    color: var(--card-text-color);
     transition: 0.4s;
+}
+.testo1 strong{
+    color: inherit;
 }
 .testo1:hover {
     transform: scale(1.1);
+    color: var(--card-text-hover-color);
     text-shadow: 3px 3px 3px #00000068;
     cursor: pointer
 }
 
+.cardhome1:hover .testo1,
+.cardhome2:hover .testo1,
+.cardhome3:hover .testo1,
+.cardhome4:hover .testo1{
+    color: var(--card-text-hover-color);
+}
+
 /* Cardhome 2 */
 
-.righette2{
-    text-decoration: none;
-}
-.righette2:visited{
-    color: black;
-}
-
 .cardhome2 {
+    --card-text-color: #2d95b5;
+    --card-text-hover-color: #ffe4e5;
     width: 230px;
     padding: 10px;
     margin: 50px ;
@@ -403,14 +430,9 @@ body{
 
 /* Cardhome3 */
 
-.righette3{
-    text-decoration: none;
-}
-.righette3:visited{
-    color: black;
-}
-
 .cardhome3{
+    --card-text-color: #de735d;
+    --card-text-hover-color: #dba544;
     width: 230px;
     padding: 10px;
     margin: 50px ;
@@ -437,6 +459,8 @@ body{
 /* Cardhome4 */
 
 .cardhome4{
+    --card-text-color: #4d7f1e;
+    --card-text-hover-color: #32366d;
     width: 230px;
     padding: 10px;
     margin: 50px ;
@@ -460,10 +484,4 @@ body{
     text-shadow: 3px 3px 3px #00000068;
 }
 
-.righette4{
-    text-decoration: none;
-}
-.righette4:visited{
-    color: black;
-}
 

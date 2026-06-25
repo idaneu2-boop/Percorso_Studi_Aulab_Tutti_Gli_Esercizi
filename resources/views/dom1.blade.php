@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/dom1.css">
   <x-fluid-assets target="head" />
 </head>
-<body>
+<body data-no-fluid>
   <header class="topbar">
     <a class="back-link" href="home.html">Torna alla home</a>
     <button class="audio-toggle" id="audioToggle" type="button" aria-label="Ferma o avvia musica">
@@ -81,4 +81,3 @@
   <x-fluid-assets target="body" />
 </body>
 </html>
-

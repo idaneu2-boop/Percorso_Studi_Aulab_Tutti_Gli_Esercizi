@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubrica DOM</title>
-    <link rel="icon" type="image/png" href="/media/logorubrica.png">
+    <link rel="icon" type="image/jpeg" href="/media/Icona Contatti.jpg">
     <!-- Link Boots -->
     <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Link Font-awesome -->
@@ -22,7 +22,7 @@
                     <div class="main-card">
                         <!-- Titolo pagina -->
                         <header class="app-header mb-4">
-                            <h1 class="display-5 fw-bold mb-2">La mia Rubrica</h1>
+                            <h1 class="display-5 fw-bold mb-2">卐 La mia Rubrica 卐</h1>
                             <div class="header-actions">
                                 <a class="home-button" href="home.html">
                                     <i class="fa-solid fa-house"></i>
@@ -31,7 +31,7 @@
                                 <div class="music-control">
                                     <i class="fa-solid fa-volume-high"></i>
                                     <button id="musicToggle" type="button" class="music-button" aria-label="Avvia musica">
-                                        <img decoding="async" loading="lazy" src="/media/logorubrica.png" alt="">
+                                        <img decoding="async" loading="lazy" src="/media/Icona Contatti.jpg" alt="">
                                     </button>
                                     <i class="fa-solid fa-volume-xmark"></i>
                                 </div>

@@ -6,7 +6,6 @@ const emptyState = document.querySelector("#emptyState");
 const linkedPagesCount = document.querySelector("#linkedPagesCount");
 const totalPagesCount = document.querySelector("#totalPagesCount");
 const visiblePagesCount = document.querySelector("#visiblePagesCount");
-const searchReset = document.querySelector("#searchReset");
 const helperButton = document.querySelector("#helperButton");
 const helperBubble = document.querySelector("#helperBubble");
 const helperClose = document.querySelector("#helperClose");
@@ -76,7 +75,6 @@ const applyFilters = () => {
     });
 
     setCounter(visiblePagesCount, visibleCards, 260);
-    searchReset.hidden = query.length === 0;
     emptyState.hidden = visibleCards > 0;
 };
 
@@ -101,11 +99,6 @@ const openHelper = () => {
 };
 
 searchInput.addEventListener("input", applyFilters);
-searchReset?.addEventListener("click", () => {
-    searchInput.value = "";
-    searchInput.focus();
-    applyFilters();
-});
 
 categoryFilterButton.addEventListener("click", () => {
     if (categoryFilterMenu.hidden) {

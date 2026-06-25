@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon">
   <x-fluid-assets target="head" />
 </head>
-<body class="bg-sec">
+<body class="nasa-page bg-sec">
     <a class="exercise-home-link" href="home.html">Home</a>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-sec shadow-sm sticky-top">
@@ -98,7 +98,7 @@
                 </article>
                 <article class="col-12 col-md-6 d-flex flex-column justify-content-center">
                     <h3 class="h2 botton3 fw-bold">UMBHs</h3>
-                    <p class="lead">Ultramassive black holes (UMBHs) are the most massive known objects in the universe, typically defined as having masses exceeding 10 billion solar masses (\(10^{10}\ M_\odot\)). They reside at the centers of massive galaxies, representing the upper limit of black hole growth and are 10,000+ times heavier than our Milky Way’s central black hole.</p>
+                    <p class="lead">Ultramassive black holes (UMBHs) are the most massive known objects in the universe, typically defined as having masses exceeding 10 billion solar masses (\(10^{10}\ M_\odot\)). They reside at the centers of massive galaxies, representing the upper limit of black hole growth and are 10,000+ times heavier than our Milky Wayâ€™s central black hole.</p>
                 </article>
             </div>
         </section>
@@ -133,7 +133,7 @@
                         <img decoding="async" loading="lazy" src="/media/ton618.gif" class="card-img-top img-leader" alt="Ton 618 gif">
                         <div class="card-body">
                             <h5 class="card-title h3 fw-bold text-center text-sec">Ton 618</h5>
-                            <p class="card-text">TON 618 is an extremely luminous, distant quasar and one of the largest known supermassive black holes in the universe. Located 18.2 billion light-years away in the Canes Venatici constellation, it weighs an estimated 66 billion solar masses, measuring roughly 30–40 times the size of our solar system.</p>
+                            <p class="card-text">TON 618 is an extremely luminous, distant quasar and one of the largest known supermassive black holes in the universe. Located 18.2 billion light-years away in the Canes Venatici constellation, it weighs an estimated 66 billion solar masses, measuring roughly 30â€“40 times the size of our solar system.</p>
                         </div>
                     </div>
                 </article>
@@ -151,7 +151,7 @@
                         <img decoding="async" loading="lazy" src="/media/antares.gif" class="card-img-top img-leader" alt="Antares Star gif">
                         <div class="card-body">
                             <h5 class="card-title h3 fw-bold text-center text-sec">Antares</h5>
-                            <p class="card-text">Antares (Alpha Scorpii) is a massive, red supergiant star located roughly 550–600 light-years away, acting as the bright, reddish heart of the constellation Scorpius. As one of the largest known stars—approx. 700 times the sun’s diameter—it is a dying star, shining 10,000 times brighter than the Sun, and is often considered a future supernova candidate</p>
+                            <p class="card-text">Antares (Alpha Scorpii) is a massive, red supergiant star located roughly 550â€“600 light-years away, acting as the bright, reddish heart of the constellation Scorpius. As one of the largest known starsâ€”approx. 700 times the sunâ€™s diameterâ€”it is a dying star, shining 10,000 times brighter than the Sun, and is often considered a future supernova candidate</p>
                         </div>
                     </div>
                 </article>
@@ -180,7 +180,7 @@
                 </div>
             </div>
             <div class="text-center border-top pt-3">
-                <p class="mb-0">© 2026 Nasa - All rights are reserved.</p>
+                <p class="mb-0">Â© 2026 Nasa - All rights are reserved.</p>
             </div>
         </div>
     </footer>
@@ -188,4 +188,3 @@
   <x-fluid-assets target="body" />
 </body>
 </html>
-

@@ -25,11 +25,20 @@
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-color: #5c94fc;
+}
+
+body.supermario-page .fluid-scroll-progress {
+  display: none;
+}
+
+body.fluid-enhanced.supermario-page {
+  overflow: hidden;
 }
 
 .exercise-home-link {
@@ -54,10 +63,143 @@ body {
 }
 
 .sup {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
   width: 100vw;
   height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
+  max-width: none;
   object-fit: cover;
+  object-position: center;
   image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.game-panel {
+  position: fixed;
+  left: 50%;
+  top: 132px;
+  z-index: 9;
+  width: min(760px, calc(100vw - 28px));
+  transform: translateX(-50%);
+  padding: 18px;
+  border: 4px solid #111;
+  border-radius: 8px;
+  background-color: #b85a24;
+  background-image:
+  linear-gradient(90deg, rgba(255, 210, 94, 0.45) 0 3px, transparent 3px 100%),
+  linear-gradient(rgba(91, 36, 14, 0.92) 0 4px, transparent 4px 100%),
+  linear-gradient(90deg, transparent 0 46px, rgba(91, 36, 14, 0.92) 46px 50px, transparent 50px 100%),
+  linear-gradient(90deg, rgba(91, 36, 14, 0.92) 0 4px, transparent 4px 100%);
+  background-position: 0 0, 0 0, 0 0, 48px 24px;
+  background-size: 96px 48px, 96px 48px, 96px 48px, 96px 48px;
+  color: #fff7d6;
+  font-family: "Arial Black", Impact, sans-serif;
+  text-align: center;
+  box-shadow:
+  0 8px 0 #c84c0c,
+  0 13px 0 #111;
+  text-shadow: 2px 2px 0 #111;
+}
+
+.game-panel h2 {
+  color: #ff2d2d;
+  font-size: clamp(24px, 5vw, 38px);
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #111;
+  text-shadow:
+  0 3px 0 #ffd22e,
+  0 6px 0 #111;
+}
+
+.game-panel p {
+  margin-top: 10px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+
+.game-stats span {
+  padding: 5px 9px;
+  border: 3px solid #111;
+  border-radius: 6px;
+  background: #fff7d6;
+  color: #111;
+  box-shadow: 2px 2px 0 #111;
+  text-shadow: none;
+}
+
+.game-question {
+  font-size: 16px;
+}
+
+.game-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.game-action-button,
+.game-secondary-action button {
+  padding: 10px 14px;
+  border: 3px solid #111;
+  border-radius: 6px;
+  background-color: #ffd22e;
+  color: #111;
+  font: 700 14px Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.game-action-button:hover,
+.game-secondary-action button:hover {
+  background-color: #fff7d6;
+}
+
+.game-action-button:active,
+.game-secondary-action button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.game-action-button.danger {
+  background-color: #ff6b6b;
+}
+
+.game-panel .play-button {
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+}
+
+.game-secondary-action {
+  margin-top: 12px;
+}
+
+.game-secondary-action button {
+  background-color: #fff7d6;
+}
+
+body.fluid-enhanced.supermario-page .sup {
+  width: 100vw;
+  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 .game-title {
@@ -189,5 +331,25 @@ body {
 .music-button:active {
   transform: translate(3px, 3px);
   box-shadow: none;
+}
+
+body.fluid-enhanced.supermario-page .play-button,
+body.fluid-enhanced.supermario-page .music-button,
+body.fluid-enhanced.supermario-page .exercise-home-link {
+  pointer-events: auto;
+  z-index: 10002;
+}
+
+@media (max-width: 640px) {
+  .game-title {
+    top: 132px;
+    white-space: normal;
+  }
+
+  .game-panel {
+    top: 204px;
+    max-height: calc(100dvh - 224px);
+    overflow-y: auto;
+  }
 }
 

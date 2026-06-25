@@ -5,9 +5,5 @@
   </label>
   <div class="search-status" aria-live="polite">
     <span>Mostro <strong id="visiblePagesCount">0</strong> di <span id="totalPagesCount">0</span> pagine</span>
-    <button class="search-reset" id="searchReset" type="button" hidden>
-      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-      <span>Reset</span>
-    </button>
   </div>
 </section>

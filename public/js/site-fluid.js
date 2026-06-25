@@ -3,7 +3,7 @@
         const body = document.body;
         const root = document.documentElement;
 
-        if (! body || body.dataset.fluidReady === "true") {
+        if (! body || body.dataset.fluidReady === "true" || body.hasAttribute("data-no-fluid")) {
             return;
         }
 

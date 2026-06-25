@@ -275,6 +275,7 @@ body.light-mode .nav-search input::placeholder {
 .hero {
     position: relative;
     min-height: 100vh;
+    padding-bottom: 86px;
     isolation: isolate;
     overflow: hidden;
 }
@@ -315,6 +316,9 @@ body.light-mode .hero::after {
 .hero-content {
     position: relative;
     z-index: 1;
+}
+.hero-content .row {
+    min-height: calc(100vh - 86px) !important;
 }
 .hero-poster {
     position: absolute;
@@ -585,9 +589,9 @@ body.light-mode .engine-stats h3 {
 /* Barra inferiore con i nomi delle auto */
 .hero-strip {
     position: absolute;
-    right: -18px;
-    bottom: -4px;
-    left: -18px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -1111,8 +1115,11 @@ body.light-mode .first {
         min-width: 145px;
     }
     .hero-content .row {
-        min-height: 92vh;
+        min-height: calc(92vh - 62px) !important;
         padding-top: 98px;
+    }
+    .hero {
+        padding-bottom: 62px;
     }
     .hero-poster {
         display: none;

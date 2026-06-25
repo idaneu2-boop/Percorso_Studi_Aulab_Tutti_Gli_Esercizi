@@ -1,6 +1,6 @@
 @props(['contacts'])
 
-<footer class="site-footer">
+<footer class="site-footer" data-no-fluid>
   <div class="footer-content">
     <div>
       <strong class="footer-title">Esercizi Daniele</strong>

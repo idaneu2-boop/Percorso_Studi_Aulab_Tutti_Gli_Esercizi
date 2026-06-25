@@ -224,9 +224,13 @@ body.light-mode .home-theme-toggle i {
   flex: 0 0 46px;
   width: 46px;
   height: 46px;
+  min-width: 46px;
+  min-height: 46px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  line-height: 0;
   background: linear-gradient(135deg, var(--vapor-coral), var(--vapor-bright));
   padding: 3px;
   box-shadow: 0 0 0 2px rgba(247, 243, 255, 0.42), 0 0 18px rgba(55, 17, 191, 0.64);
@@ -235,11 +239,12 @@ body.light-mode .home-theme-toggle i {
 }
 
 .brand-mark img {
+  display: block;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
   border: 2px solid var(--vapor-void);
   border-radius: 50%;
-  display: block;
   object-fit: cover;
 }
 
@@ -527,29 +532,6 @@ body.light-mode .footer-title {
   color: var(--ink);
 }
 
-.search-reset {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 34px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  color: var(--ink);
-  background: rgba(247, 243, 255, 0.08);
-  font: inherit;
-  font-size: 0.82rem;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.search-reset:hover,
-.search-reset:focus {
-  color: #ffffff;
-  background: var(--vapor-coral);
-  outline: none;
-}
-
 .search-box input::placeholder {
   color: rgba(247, 243, 255, 0.56);
 }
@@ -643,6 +625,8 @@ body.light-mode .search-box input::placeholder {
 
 .card-media {
   position: relative;
+  display: grid;
+  place-items: center;
   height: 118px;
   margin: -22px -22px 0;
   overflow: hidden;
@@ -663,7 +647,7 @@ body.light-mode .search-box input::placeholder {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 62%;
+  object-position: center;
   transition: transform 420ms ease, filter 420ms ease;
 }
 
@@ -672,7 +656,6 @@ body.light-mode .search-box input::placeholder {
   filter: saturate(1.08) contrast(1.04);
 }
 
-.card-flow .card-media img,
 .card-tech .card-media img {
   object-fit: contain;
   padding: 10px;
@@ -681,13 +664,12 @@ body.light-mode .search-box input::placeholder {
 
 .card-pokemon-myth .card-media img {
   object-fit: cover;
-  object-position: center 8%;
+  object-position: center;
   padding: 0;
-  transform: scale(1.22);
 }
 
 .card-mario .card-media img {
-  object-position: center bottom;
+  object-position: center;
 }
 
 .card-undertale .card-media img {
@@ -700,15 +682,11 @@ body.light-mode .search-box input::placeholder {
 
 .card-aulab .card-media img {
   object-fit: cover;
-  object-position: right center;
-  transform: scale(1.18);
+  object-position: center;
 }
 
 .terminal-media,
-.code-media,
-.array-media,
 .dom-media,
-.weekend-media,
 .pokeball-media {
   display: grid;
   place-items: center;
@@ -733,49 +711,6 @@ body.light-mode .search-box input::placeholder {
   content: "";
   background: #e30613;
   box-shadow: 16px 0 #f2c94c, 32px 0 #27ae60;
-}
-
-.code-media {
-  color: #1f2937;
-  font-size: 3.2rem;
-  background:
-  linear-gradient(135deg, rgba(245, 158, 11, 0.22), transparent 34%),
-  linear-gradient(225deg, rgba(56, 189, 248, 0.2), transparent 40%),
-  linear-gradient(180deg, #fff7d6, #d9f99d 48%, #bae6fd);
-}
-
-.code-media span {
-  width: 72px;
-  height: 72px;
-  display: grid;
-  place-items: center;
-  border: 2px solid #1f2937;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.84);
-  box-shadow: 5px 5px 0 #f59e0b;
-  font-family: var(--font-body);
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.array-media {
-  color: #f3efff;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 2.6rem;
-  background:
-  linear-gradient(rgba(184, 132, 255, 0.12) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(184, 132, 255, 0.12) 1px, transparent 1px),
-  #17171d;
-  background-size: 22px 22px;
-}
-
-.weekend-media {
-  color: #10141f;
-  font-size: 2.4rem;
-  background:
-  linear-gradient(135deg, rgba(242, 111, 91, 0.25), transparent 48%),
-  linear-gradient(225deg, rgba(76, 125, 240, 0.22), transparent 48%),
-  #f7f4ef;
 }
 
 .dom-media {
@@ -810,16 +745,18 @@ body.light-mode .search-box input::placeholder {
   position: relative;
   overflow: hidden;
   background:
-  linear-gradient(135deg, rgba(7, 12, 38, 0.72), rgba(24, 14, 89, 0.62)),
-  url("/media/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg") center / cover;
+  radial-gradient(circle at center, rgba(72, 211, 58, 0.3), transparent 42%),
+  linear-gradient(135deg, rgba(7, 12, 38, 0.8), rgba(24, 14, 89, 0.66));
 }
 
 .rubrica-media img {
-  width: min(104px, 52%);
-  height: auto;
-  object-fit: contain;
+  width: 86px;
+  height: 86px;
+  border: 4px solid rgba(255, 255, 255, 0.86);
+  border-radius: 50%;
+  object-fit: cover;
   filter:
-  drop-shadow(0 0 10px rgba(242, 75, 75, 0.75))
+  drop-shadow(0 0 10px rgba(72, 211, 58, 0.75))
   drop-shadow(0 12px 18px rgba(0, 0, 0, 0.42));
 }
 
@@ -948,7 +885,9 @@ body.light-mode .search-box input::placeholder {
   --card-tag-bg: rgba(220, 185, 9, 0.2);
   --card-tag-text: #fff7d1;
   --card-button-bg: #a89890;
+  --card-button-text: #080709;
   --card-button-hover: #dcb909;
+  --card-button-hover-text: #080709;
 }
 
 .card-anime {
@@ -984,17 +923,6 @@ body.light-mode .search-box input::placeholder {
   --card-button-hover: #ec413b;
 }
 
-.card-flow {
-  --card-bg: #ffffff;
-  --card-text: #171717;
-  --card-muted: #555555;
-  --card-accent: #e30613;
-  --card-tag-bg: #f6f7f8;
-  --card-tag-text: #171717;
-  --card-button-bg: #171717;
-  --card-button-hover: #e30613;
-}
-
 .card-mario {
   --card-bg: #5c94fc;
   --card-text: #ffffff;
@@ -1021,17 +949,6 @@ body.light-mode .search-box input::placeholder {
   --card-button-hover-text: #ffffff;
 }
 
-.card-morning {
-  --card-bg: rgba(255, 255, 255, 0.84);
-  --card-text: #1f2937;
-  --card-muted: #5f6b7a;
-  --card-accent: #f59e0b;
-  --card-tag-bg: rgba(245, 158, 11, 0.18);
-  --card-tag-text: #1f2937;
-  --card-button-bg: #1f2937;
-  --card-button-hover: #f59e0b;
-}
-
 .card-pokedex {
   --card-bg: linear-gradient(135deg, #eaf4ff 0%, #fff8d9 46%, #e9fff2 100%);
   --card-text: #17223b;
@@ -1040,18 +957,9 @@ body.light-mode .search-box input::placeholder {
   --card-tag-bg: #ffcc32;
   --card-tag-text: #17223b;
   --card-button-bg: #2c62c9;
+  --card-button-text: #ffffff;
   --card-button-hover: #e83b3b;
-}
-
-.card-array {
-  --card-bg: #17171d;
-  --card-text: #f3efff;
-  --card-muted: #c8bfd8;
-  --card-accent: #b884ff;
-  --card-tag-bg: rgba(184, 132, 255, 0.22);
-  --card-tag-text: #f3efff;
-  --card-button-bg: #8b5cf6;
-  --card-button-hover: #b884ff;
+  --card-button-hover-text: #ffffff;
 }
 
 .card-aulab {
@@ -1065,17 +973,6 @@ body.light-mode .search-box input::placeholder {
   --card-button-text: #050505;
   --card-button-hover: #d8c600;
   --card-button-hover-text: #050505;
-}
-
-.card-weekend {
-  --card-bg: #f7f4ef;
-  --card-text: #10141f;
-  --card-muted: #657086;
-  --card-accent: #f26f5b;
-  --card-tag-bg: rgba(88, 199, 168, 0.18);
-  --card-tag-text: #10141f;
-  --card-button-bg: #10141f;
-  --card-button-hover: #58c7a8;
 }
 
 .card-dom {
@@ -1197,6 +1094,9 @@ body.light-mode .search-box input::placeholder {
 
 .site-footer {
   position: relative;
+  display: block;
+  opacity: 1;
+  transform: none;
   border-top: 0;
   padding: 24px 0 36px;
   color: var(--muted);
@@ -1204,6 +1104,11 @@ body.light-mode .search-box input::placeholder {
   linear-gradient(135deg, rgba(7, 12, 38, 0.88), rgba(40, 13, 140, 0.74)),
   rgba(7, 12, 38, 0.88);
   box-shadow: 0 -18px 44px rgba(7, 12, 38, 0.34);
+}
+
+body.fluid-enhanced .site-footer {
+  opacity: 1;
+  transform: none;
 }
 
 .site-footer::before {

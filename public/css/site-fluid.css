@@ -18,7 +18,7 @@ body.fluid-enhanced :is(img, video, iframe, canvas, svg) {
   max-width: 100%;
 }
 
-body.fluid-enhanced :is(img, video) {
+body.fluid-enhanced :is(img:not([class]), video) {
   height: auto;
 }
 
@@ -104,26 +104,6 @@ body.fluid-enhanced :is(.card, article, .exercise-card, .annuncio-card, .feature
 
 body.fluid-enhanced :is(header, .hero, .bg-header, [class*="header"]) {
   background-position-y: calc(50% + var(--fluid-hero-y, 0px));
-}
-
-body.fluid-enhanced .exercise-home-link {
-  position: fixed;
-  top: clamp(12px, 2vw, 22px);
-  left: clamp(12px, 2vw, 22px);
-  z-index: 9990;
-  border: 1px solid color-mix(in srgb, var(--fluid-cyan) 38%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, #090b16 76%, transparent);
-  color: #ffffff;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(12px);
-}
-
-body.fluid-enhanced .exercise-home-link:hover,
-body.fluid-enhanced .exercise-home-link:focus-visible {
-  color: #ffffff;
-  background: linear-gradient(135deg, var(--fluid-cyan), var(--fluid-pink));
-  transform: translateY(-2px);
 }
 
 .fluid-scroll-top {

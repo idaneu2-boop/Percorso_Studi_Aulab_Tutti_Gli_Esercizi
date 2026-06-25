@@ -23,7 +23,7 @@ class ExerciseCatalog
     public function hero(): array
     {
         return [
-            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - Flowcharts - JS',
+            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - JS',
             'title' => 'Indice dei miei esercizi',
             'copy' => 'Una dashboard semplice e ordinata per aprire al volo tutte le pagine HTML dei miei esercizi.',
         ];
@@ -39,7 +39,6 @@ class ExerciseCatalog
             ['label' => 'Html', 'slug' => 'html'],
             ['label' => 'Css', 'slug' => 'css'],
             ['label' => 'Bootstrap', 'slug' => 'bootstrap'],
-            ['label' => 'Flowcharts', 'slug' => 'flowcharts'],
             ['label' => 'DOM', 'slug' => 'dom'],
             ['label' => 'JS', 'slug' => 'js'],
             ['label' => 'Laravel', 'slug' => 'laravel'],
@@ -197,17 +196,6 @@ class ExerciseCatalog
                 'media' => ['type' => 'image', 'src' => '/media/header.webp', 'alt' => 'Scenario spaziale NASA'],
             ],
             [
-                'title' => 'Esercizio flowcharts',
-                'search_title' => 'Es flowchart Es-flowchart diagrammi logica',
-                'tag' => 'Flowcharts',
-                'date' => '11.05.2026',
-                'card_class' => 'card-flow',
-                'category_slug' => 'flowcharts',
-                'page' => 'flowcharts',
-                'cta' => "Clicca per vedere l'immagine",
-                'media' => ['type' => 'image', 'src' => '/media/Screenshot 2026-05-12 150557.png', 'alt' => 'Screenshot del flowchart'],
-            ],
-            [
                 'title' => 'Super Ma...Du..',
                 'search_title' => 'SuperMario SuperMario_Es super mario gioco esercizio',
                 'tag' => 'JS - intro',
@@ -230,17 +218,6 @@ class ExerciseCatalog
                 'media' => ['type' => 'image', 'src' => '/media/footer.webp', 'alt' => 'Sans da Undertale'],
             ],
             [
-                'title' => 'Mattutini',
-                'search_title' => 'MattutiniEs Mattutini esercizi mattutini',
-                'tag' => 'JS - Condizioni/Cicli',
-                'date' => '14.05.2026',
-                'card_class' => 'card-morning',
-                'category_slug' => 'js',
-                'page' => 'mattutini',
-                'cta' => 'Apri esercizio',
-                'media' => ['type' => 'text', 'class' => 'code-media', 'text' => '17', 'hidden' => true],
-            ],
-            [
                 'title' => 'Pokédex',
                 'search_title' => 'Es2005Ja Es2005ja JavaScript esercizi 20 maggio',
                 'tag' => 'JS - Array/Funzioni',
@@ -252,17 +229,6 @@ class ExerciseCatalog
                 'media' => ['type' => 'empty', 'class' => 'pokeball-media', 'hidden' => true],
             ],
             [
-                'title' => 'funzioniarray',
-                'search_title' => 'funzioniarray FunzioniArray funzioni array JavaScript',
-                'tag' => 'JS - Ripasso: Array/Funzioni',
-                'date' => '19.05.2026',
-                'card_class' => 'card-array',
-                'category_slug' => 'js',
-                'page' => 'funzioni (1)',
-                'cta' => 'Apri esercizio',
-                'media' => ['type' => 'text', 'class' => 'array-media', 'text' => '[ ]', 'hidden' => true],
-            ],
-            [
                 'title' => 'Aulab',
                 'search_title' => 'oggetti OggettiEsDP Aulab oggetti JavaScript',
                 'tag' => 'JS - Oggetti',
@@ -272,17 +238,6 @@ class ExerciseCatalog
                 'page' => 'oggetti (1)',
                 'cta' => 'Valerio perderà il lavoro?',
                 'media' => ['type' => 'image', 'src' => '/media/object-lab-hero.png', 'alt' => 'Aulab Object Lab'],
-            ],
-            [
-                'title' => 'Weekend',
-                'search_title' => 'Weekend EserciziJaWeekend esercizi weekend JavaScript',
-                'tag' => 'JS - Ripasso: Funzioni/Oggetti',
-                'date' => '22.05.2026',
-                'card_class' => 'card-weekend',
-                'category_slug' => 'js',
-                'page' => 'weekend (1)',
-                'cta' => 'Apri esercizio',
-                'media' => ['type' => 'text', 'class' => 'weekend-media', 'text' => 'JS', 'hidden' => true],
             ],
             [
                 'title' => 'Minecraft',
@@ -304,7 +259,7 @@ class ExerciseCatalog
                 'category_slug' => 'dom',
                 'page' => 'rubrica',
                 'cta' => 'Apri la rubrica',
-                'media' => ['type' => 'image', 'class' => 'rubrica-media', 'src' => '/media/logorubrica.png', 'alt' => ''],
+                'media' => ['type' => 'image', 'class' => 'rubrica-media', 'src' => '/media/Icona Contatti.jpg', 'alt' => ''],
             ],
             [
                 'title' => 'JDM Garage',
