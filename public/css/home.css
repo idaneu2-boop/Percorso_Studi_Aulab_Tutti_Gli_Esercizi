@@ -1128,6 +1128,40 @@ body.fluid-enhanced .card-aulab:hover .card-media img {
   filter: saturate(0.92) contrast(1.06);
 }
 
+.card-anime-tv {
+  --card-bg:
+  linear-gradient(135deg, rgba(27, 26, 26, 0.96), rgba(40, 82, 90, 0.84)),
+  url("/media/anime-tv/hero.jpeg");
+  --card-text: #ffffff;
+  --card-muted: #d7eff2;
+  --card-accent: #e31b2f;
+  --card-tag-bg: rgba(121, 215, 223, 0.22);
+  --card-tag-text: #ffffff;
+  --card-button-bg: #e31b2f;
+  --card-button-text: #ffffff;
+  --card-button-hover: #79d7df;
+  --card-button-hover-text: #111111;
+  background-position: center;
+  background-size: cover;
+}
+
+.anime-tv-media {
+  display: grid;
+  place-items: center;
+  background:
+  linear-gradient(135deg, rgba(227, 27, 47, 0.24), rgba(121, 215, 223, 0.18)),
+  url("/media/anime-tv/hero.jpeg") center / cover;
+}
+
+.card-anime-tv .card-media img {
+  width: min(128px, 42%);
+  height: auto;
+  object-fit: contain;
+  filter:
+  drop-shadow(0 0 14px rgba(227, 27, 47, 0.7))
+  drop-shadow(0 10px 18px rgba(0, 0, 0, 0.55));
+}
+
 .empty-state {
   margin: 24px 0 0;
   padding: 18px;

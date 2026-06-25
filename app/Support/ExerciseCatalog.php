@@ -294,6 +294,17 @@ class ExerciseCatalog
                 'cta' => 'Apri le case infestate',
                 'media' => ['type' => 'image', 'class' => 'haunted-media', 'src' => '/media/haunted-houses/header.jpg', 'alt' => 'Ingresso di una dimora spettrale'],
             ],
+            [
+                'title' => 'Anime.TV API',
+                'search_title' => 'Anime TV API Laravel Jikan anime catalogo form',
+                'tag' => 'Laravel + API',
+                'date' => '25.06.2026',
+                'card_class' => 'card-anime-tv',
+                'category_slug' => 'laravel',
+                'route' => 'anime-tv.home',
+                'cta' => 'Apri Anime.TV',
+                'media' => ['type' => 'image', 'class' => 'anime-tv-media', 'src' => '/media/anime-tv/gojo.jpg', 'alt' => 'Illustrazione anime'],
+            ],
         ];
     }
 }

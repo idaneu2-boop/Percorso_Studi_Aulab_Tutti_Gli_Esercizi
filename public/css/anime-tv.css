@@ -1,0 +1,315 @@
+:root {
+    --anime-tv-bg: #1b1a1a;
+    --anime-tv-panel: #28525a;
+    --anime-tv-panel-strong: #1f3f48;
+    --anime-tv-red: #e31b2f;
+    --anime-tv-cyan: #79d7df;
+    --anime-tv-ink: #f8fbff;
+    --anime-tv-muted: #c6d7dc;
+    --anime-tv-line: rgba(248, 251, 255, 0.18);
+    --anime-tv-heading-font: "Bungee", system-ui, sans-serif;
+    --anime-tv-body-font: "Righteous", Arial, sans-serif;
+    --anime-tv-hero-image: url("/media/anime-tv/hero.jpeg");
+}
+
+body.anime-tv-body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--anime-tv-bg);
+    color: var(--anime-tv-ink);
+    font-family: var(--anime-tv-body-font);
+}
+
+.anime-tv-body h1,
+.anime-tv-body h2,
+.anime-tv-body h3,
+.anime-tv-body h4,
+.anime-tv-body .navbar-brand {
+    font-family: var(--anime-tv-heading-font);
+    letter-spacing: 0;
+}
+
+.anime-tv-navbar {
+    padding: 10px;
+    background-color: rgba(27, 26, 26, 0.94);
+    border-bottom: 1px solid var(--anime-tv-line);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 1px 1px 25px rgba(248, 251, 255, 0.4);
+    backdrop-filter: blur(14px);
+}
+
+.anime-tv-navbar .navbar-brand,
+.anime-tv-navbar .nav-link {
+    color: var(--anime-tv-ink);
+}
+
+.anime-tv-navbar .nav-link {
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.anime-tv-navbar .nav-link:hover,
+.anime-tv-navbar .nav-link.active {
+    color: #ffffff;
+    background: rgba(227, 27, 47, 0.2);
+}
+
+.anime-tv-hero {
+    min-height: 76vh;
+    display: grid;
+    align-items: center;
+    color: whitesmoke;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.44)),
+        var(--anime-tv-hero-image);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anime-tv-hero h1 {
+    max-width: 980px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: clamp(3rem, 10vw, 9rem);
+    text-align: center;
+    text-shadow: 1px 1px 25px rgba(248, 251, 255, 0.78);
+}
+
+.anime-tv-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--anime-tv-cyan);
+    font-family: var(--anime-tv-heading-font);
+    font-size: 0.82rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.anime-tv-main {
+    min-height: 100vh;
+}
+
+.anime-tv-section {
+    padding: 5rem 0;
+}
+
+.anime-tv-section-heading {
+    max-width: 760px;
+    margin-bottom: 2rem;
+}
+
+.anime-tv-section-heading h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.anime-tv-card,
+.anime-tv-submitted-card,
+.anime-tv-form,
+.anime-tv-empty {
+    border: 1px solid var(--anime-tv-line);
+    border-radius: 8px;
+    background: var(--anime-tv-panel);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.anime-tv-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.anime-tv-card-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    display: block;
+    object-fit: cover;
+    background: var(--anime-tv-panel-strong);
+}
+
+.anime-tv-card-body {
+    display: flex;
+    min-height: 250px;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1.25rem;
+}
+
+.anime-tv-card h2,
+.anime-tv-submitted-card h2,
+.anime-tv-empty h2 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.anime-tv-card p,
+.anime-tv-submitted-card p,
+.anime-tv-empty p,
+.anime-tv-detail-copy {
+    color: var(--anime-tv-muted);
+}
+
+.btn-anime-primary,
+.btn-anime-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.btn-anime-primary {
+    margin-top: auto;
+    color: #ffffff;
+    background: var(--anime-tv-red);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.btn-anime-primary:hover,
+.btn-anime-primary:focus {
+    color: #111111;
+    background: var(--anime-tv-cyan);
+}
+
+.btn-anime-outline {
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(248, 251, 255, 0.38);
+}
+
+.btn-anime-outline:hover,
+.btn-anime-outline:focus {
+    color: #ffffff;
+    border-color: var(--anime-tv-cyan);
+    background: rgba(121, 215, 223, 0.16);
+}
+
+.anime-tv-detail {
+    display: grid;
+    grid-template-columns: minmax(220px, 360px) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.anime-tv-detail-image {
+    width: 100%;
+    border: 1px solid var(--anime-tv-line);
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.anime-tv-detail-copy {
+    padding: 2rem;
+    border: 1px solid var(--anime-tv-line);
+    border-radius: 8px;
+    background: rgba(40, 82, 90, 0.72);
+}
+
+.anime-tv-detail-label {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.anime-tv-genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0 0 1.25rem;
+    list-style: none;
+}
+
+.anime-tv-genre-list li {
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    color: #ffffff;
+    background: rgba(227, 27, 47, 0.28);
+}
+
+.anime-tv-trailer {
+    overflow: hidden;
+    border: 1px solid var(--anime-tv-line);
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+    background: #000000;
+}
+
+.anime-tv-trailer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.anime-tv-form,
+.anime-tv-submitted-card,
+.anime-tv-empty {
+    padding: 2rem;
+}
+
+.anime-tv-form .form-label {
+    color: #ffffff;
+}
+
+.anime-tv-form .form-control {
+    color: #ffffff;
+    background: rgba(27, 26, 26, 0.68);
+    border: 1px solid var(--anime-tv-line);
+    border-radius: 8px;
+}
+
+.anime-tv-form .form-control:focus {
+    color: #ffffff;
+    background: rgba(27, 26, 26, 0.86);
+    border-color: var(--anime-tv-cyan);
+    box-shadow: 0 0 0 0.25rem rgba(121, 215, 223, 0.18);
+}
+
+.anime-tv-submitted-genre {
+    color: #ffffff;
+}
+
+.anime-tv-alert {
+    color: #ffffff;
+    background: rgba(227, 27, 47, 0.24);
+    border: 1px solid rgba(227, 27, 47, 0.42);
+}
+
+.anime-tv-empty {
+    text-align: center;
+}
+
+.anime-tv-footer {
+    padding: 2rem 0;
+    color: var(--anime-tv-muted);
+    background: #111111;
+    border-top: 1px solid var(--anime-tv-line);
+}
+
+.anime-tv-footer p {
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .anime-tv-hero {
+        min-height: 62vh;
+        background-attachment: scroll;
+    }
+
+    .anime-tv-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .anime-tv-detail-copy,
+    .anime-tv-form,
+    .anime-tv-submitted-card,
+    .anime-tv-empty {
+        padding: 1.25rem;
+    }
+}

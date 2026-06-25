@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnimeTvController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ExerciseDashboardController;
 use App\Http\Controllers\HauntedHouseController;
@@ -23,6 +24,20 @@ Route::post('/supermario/choose', [SuperMarioGameController::class, 'choose'])
     ->name('supermario.choose');
 Route::post('/supermario/reset', [SuperMarioGameController::class, 'reset'])
     ->name('supermario.reset');
+
+Route::prefix('anime-tv')
+    ->name('anime-tv.')
+    ->controller(AnimeTvController::class)
+    ->group(function (): void {
+        Route::get('/', 'home')->name('home');
+        Route::get('/anime/{animeId}/{slug?}', 'show')
+            ->whereNumber('animeId')
+            ->name('show');
+        Route::get('/inserisci', 'create')->name('create');
+        Route::post('/inserisci', 'store')->name('store');
+        Route::get('/inseriti', 'index')->name('index');
+        Route::get('/api/anime', 'api')->name('api');
+    });
 
 Route::prefix('case-infestate')
     ->name('haunted-houses.')
