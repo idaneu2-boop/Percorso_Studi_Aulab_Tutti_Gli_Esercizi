@@ -283,6 +283,17 @@ class ExerciseCatalog
                 'cta' => 'Apri il sito GTA 6',
                 'media' => ['type' => 'image', 'class' => 'gta-media', 'src' => '/GTA-6-Logo-PNG-from-Grand-Theft-Auto-VI-Transparent-jpg.png', 'alt' => 'Logo Grand Theft Auto VI'],
             ],
+            [
+                'title' => 'Dimore Spettrali',
+                'search_title' => 'Case Infestate Laravel dimore spettrali catalogo form',
+                'tag' => 'Laravel',
+                'date' => '25.06.2026',
+                'card_class' => 'card-haunted',
+                'category_slug' => 'laravel',
+                'route' => 'haunted-houses.home',
+                'cta' => 'Apri le case infestate',
+                'media' => ['type' => 'image', 'class' => 'haunted-media', 'src' => '/media/haunted-houses/header.jpg', 'alt' => 'Ingresso di una dimora spettrale'],
+            ],
         ];
     }
 }

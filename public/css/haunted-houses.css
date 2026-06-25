@@ -1,0 +1,395 @@
+:root {
+    --haunted-void: #12001d;
+    --haunted-midnight: #2f004f;
+    --haunted-deep: #480078;
+    --haunted-primary: #5e009c;
+    --haunted-bright: #9100f2;
+    --haunted-royal: #7900c9;
+    --haunted-veil: #f6efff;
+    --haunted-muted: #cdb8dc;
+    --haunted-line: rgba(246, 239, 255, 0.16);
+    --haunted-heading: "Work Sans", sans-serif;
+    --haunted-body: "Tai Heritage Pro", serif;
+    --haunted-hero-image: url("/media/haunted-houses/header.jpg");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.haunted-houses-body {
+    min-height: 100vh;
+    background: var(--haunted-void);
+    color: var(--haunted-veil);
+    font-family: var(--haunted-body);
+    font-size: 1.08rem;
+}
+
+.haunted-houses-body h1,
+.haunted-houses-body h2,
+.haunted-houses-body h3,
+.haunted-houses-body h4,
+.haunted-houses-body h5,
+.haunted-houses-body h6,
+.haunted-houses-body .navbar-brand {
+    font-family: var(--haunted-heading);
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.haunted-houses-body a {
+    color: inherit;
+}
+
+.haunted-houses-body .site-navbar {
+    background: rgba(18, 0, 29, 0.94);
+    border-bottom: 1px solid var(--haunted-line);
+    backdrop-filter: blur(14px);
+}
+
+.haunted-houses-body .navbar-brand {
+    color: var(--haunted-veil);
+}
+
+.haunted-houses-body .navbar-brand i {
+    color: #d8b4fe;
+}
+
+.haunted-houses-body .site-navbar .nav-link {
+    color: rgba(246, 239, 255, 0.78);
+    font-family: var(--haunted-heading);
+    font-size: 0.95rem;
+}
+
+.haunted-houses-body .site-navbar .nav-link:hover,
+.haunted-houses-body .site-navbar .nav-link.active {
+    color: #ffffff;
+}
+
+.haunted-houses-body .hero-section {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background-image:
+        linear-gradient(90deg, rgba(18, 0, 29, 0.96) 0%, rgba(47, 0, 79, 0.82) 44%, rgba(18, 0, 29, 0.36) 100%),
+        var(--haunted-hero-image);
+    background-position: center;
+    background-size: cover;
+}
+
+.haunted-houses-body .hero-content {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.haunted-houses-body .hero-content h1,
+.haunted-houses-body .page-hero h1 {
+    max-width: 780px;
+    margin-bottom: 1.25rem;
+    color: #ffffff;
+    font-size: 4.4rem;
+    line-height: 1;
+}
+
+.haunted-houses-body .hero-copy,
+.haunted-houses-body .page-hero p {
+    max-width: 620px;
+    color: var(--haunted-muted);
+    font-size: 1.35rem;
+}
+
+.haunted-houses-body .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: #d8b4fe;
+    font-family: var(--haunted-heading);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.haunted-houses-body .btn {
+    border-radius: 8px;
+    font-family: var(--haunted-heading);
+    font-weight: 700;
+}
+
+.haunted-houses-body .btn-primary-ghost {
+    background: linear-gradient(135deg, var(--haunted-bright), var(--haunted-royal));
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    box-shadow: 0 18px 34px rgba(94, 0, 156, 0.34);
+}
+
+.haunted-houses-body .btn-primary-ghost:hover {
+    background: linear-gradient(135deg, #a427ff, var(--haunted-primary));
+    color: #ffffff;
+}
+
+.haunted-houses-body .btn-outline-ghost,
+.haunted-houses-body .btn-phantom {
+    border: 1px solid rgba(246, 239, 255, 0.36);
+    color: #ffffff;
+}
+
+.haunted-houses-body .btn-outline-ghost:hover,
+.haunted-houses-body .btn-phantom:hover {
+    background: rgba(246, 239, 255, 0.12);
+    border-color: rgba(246, 239, 255, 0.58);
+    color: #ffffff;
+}
+
+.haunted-houses-body .section-spacing {
+    padding: 6rem 0;
+}
+
+.haunted-houses-body .featured-section {
+    background: linear-gradient(180deg, var(--haunted-void) 0%, var(--haunted-midnight) 100%);
+}
+
+.haunted-houses-body .section-heading {
+    max-width: 820px;
+    margin-bottom: 2.5rem;
+}
+
+.haunted-houses-body .section-heading h2,
+.haunted-houses-body .section-title-small {
+    color: #ffffff;
+    font-size: 2.45rem;
+    line-height: 1.12;
+}
+
+.haunted-houses-body .haunted-card {
+    overflow: hidden;
+    background: rgba(47, 0, 79, 0.82);
+    border: 1px solid var(--haunted-line);
+    border-radius: 8px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.haunted-houses-body .haunted-card-image,
+.haunted-houses-body .haunted-card-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+}
+
+.haunted-houses-body .haunted-card-image {
+    display: block;
+    object-fit: cover;
+}
+
+.haunted-houses-body .haunted-card-placeholder {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--haunted-deep), var(--haunted-primary));
+}
+
+.haunted-houses-body .haunted-card-placeholder i {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 3rem;
+}
+
+.haunted-houses-body .haunted-card-body {
+    display: flex;
+    min-height: 310px;
+    flex-direction: column;
+    padding: 1.35rem;
+}
+
+.haunted-houses-body .haunted-card h3 {
+    margin-top: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+    font-size: 1.45rem;
+}
+
+.haunted-houses-body .haunted-card p {
+    color: var(--haunted-muted);
+}
+
+.haunted-houses-body .location-badge,
+.haunted-houses-body .recommended-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-width: 0;
+    color: #efe3ff;
+    font-family: var(--haunted-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.haunted-houses-body .location-badge {
+    overflow-wrap: anywhere;
+}
+
+.haunted-houses-body .recommended-badge {
+    flex: 0 0 auto;
+    padding: 0.18rem 0.5rem;
+    background: rgba(145, 0, 242, 0.3);
+    border: 1px solid rgba(216, 180, 254, 0.36);
+    border-radius: 999px;
+}
+
+.haunted-houses-body .haunted-card-footer {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    color: var(--haunted-muted);
+    border-top: 1px solid var(--haunted-line);
+}
+
+.haunted-houses-body .haunted-card-footer strong {
+    color: #ffffff;
+    font-family: var(--haunted-heading);
+    font-size: 1.35rem;
+}
+
+.haunted-houses-body .page-hero {
+    padding: 7rem 0 4.5rem;
+    background:
+        linear-gradient(135deg, rgba(18, 0, 29, 0.98), rgba(72, 0, 120, 0.94)),
+        var(--haunted-hero-image);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid var(--haunted-line);
+}
+
+.haunted-houses-body .page-hero-compact {
+    padding-bottom: 3.5rem;
+}
+
+.haunted-houses-body .alert-ghost {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: rgba(145, 0, 242, 0.16);
+    border: 1px solid rgba(216, 180, 254, 0.32);
+    color: #ffffff;
+}
+
+.haunted-houses-body .empty-state,
+.haunted-houses-body .haunted-form {
+    padding: 2rem;
+    background: rgba(47, 0, 79, 0.78);
+    border: 1px solid var(--haunted-line);
+    border-radius: 8px;
+}
+
+.haunted-houses-body .empty-state {
+    text-align: center;
+}
+
+.haunted-houses-body .empty-state i {
+    color: #d8b4fe;
+    font-size: 2.6rem;
+}
+
+.haunted-houses-body .empty-state h3 {
+    color: #ffffff;
+}
+
+.haunted-houses-body .empty-state p {
+    color: var(--haunted-muted);
+}
+
+.haunted-houses-body .haunted-form .form-label {
+    color: #ffffff;
+    font-family: var(--haunted-heading);
+    font-weight: 700;
+}
+
+.haunted-houses-body .haunted-form .form-control,
+.haunted-houses-body .haunted-form .input-group-text {
+    background: rgba(18, 0, 29, 0.72);
+    border-color: rgba(246, 239, 255, 0.22);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.haunted-houses-body .haunted-form .input-group-text {
+    color: #d8b4fe;
+    font-family: var(--haunted-heading);
+    font-weight: 800;
+}
+
+.haunted-houses-body .haunted-form .form-control::placeholder {
+    color: rgba(246, 239, 255, 0.48);
+}
+
+.haunted-houses-body .haunted-form .form-control:focus {
+    background: rgba(18, 0, 29, 0.9);
+    border-color: var(--haunted-bright);
+    box-shadow: 0 0 0 0.25rem rgba(145, 0, 242, 0.2);
+    color: #ffffff;
+}
+
+.haunted-houses-body .invalid-feedback {
+    color: #f6c9ff;
+}
+
+.haunted-houses-body .site-footer {
+    padding: 2.5rem 0;
+    background: #0a0012;
+    border-top: 1px solid var(--haunted-line);
+}
+
+.haunted-houses-body .site-footer h2 {
+    margin-bottom: 0.35rem;
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.haunted-houses-body .site-footer p {
+    margin-bottom: 0;
+    color: var(--haunted-muted);
+}
+
+.haunted-houses-body .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-md-end;
+    gap: 1rem;
+    font-family: var(--haunted-heading);
+    font-weight: 700;
+}
+
+.haunted-houses-body .footer-links a {
+    color: var(--haunted-muted);
+    text-decoration: none;
+}
+
+.haunted-houses-body .footer-links a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .haunted-houses-body .hero-section {
+        min-height: 620px;
+    }
+
+    .haunted-houses-body .hero-content h1,
+    .haunted-houses-body .page-hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .haunted-houses-body .hero-copy,
+    .haunted-houses-body .page-hero p {
+        font-size: 1.16rem;
+    }
+
+    .haunted-houses-body .section-spacing {
+        padding: 4rem 0;
+    }
+
+    .haunted-houses-body .section-heading h2,
+    .haunted-houses-body .section-title-small {
+        font-size: 2rem;
+    }
+}

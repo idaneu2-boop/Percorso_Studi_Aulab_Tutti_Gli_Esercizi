@@ -643,16 +643,21 @@ body.light-mode .search-box input::placeholder {
 }
 
 .card-media img {
+  --card-media-x: 0px;
+  --card-media-y: 0px;
+  --card-media-scale: 1;
+  --card-media-hover-scale: 1.03;
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
   object-position: center;
+  transform: translate(var(--card-media-x), var(--card-media-y)) scale(var(--card-media-scale));
   transition: transform 420ms ease, filter 420ms ease;
 }
 
 .exercise-card:hover .card-media img {
-  transform: scale(1.06);
+  transform: translate(var(--card-media-x), var(--card-media-y)) scale(var(--card-media-hover-scale));
   filter: saturate(1.08) contrast(1.04);
 }
 
@@ -669,20 +674,30 @@ body.light-mode .search-box input::placeholder {
 }
 
 .card-mario .card-media img {
+  --card-media-y: -60px;
   object-position: center;
 }
 
 .card-undertale .card-media img {
+  --card-media-y: -40px;
   object-fit: contain;
   object-position: center;
   padding: 0;
   background: #000000;
-  transform: scale(1.28);
 }
 
 .card-aulab .card-media img {
+   --card-media-y: -40px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+}
+
+.card-mario:hover .card-media img,
+.card-aulab:hover .card-media img,
+body.fluid-enhanced .card-mario:hover .card-media img,
+body.fluid-enhanced .card-aulab:hover .card-media img {
+  filter: none;
+  transform: translate(var(--card-media-x), var(--card-media-y)) scale(var(--card-media-scale));
 }
 
 .terminal-media,
@@ -1083,6 +1098,36 @@ body.light-mode .search-box input::placeholder {
   drop-shadow(0 10px 18px rgba(0, 0, 0, 0.5));
 }
 
+.card-haunted {
+  --card-bg:
+  linear-gradient(135deg, rgba(18, 0, 29, 0.96), rgba(47, 0, 79, 0.86)),
+  url("/media/haunted-houses/header.jpg");
+  --card-text: #ffffff;
+  --card-muted: #e8d5f5;
+  --card-accent: #9100f2;
+  --card-tag-bg: rgba(216, 180, 254, 0.24);
+  --card-tag-text: #ffffff;
+  --card-button-bg: #d8b4fe;
+  --card-button-text: #180026;
+  --card-button-hover: #ffffff;
+  --card-button-hover-text: #180026;
+  background-position: center;
+  background-size: cover;
+}
+
+.haunted-media {
+  display: grid;
+  place-items: center;
+  background:
+  linear-gradient(135deg, rgba(18, 0, 29, 0.34), rgba(145, 0, 242, 0.2)),
+  url("/media/haunted-houses/header.jpg") center / cover;
+}
+
+.card-haunted .card-media img {
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.06);
+}
+
 .empty-state {
   margin: 24px 0 0;
   padding: 18px;
@@ -1441,4 +1486,3 @@ body.fluid-enhanced .site-footer {
     transform: none;
   }
 }
-

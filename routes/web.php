@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ExerciseDashboardController;
+use App\Http\Controllers\HauntedHouseController;
 use App\Http\Controllers\InfoRequestController;
 use App\Http\Controllers\LegacyPageController;
 use App\Http\Controllers\PublicController;
@@ -22,6 +23,16 @@ Route::post('/supermario/choose', [SuperMarioGameController::class, 'choose'])
     ->name('supermario.choose');
 Route::post('/supermario/reset', [SuperMarioGameController::class, 'reset'])
     ->name('supermario.reset');
+
+Route::prefix('case-infestate')
+    ->name('haunted-houses.')
+    ->controller(HauntedHouseController::class)
+    ->group(function (): void {
+        Route::get('/', 'home')->name('home');
+        Route::get('/catalogo', 'index')->name('index');
+        Route::get('/aggiungi', 'create')->name('create');
+        Route::post('/catalogo', 'store')->name('store');
+    });
 
 Route::prefix('gta-6')->group(function (): void {
     Route::get('/', [PublicController::class, 'home'])->name('gta.home');

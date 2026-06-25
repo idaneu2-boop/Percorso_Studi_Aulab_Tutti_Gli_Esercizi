@@ -112,12 +112,18 @@ body.fluid-enhanced :is(header, .hero, .bg-header, [class*="header"]) {
   bottom: clamp(14px, 3vw, 28px);
   z-index: 9990;
   display: grid;
+  box-sizing: border-box;
   width: 44px;
   height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  aspect-ratio: 1 / 1;
   place-items: center;
   border: 1px solid color-mix(in srgb, var(--fluid-cyan) 45%, transparent);
   border-radius: 50%;
   color: #ffffff;
+  line-height: 1;
   background: linear-gradient(135deg, rgba(23, 217, 255, 0.78), rgba(255, 79, 216, 0.78));
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.26);
   cursor: pointer;

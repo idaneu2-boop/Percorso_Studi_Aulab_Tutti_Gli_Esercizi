@@ -103,16 +103,38 @@ body.light-mode .annunci-header {
 }
 /* Sezione annunci: area principale con sfondo, titolo, tendina e card auto */
 .annunci-section {
+    --annunci-bg-height: max(100vh, 620px);
+    --annunci-bg-height: max(100svh, 620px);
+    --annunci-bg-overlay: linear-gradient(90deg, rgba(6, 5, 10, 0.96), rgba(6, 5, 10, 0.72));
+    --annunci-bg-image: url("/media/Sfondoannuncitoyota.gif");
     position: relative;
-    padding: 86px 0;
+    padding: 0;
     color: var(--white);
-    background:
-    linear-gradient(90deg, rgba(6, 5, 10, 0.96), rgba(6, 5, 10, 0.72)),
-    url("/media/Sfondoannuncitoyota.gif");
-    background-attachment: fixed;
+    background: var(--black);
+    overflow: hidden;
+    overflow: clip;
+    isolation: isolate;
+}
+.annunci-section::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: var(--annunci-bg-height);
+    margin-bottom: calc(var(--annunci-bg-height) * -1);
+    background: var(--annunci-bg-overlay), var(--annunci-bg-image);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    pointer-events: none;
+}
+.annunci-section > .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 86px;
+    padding-bottom: 86px;
 }
 body.fluid-enhanced .annunci-section.fluid-reveal {
     opacity: 1 !important;
@@ -445,14 +467,9 @@ body.light-mode .annuncio-modal-box {
 }
 /* Varianti light mode della sezione annunci */
 body.light-mode .annunci-section {
+    --annunci-bg-overlay: linear-gradient(90deg, rgba(248, 244, 255, 0.64), rgba(248, 244, 255, 0.38));
     color: #100c16;
-    background:
-    linear-gradient(90deg, rgba(248, 244, 255, 0.64), rgba(248, 244, 255, 0.38)),
-    url("/media/Sfondoannuncitoyota.gif");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: #f8f4ff;
 }
 body.light-mode .annuncio-card {
     background: rgba(255, 255, 255, 0.66);
@@ -566,7 +583,11 @@ body.light-mode .annunci-section-search input::placeholder {
         height: 68px;
     }
     .annunci-section {
-        padding: 58px 0;
+        --annunci-bg-height: 100svh;
+    }
+    .annunci-section > .container {
+        padding-top: 58px;
+        padding-bottom: 58px;
     }
     .annunci-section-head {
         align-items: flex-start;
