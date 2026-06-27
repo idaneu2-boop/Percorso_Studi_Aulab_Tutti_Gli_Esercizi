@@ -21,7 +21,10 @@
                     <a class="nav-link {{ request()->routeIs('anime-tv.index') ? 'active' : '' }}" href="{{ route('anime-tv.index') }}">Anime Inseriti</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-sm btn-anime-outline" href="{{ route('anime-tv.api') }}">JSON API</a>
+                    <a class="btn btn-sm btn-anime-outline gap-2" href="{{ route('home') }}" aria-label="Torna alla pagina degli esercizi">
+                        <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+                        Esercizi
+                    </a>
                 </li>
             </ul>
         </div>

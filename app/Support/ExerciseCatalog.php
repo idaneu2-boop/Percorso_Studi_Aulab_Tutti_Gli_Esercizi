@@ -23,7 +23,7 @@ class ExerciseCatalog
     public function hero(): array
     {
         return [
-            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - JS',
+            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - JS - PHP - Laravel - API - MySQL',
             'title' => 'Indice dei miei esercizi',
             'copy' => 'Una dashboard semplice e ordinata per aprire al volo tutte le pagine HTML dei miei esercizi.',
         ];
@@ -41,7 +41,11 @@ class ExerciseCatalog
             ['label' => 'Bootstrap', 'slug' => 'bootstrap'],
             ['label' => 'DOM', 'slug' => 'dom'],
             ['label' => 'JS', 'slug' => 'js'],
+            ['label' => 'PHP', 'slug' => 'php'],
             ['label' => 'Laravel', 'slug' => 'laravel'],
+            ['label' => 'API', 'slug' => 'api'],
+            ['label' => 'Collab', 'slug' => 'collab'],
+            ['label' => 'MySQL', 'slug' => 'mysql'],
         ];
     }
 
@@ -70,8 +74,20 @@ class ExerciseCatalog
 
         return array_values(array_filter(
             $this->allExercises(),
-            fn (array $exercise): bool => $exercise['category_slug'] === $category,
+            fn (array $exercise): bool => $this->exerciseBelongsToCategory($exercise, $category),
         ));
+    }
+
+    /**
+     * @param  array<string, mixed>  $exercise
+     */
+    private function exerciseBelongsToCategory(array $exercise, string $category): bool
+    {
+        if (isset($exercise['category_slugs']) && is_array($exercise['category_slugs'])) {
+            return in_array($category, $exercise['category_slugs'], true);
+        }
+
+        return $exercise['category_slug'] === $category;
     }
 
     /**
@@ -273,37 +289,40 @@ class ExerciseCatalog
                 'media' => ['type' => 'image', 'class' => 'presto-media', 'src' => '/media/logopresto.avif', 'alt' => 'Logo Presto JDM Garage'],
             ],
             [
-                'title' => 'GTA VI Hub',
-                'search_title' => 'Donato GTA 6 Grand Theft Auto VI Laravel annunci leak',
-                'tag' => 'Laravel',
-                'date' => '24.06.2026',
+                'title' => 'Anime.TV',
+                'search_title' => 'Anime TV API Laravel Jikan anime catalogo form Php Mailtrap',
+                'tag' => 'PHP + Laravel + API',
+                'date' => '25.06.2026',
+                'card_class' => 'card-anime-tv',
+                'category_slug' => 'laravel',
+                'category_slugs' => ['laravel', 'php', 'api'],
+                'route' => 'anime-tv.home',
+                'cta' => 'Apri Anime.TV',
+                'media' => ['type' => 'image', 'class' => 'anime-tv-media', 'src' => '/media/anime-tv/gojo.jpg', 'alt' => 'Illustrazione anime'],
+            ],
+            [
+                'title' => 'GTA VI',
+                'search_title' => 'Donato GTA 6 Grand Theft Auto VI Laravel annunci leak collab Kostyantyn Hruzynskyy MySQL PHP Mailtrap',
+                'tag' => 'Laravel - Collab - MySQL',
+                'date' => '24.06.2026 - (In collaborazione con Kostyantyn Hruzynskyy)',
                 'card_class' => 'card-gta',
                 'category_slug' => 'laravel',
+                'category_slugs' => ['laravel', 'php', 'collab', 'mysql'],
                 'route' => 'gta.home',
                 'cta' => 'Apri il sito GTA 6',
                 'media' => ['type' => 'image', 'class' => 'gta-media', 'src' => '/GTA-6-Logo-PNG-from-Grand-Theft-Auto-VI-Transparent-jpg.png', 'alt' => 'Logo Grand Theft Auto VI'],
             ],
             [
                 'title' => 'Dimore Spettrali',
-                'search_title' => 'Case Infestate Laravel dimore spettrali catalogo form',
-                'tag' => 'Laravel',
+                'search_title' => 'Case Infestate Laravel dimore spettrali catalogo form PHP MySQL Mailtrap',
+                'tag' => 'Laravel + MySQL',
                 'date' => '25.06.2026',
                 'card_class' => 'card-haunted',
                 'category_slug' => 'laravel',
+                'category_slugs' => ['laravel', 'php', 'mysql'],
                 'route' => 'haunted-houses.home',
                 'cta' => 'Apri le case infestate',
                 'media' => ['type' => 'image', 'class' => 'haunted-media', 'src' => '/media/haunted-houses/header.jpg', 'alt' => 'Ingresso di una dimora spettrale'],
-            ],
-            [
-                'title' => 'Anime.TV API',
-                'search_title' => 'Anime TV API Laravel Jikan anime catalogo form',
-                'tag' => 'Laravel + API',
-                'date' => '25.06.2026',
-                'card_class' => 'card-anime-tv',
-                'category_slug' => 'laravel',
-                'route' => 'anime-tv.home',
-                'cta' => 'Apri Anime.TV',
-                'media' => ['type' => 'image', 'class' => 'anime-tv-media', 'src' => '/media/anime-tv/gojo.jpg', 'alt' => 'Illustrazione anime'],
             ],
         ];
     }

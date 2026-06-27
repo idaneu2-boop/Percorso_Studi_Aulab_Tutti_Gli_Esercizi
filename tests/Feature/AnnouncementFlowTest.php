@@ -12,6 +12,15 @@ class AnnouncementFlowTest extends TestCase
 {
     use LazilyRefreshDatabase;
 
+    public function test_gta_pages_use_the_rockstar_logo_as_favicon(): void
+    {
+        $this->get(route('gta.home'))
+            ->assertOk()
+            ->assertSee('GTA VI Announcements')
+            ->assertSee('rel="icon"', false)
+            ->assertSee('Rockstar-Games-Logo-emblem-of-the-renowned-game-developer-transparent-png-jpg.png', false);
+    }
+
     public function test_user_can_publish_an_announcement_and_open_its_detail_page(): void
     {
         $response = $this->post(route('announcements.store'), [

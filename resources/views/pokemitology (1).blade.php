@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéMitology</title>
+    <title>Pok&eacute;Mitology</title>
     
     <!-- Icona Sito -->
     <link rel="shortcut icon" href="/media/ArceusIcon.jpg" type="image/x-icon">
@@ -42,7 +42,7 @@
             <img decoding="async" loading="lazy" class="giffona1" src="/media/mew gif 2.gif" alt="gif di mewche balla">
             <a class="titolone" href="https://www.pokemon.com/it">
                 
-                <h1 class="title"> PokéMitology </h1>
+                <h1 class="title"> Pok&eacute;Mitology </h1>
                 
             </a>
             <img decoding="async" loading="lazy" class="giffona2" src="/media/Dittoballa.gif" alt="gif di Ditto che balla">
@@ -50,10 +50,11 @@
         <!-- Barra di ricerca e gif -->
         <div class="sezionericerca">
             <a class="exercise-home-link" href="home.html">Torna agli esercizi</a>
-            <form class="barraricerca">
-                <input type="search" placeholder="Acchiappali Tutti!">
-                <button type="submit"><img decoding="async" loading="lazy" id="diglettGif" src="/media/diglett gif.gif" alt="diglett che sbuca e dice ok"></button>
+            <form class="barraricerca" data-pokemitology-search>
+                <input type="search" placeholder="Acchiappali Tutti!" aria-label="Cerca nelle parole della pagina">
+                <button type="submit" aria-label="Cerca nella pagina"><img decoding="async" loading="lazy" id="diglettGif" src="/media/diglett gif.gif" alt="diglett che sbuca e dice ok"></button>
             </form>
+            <p class="pokemitology-search-status" data-pokemitology-search-status aria-live="polite"></p>
         </div>
         <!-- Cards -->
         <div class="container1">
@@ -100,6 +101,8 @@
         </div>
         
     </nav>
+    <x-pokemitology.story-page topic="overview" />
+
     <!-- Header -->
     <script>
         const diglettGif = document.getElementById("diglettGif");
@@ -109,8 +112,7 @@
             diglettGif.src = diglettSrc + "?restart=" + Date.now();
         }, 6000);
     </script>
+    <script src="/js/pokemitology-search.js" defer></script>
   <x-fluid-assets target="body" />
 </body>
 </html>
-
-

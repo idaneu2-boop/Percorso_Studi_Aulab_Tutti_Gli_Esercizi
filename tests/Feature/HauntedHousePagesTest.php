@@ -55,6 +55,31 @@ class HauntedHousePagesTest extends TestCase
             ->assertSee('Nome casa infestata');
     }
 
+    public function test_haunted_house_pages_use_their_own_favicon(): void
+    {
+        $this->get(route('haunted-houses.home'))
+            ->assertOk()
+            ->assertSee('rel="icon"', false)
+            ->assertSee('haunted-house-favicon.svg', false);
+    }
+
+    public function test_haunted_house_pages_link_back_to_the_exercises_dashboard(): void
+    {
+        $routes = [
+            'haunted-houses.home',
+            'haunted-houses.index',
+            'haunted-houses.create',
+        ];
+
+        foreach ($routes as $route) {
+            $this->get(route($route))
+                ->assertOk()
+                ->assertSee('bi-house-door-fill', false)
+                ->assertSee('Torna alla pagina degli esercizi')
+                ->assertSee('href="'.route('home').'"', false);
+        }
+    }
+
     public function test_store_creates_a_new_haunted_house(): void
     {
         $response = $this->post(route('haunted-houses.store'), [

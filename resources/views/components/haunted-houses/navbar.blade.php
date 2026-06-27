@@ -12,6 +12,12 @@
         <div class="collapse navbar-collapse" id="hauntedHousesNavbar">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                 <li class="nav-item">
+                    <a class="btn btn-sm btn-phantom" href="{{ route('home') }}" aria-label="Torna alla pagina degli esercizi">
+                        <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+                        Esercizi
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('haunted-houses.home') ? 'active' : '' }}" href="{{ route('haunted-houses.home') }}">Home</a>
                 </li>
                 <li class="nav-item">

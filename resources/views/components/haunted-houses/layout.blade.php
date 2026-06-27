@@ -9,6 +9,7 @@
 
         <title>{{ $title }}</title>
 
+        <link rel="icon" type="image/svg+xml" href="{{ asset('haunted-house-favicon.svg') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">

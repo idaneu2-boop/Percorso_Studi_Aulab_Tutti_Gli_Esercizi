@@ -32,6 +32,7 @@
     },
     "homepage": "https://github.com/idaneu2-boop/Percorso_Studi_Aulab_Tutti_Gli_Esercizi#readme",
     "dependencies": {
+        "all": "^0.0.0",
         "aos": "^2.3.4",
         "bootstrap": "^5.3.8"
     }

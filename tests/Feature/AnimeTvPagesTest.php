@@ -32,7 +32,9 @@ class AnimeTvPagesTest extends TestCase
             ->assertOk()
             ->assertSee('Anime.TV')
             ->assertSee('Cowboy Bebop')
-            ->assertSee('Vai al dettaglio');
+            ->assertSee('Vai al dettaglio')
+            ->assertDontSee('Jikan API + Laravel')
+            ->assertDontSee('bi bi-stars', false);
     }
 
     public function test_detail_page_displays_api_anime_details(): void
@@ -63,6 +65,38 @@ class AnimeTvPagesTest extends TestCase
         $this->get(route('anime-tv.api'))
             ->assertOk()
             ->assertJsonPath('data.0.title', 'Cowboy Bebop');
+    }
+
+    public function test_anime_tv_pages_use_gojo_as_favicon(): void
+    {
+        Http::preventStrayRequests();
+        Http::fake([
+            'https://api.jikan.moe/v4/anime' => Http::response([
+                'data' => [$this->apiAnime()],
+            ]),
+        ]);
+
+        $this->get(route('anime-tv.home'))
+            ->assertOk()
+            ->assertSee('rel="icon"', false)
+            ->assertSee('media/anime-tv/gojo.jpg', false);
+    }
+
+    public function test_anime_tv_navbar_links_back_to_the_exercises_dashboard(): void
+    {
+        Http::preventStrayRequests();
+        Http::fake([
+            'https://api.jikan.moe/v4/anime' => Http::response([
+                'data' => [$this->apiAnime()],
+            ]),
+        ]);
+
+        $this->get(route('anime-tv.home'))
+            ->assertOk()
+            ->assertSee('bi-house-door-fill', false)
+            ->assertSee('Torna alla pagina degli esercizi')
+            ->assertSee('href="'.route('home').'"', false)
+            ->assertDontSee('JSON API');
     }
 
     public function test_user_can_store_an_anime(): void
