@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 // use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Support\ExerciseCatalog;
+use Illuminate\Support\Facades\Cache;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
@@ -23,7 +25,19 @@ class ExampleTest extends TestCase
             ->assertSee('/categorie/api')
             ->assertSee('/categorie/collab')
             ->assertSee('/categorie/mysql')
-            ->assertSee('/index.html');
+            ->assertSee('/index.html')
+            ->assertDontSee('Modernizzazione Laravel 13')
+            ->assertDontSee('Stack applicato alla dashboard')
+            ->assertDontSee('exercise-upgrade-bar', false);
+    }
+
+    public function test_home_does_not_cache_the_catalog_while_testing(): void
+    {
+        Cache::forget(ExerciseCatalog::CacheKey);
+
+        $this->get(route('home'))->assertOk();
+
+        $this->assertFalse(Cache::has(ExerciseCatalog::CacheKey));
     }
 
     public function test_home_category_dropdown_includes_new_backend_categories(): void
@@ -86,7 +100,34 @@ class ExampleTest extends TestCase
         $this->get('/index.html')
             ->assertOk()
             ->assertSee('test-comandi')
-            ->assertSee('/media/logo-test-comandi.png');
+            ->assertSee('/media/logo-test-comandi.png')
+            ->assertDontSee('exercise-upgrade-bar', false)
+            ->assertDontSee('API catalogo');
+    }
+
+    public function test_exercises_catalog_is_available_as_json_api(): void
+    {
+        $response = $this->get(route('exercises.api.index'));
+
+        $response
+            ->assertOk()
+            ->assertJsonPath('data.0.type', 'exercises')
+            ->assertJsonPath('data.0.attributes.title', 'Test-Comandi')
+            ->assertJsonPath('data.0.attributes.modernized_with.0', 'Cache viva')
+            ->assertJsonPath('links.dashboard', '/');
+
+        $this->assertStringContainsString(
+            'application/vnd.api+json',
+            (string) $response->headers->get('Content-Type'),
+        );
+    }
+
+    public function test_exercises_json_api_can_filter_by_category(): void
+    {
+        $this->get(route('exercises.api.index', ['category' => 'api']))
+            ->assertOk()
+            ->assertJsonPath('data.0.attributes.title', 'Anime.TV')
+            ->assertJsonMissingPath('data.1.attributes.title');
     }
 
     public function test_legacy_home_html_redirects_to_dashboard(): void

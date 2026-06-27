@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnimeTvController;
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\ExerciseApiController;
 use App\Http\Controllers\ExerciseDashboardController;
 use App\Http\Controllers\HauntedHouseController;
 use App\Http\Controllers\InfoRequestController;
@@ -15,6 +16,9 @@ Route::get('/', [ExerciseDashboardController::class, 'index'])->name('home');
 Route::get('/home', [ExerciseDashboardController::class, 'index']);
 Route::get('/categorie/{category}', [ExerciseDashboardController::class, 'category'])
     ->name('home.category');
+
+Route::get('/api/v1/esercizi', [ExerciseApiController::class, 'index'])
+    ->name('exercises.api.index');
 
 Route::get('/supermario.html', [SuperMarioGameController::class, 'show'])
     ->name('supermario.show');

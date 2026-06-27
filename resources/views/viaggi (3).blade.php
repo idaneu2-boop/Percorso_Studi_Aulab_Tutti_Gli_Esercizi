@@ -66,7 +66,7 @@
             <li>Arsenale di Mystetskyi.</li>
         </ol>
         <h2>Il Muro d'Europa:</h2>
-        <p>Capitale dell'Ucraina attraversata dal fiume Dnepr, Kiev dopo un passato turbolento sta vivendo un periodo di tranquillit‡ ed Ë diventata una localit‡ moderna dove divertirsi e scoprire la sua storia. Ricca di contrasti e tradizioni, di monasteri, cattedrali, palazzi e musei, ha un patrimonio culturale ricco che vale la pena di essere vissuto.</p>
+        <p>Capitale dell'Ucraina attraversata dal fiume Dnepr, Kiev dopo un passato turbolento sta vivendo un periodo di tranquillit√† ed √® diventata una localit√† moderna dove divertirsi e scoprire la sua storia. Ricca di contrasti e tradizioni, di monasteri, cattedrali, palazzi e musei, ha un patrimonio culturale ricco che vale la pena di essere vissuto.</p>
         <h2>Prezzo del viaggio:</h2>
         <h3>1000 sbleuri per un viaggio ricco di storia.</h3>
         </main>

@@ -2,19 +2,22 @@
 
 namespace App\Support;
 
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Str;
+use Throwable;
+
 class ExerciseCatalog
 {
+    public const CacheKey = 'exercise-catalog:dashboard';
+
+    private const CacheTtlMinutes = 720;
+
     /**
      * @return array<string, string>
      */
     public function profile(): array
     {
-        return [
-            'name' => 'Daniele Pigliacelli / Matricola: 7521788692',
-            'url' => 'https://www.instagram.com/daniele.pigliacelli_/',
-            'image' => '/media/danielefoto.jpg',
-            'image_alt' => 'Foto di Daniele Pigliacelli',
-        ];
+        return $this->snapshot()['profile'];
     }
 
     /**
@@ -22,11 +25,7 @@ class ExerciseCatalog
      */
     public function hero(): array
     {
-        return [
-            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - JS - PHP - Laravel - API - MySQL',
-            'title' => 'Indice dei miei esercizi',
-            'copy' => 'Una dashboard semplice e ordinata per aprire al volo tutte le pagine HTML dei miei esercizi.',
-        ];
+        return $this->snapshot()['hero'];
     }
 
     /**
@@ -34,19 +33,7 @@ class ExerciseCatalog
      */
     public function categories(): array
     {
-        return [
-            ['label' => 'Console Unix', 'slug' => 'console'],
-            ['label' => 'Html', 'slug' => 'html'],
-            ['label' => 'Css', 'slug' => 'css'],
-            ['label' => 'Bootstrap', 'slug' => 'bootstrap'],
-            ['label' => 'DOM', 'slug' => 'dom'],
-            ['label' => 'JS', 'slug' => 'js'],
-            ['label' => 'PHP', 'slug' => 'php'],
-            ['label' => 'Laravel', 'slug' => 'laravel'],
-            ['label' => 'API', 'slug' => 'api'],
-            ['label' => 'Collab', 'slug' => 'collab'],
-            ['label' => 'MySQL', 'slug' => 'mysql'],
-        ];
+        return $this->snapshot()['categories'];
     }
 
     /**
@@ -69,11 +56,11 @@ class ExerciseCatalog
     public function exercises(?string $category = null): array
     {
         if ($category === null) {
-            return $this->allExercises();
+            return $this->snapshot()['exercises'];
         }
 
         return array_values(array_filter(
-            $this->allExercises(),
+            $this->snapshot()['exercises'],
             fn (array $exercise): bool => $this->exerciseBelongsToCategory($exercise, $category),
         ));
     }
@@ -97,7 +84,7 @@ class ExerciseCatalog
     {
         $exercisePages = array_map(
             fn (array $exercise): string => $exercise['page'],
-            array_filter($this->allExercises(), fn (array $exercise): bool => isset($exercise['page'])),
+            array_filter($this->exercises(), fn (array $exercise): bool => isset($exercise['page'])),
         );
 
         return array_values(array_unique(array_merge([
@@ -121,11 +108,180 @@ class ExerciseCatalog
      */
     public function footerContacts(): array
     {
+        return $this->snapshot()['footer_contacts'];
+    }
+
+    /**
+     * @return array{cache_key: string, cache_ttl_minutes: int, exercise_count: int, category_count: int, cache_payload: string, php: string, laravel: string}
+     */
+    public function catalogMeta(): array
+    {
+        $snapshot = $this->snapshot();
+
+        return [
+            'cache_key' => self::CacheKey,
+            'cache_ttl_minutes' => self::CacheTtlMinutes,
+            'exercise_count' => count($snapshot['exercises']),
+            'category_count' => count($snapshot['categories']),
+            'cache_payload' => 'array e scalari',
+            'php' => PHP_VERSION,
+            'laravel' => app()->version(),
+        ];
+    }
+
+    public function warm(): void
+    {
+        $this->snapshot();
+    }
+
+    /**
+     * @return array{
+     *     profile: array<string, string>,
+     *     hero: array<string, string>,
+     *     categories: list<array{label: string, slug: string}>,
+     *     exercises: list<array<string, mixed>>,
+     *     footer_contacts: list<array<string, string>>
+     * }
+     */
+    private function snapshot(): array
+    {
+        if (app()->environment('local', 'testing')) {
+            return $this->buildSnapshot();
+        }
+
+        try {
+            if (Cache::has(self::CacheKey)) {
+                Cache::touch(self::CacheKey, now()->addMinutes(self::CacheTtlMinutes));
+            }
+
+            return Cache::remember(
+                self::CacheKey,
+                now()->addMinutes(self::CacheTtlMinutes),
+                fn (): array => $this->buildSnapshot(),
+            );
+        } catch (Throwable) {
+            return $this->buildSnapshot();
+        }
+    }
+
+    /**
+     * @return array{
+     *     profile: array<string, string>,
+     *     hero: array<string, string>,
+     *     categories: list<array{label: string, slug: string}>,
+     *     exercises: list<array<string, mixed>>,
+     *     footer_contacts: list<array<string, string>>
+     * }
+     */
+    private function buildSnapshot(): array
+    {
+        return [
+            'profile' => $this->buildProfile(),
+            'hero' => $this->buildHero(),
+            'categories' => $this->buildCategories(),
+            'exercises' => $this->modernizedExercises($this->allExercises()),
+            'footer_contacts' => $this->buildFooterContacts(),
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function buildProfile(): array
+    {
+        return [
+            'name' => 'Daniele Pigliacelli / Matricola: 7521788692',
+            'url' => 'https://www.instagram.com/daniele.pigliacelli_/',
+            'image' => '/media/danielefoto.jpg',
+            'image_alt' => 'Foto di Daniele Pigliacelli',
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function buildHero(): array
+    {
+        return [
+            'kicker' => 'Console Unix - Html - Git Bash&Hub - CSS - Bootstrap - JS - PHP - Laravel - API - MySQL',
+            'title' => 'Indice dei miei esercizi',
+            'copy' => 'Una dashboard semplice e ordinata per aprire al volo tutte le pagine HTML dei miei esercizi.',
+        ];
+    }
+
+    /**
+     * @return list<array{label: string, slug: string}>
+     */
+    private function buildCategories(): array
+    {
+        return [
+            ['label' => 'Console Unix', 'slug' => 'console'],
+            ['label' => 'Html', 'slug' => 'html'],
+            ['label' => 'Css', 'slug' => 'css'],
+            ['label' => 'Bootstrap', 'slug' => 'bootstrap'],
+            ['label' => 'DOM', 'slug' => 'dom'],
+            ['label' => 'JS', 'slug' => 'js'],
+            ['label' => 'PHP', 'slug' => 'php'],
+            ['label' => 'Laravel', 'slug' => 'laravel'],
+            ['label' => 'API', 'slug' => 'api'],
+            ['label' => 'Collab', 'slug' => 'collab'],
+            ['label' => 'MySQL', 'slug' => 'mysql'],
+        ];
+    }
+
+    /**
+     * @return list<array<string, string>>
+     */
+    private function buildFooterContacts(): array
+    {
         return [
             ['label' => 'idaneu2@gmail.com', 'href' => 'mailto:idaneu2@gmail.com'],
             ['label' => '3281022479', 'href' => 'tel:+393281022479'],
             ['label' => 'Daniele.Pigliacelli_', 'href' => 'https://www.instagram.com/daniele.pigliacelli_/'],
         ];
+    }
+
+    /**
+     * @param  list<array<string, mixed>>  $exercises
+     * @return list<array<string, mixed>>
+     */
+    private function modernizedExercises(array $exercises): array
+    {
+        return array_map(function (array $exercise): array {
+            $categorySlugs = $exercise['category_slugs'] ?? [$exercise['category_slug']];
+
+            return [
+                'id' => $this->exerciseId($exercise),
+                'category_slugs' => $categorySlugs,
+                'is_legacy' => ! isset($exercise['route']),
+                'upgrade_badges' => $this->upgradeBadges($exercise, $categorySlugs),
+            ] + $exercise;
+        }, $exercises);
+    }
+
+    /**
+     * @param  array<string, mixed>  $exercise
+     */
+    private function exerciseId(array $exercise): string
+    {
+        return Str::slug((string) ($exercise['page'] ?? $exercise['route'] ?? $exercise['title']));
+    }
+
+    /**
+     * @param  array<string, mixed>  $exercise
+     * @param  list<string>  $categorySlugs
+     * @return list<string>
+     */
+    private function upgradeBadges(array $exercise, array $categorySlugs): array
+    {
+        $badges = ['Cache viva', 'JSON:API', 'CSRF L13'];
+        $badges[] = isset($exercise['route']) ? 'Rotta nominata' : 'Legacy shell';
+
+        if (in_array('laravel', $categorySlugs, true)) {
+            $badges[] = 'PHP 8.3+';
+        }
+
+        return $badges;
     }
 
     /**
@@ -291,7 +447,7 @@ class ExerciseCatalog
             [
                 'title' => 'Anime.TV',
                 'search_title' => 'Anime TV API Laravel Jikan anime catalogo form Php Mailtrap',
-                'tag' => 'PHP + Laravel + API',
+                'tag' => 'API + Laravel',
                 'date' => '25.06.2026',
                 'card_class' => 'card-anime-tv',
                 'category_slug' => 'laravel',

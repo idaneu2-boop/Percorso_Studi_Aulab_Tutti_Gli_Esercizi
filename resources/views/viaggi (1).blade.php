@@ -68,7 +68,7 @@
         </ol>
         <h2>Storia e cultura del luogo:</h2>
         <p>La Striscia di Gaza ha una storia complessa e un patrimonio culturale segnato da secoli di passaggi, conflitti e tradizioni.</p>
-        <p>Oggi è un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
+        <p>Oggi Ã¨ un territorio fragile, ma resta un luogo importante per comprendere la storia e le culture del Mediterraneo.</p>
 
         <h2>Prezzo del viaggio:</h2>
         <h3>300 sbleuri solo andata</h3>

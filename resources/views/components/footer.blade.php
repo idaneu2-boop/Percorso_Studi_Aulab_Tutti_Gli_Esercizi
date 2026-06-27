@@ -23,14 +23,13 @@
                 </div>
             </div>
             <div class="footer-bottom justify-content-center">
-                    <span><i aria-hidden="true"></i> Con la bellissima collaborazione di: <a class="text-decoration-none bi bi-heart" href=""> Kostyantyn Hruzynskyy <i class="bi bi-heart"></i></a></span>
-                        <span><i class="bi bi-person" aria-hidden="true"> Contatti: </i></span>
+                    <span><i aria-hidden="true"></i> Con la bellissima collaborazione di: <a class="text-decoration-none bi bi-heart" href="https://www.linkedin.com/in/kostyantyn-hruzynskyy/"> Kostyantyn Hruzynskyy <i class="bi bi-heart"></i></a></span>
+                        <span><i class="bi bi-person" aria-hidden="true">Il suo <a class="text-decoration-none" href="https://www.instagram.com/letitflow_skyy/">Instagram</a></i></span>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <span><i aria-hidden="true"></i> &copy; {{ now()->year }} GTA VI</span>
-                <span><i class="bi bi-person" aria-hidden="true"> Contatti: </i></span>
                 <span><i class="bi bi-shield-check" aria-hidden="true"></i> Fan web app non ufficiale.</span>
             </div>
         </div>
