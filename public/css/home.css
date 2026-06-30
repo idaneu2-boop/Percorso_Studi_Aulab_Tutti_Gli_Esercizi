@@ -1176,6 +1176,42 @@ body.fluid-enhanced .card-aulab:hover .card-media img {
   filter: saturate(0.92) contrast(1.06);
 }
 
+.card-authentication {
+  --card-bg:
+  linear-gradient(135deg, rgba(3, 7, 18, 0.97), rgba(13, 23, 39, 0.86)),
+  url("/media/autenticazione/moon-earthrise.jpg");
+  --card-text: #ffffff;
+  --card-muted: #d9e6f6;
+  --card-accent: #e31b23;
+  --card-tag-bg: rgba(109, 214, 255, 0.2);
+  --card-tag-text: #ffffff;
+  --card-button-bg: #6dd6ff;
+  --card-button-text: #06111f;
+  --card-button-hover: #f5c451;
+  --card-button-hover-text: #06111f;
+  background-position: center;
+  background-size: cover;
+}
+
+.authentication-media {
+  display: grid;
+  place-items: center;
+  background:
+  linear-gradient(135deg, rgba(3, 7, 18, 0.24), rgba(109, 214, 255, 0.16)),
+  url("/media/autenticazione/moon-earthrise.jpg") center / cover;
+}
+
+.card-authentication .card-media img {
+  position: relative;
+  z-index: 1;
+  width: min(150px, 54%);
+  height: auto;
+  object-fit: contain;
+  filter:
+  drop-shadow(0 0 18px rgba(109, 214, 255, 0.72))
+  drop-shadow(0 12px 20px rgba(0, 0, 0, 0.58));
+}
+
 .card-anime-tv {
   --card-bg:
   linear-gradient(135deg, rgba(27, 26, 26, 0.96), rgba(40, 82, 90, 0.84)),

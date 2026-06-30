@@ -480,6 +480,18 @@ class ExerciseCatalog
                 'cta' => 'Apri le case infestate',
                 'media' => ['type' => 'image', 'class' => 'haunted-media', 'src' => '/media/haunted-houses/header.jpg', 'alt' => 'Ingresso di una dimora spettrale'],
             ],
+            [
+                'title' => 'Autenticazione NASA',
+                'search_title' => 'Autenticazione Laravel Fortify login registrazione CRUD post NASA MySQL',
+                'tag' => 'Laravel Auth + MySQL',
+                'date' => '30.06.2026',
+                'card_class' => 'card-authentication',
+                'category_slug' => 'laravel',
+                'category_slugs' => ['laravel', 'php', 'mysql'],
+                'route' => 'autenticazione.home',
+                'cta' => 'Accedi a Mission Control',
+                'media' => ['type' => 'image', 'class' => 'authentication-media', 'src' => '/media/autenticazione/logo.png', 'alt' => 'Logo NASA'],
+            ],
         ];
     }
 }

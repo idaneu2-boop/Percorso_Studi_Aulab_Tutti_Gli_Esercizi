@@ -1,0 +1,47 @@
+[
+  {
+    "id": "nasa-ames-stars-july-2026",
+    "title": "Ames Science Stars of the Month July 2026",
+    "excerpt": "NASA Ames celebra contributi scientifici e tecnici che sostengono ricerca, collaborazione e nuove missioni.",
+    "body": "Un post ufficiale NASA dedicato alle persone del centro Ames e al lavoro che rende possibili ricerca spaziale, bioscienze e innovazione tecnica. Resta nel feed come contenuto JSON di partenza accanto ai post salvati nel database.",
+    "author": "NASA Ames",
+    "source_url": "https://www.nasa.gov/general/ames-stars-of-the-month-july-2026/",
+    "published_at": "2026-06-30"
+  },
+  {
+    "id": "nasa-langley-wind-tunnel-2026",
+    "title": "NASA's Newest Wind Tunnel Builds on Legacy of Innovation",
+    "excerpt": "NASA Langley racconta una nuova infrastruttura per ricerca aeronautica, prove sperimentali e futuro del volo.",
+    "body": "Il contenuto originale descrive il passaggio generazionale tra storiche gallerie del vento e una nuova struttura pensata per studiare dinamica del volo, stabilita e sicurezza. Nel feed mostra come la NASA lavori anche sull'aeronautica terrestre.",
+    "author": "NASA Langley",
+    "source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasas-newest-wind-tunnel-builds-on-legacy-of-innovation/",
+    "published_at": "2026-06-29"
+  },
+  {
+    "id": "nasa-earth-observations-betsy-ford",
+    "title": "Mapping Earth's Observations, featuring Betsy Ford",
+    "excerpt": "Un approfondimento NASA sul valore dei dati satellitari per atmosfera, suolo, clima e osservazione della Terra.",
+    "body": "Il post ufficiale evidenzia il lavoro dietro la gestione e la lettura dei dati Earth Science. Questi contenuti completano i post utente con una base JSON dedicata a osservazione terrestre e scienza applicata.",
+    "author": "NASA Earth Science",
+    "source_url": "https://www.nasa.gov/general/mapping-earths-observations-featuring-betsy-ford/",
+    "published_at": "2026-06-29"
+  },
+  {
+    "id": "nasa-nextstep-lunar-technology",
+    "title": "NextSTEP-3 A: Lunar Enabling Technology",
+    "excerpt": "NASA presenta iniziative e tecnologie per rendere piu pronte le architetture lunari e cislunari.",
+    "body": "Questo contenuto NASA riguarda sistemi e tecnologie per esplorazione lunare di lungo periodo. Nel feed mantiene un collegamento diretto con Artemis, infrastrutture sulla Luna e missioni future.",
+    "author": "NASA Space Technology",
+    "source_url": "https://www.nasa.gov/directorates/stmd/nextstep-3-a-lunar-enabling-technology/",
+    "published_at": "2026-06-29"
+  },
+  {
+    "id": "nasa-lunar-surface-technologies",
+    "title": "NASA Seeks Industry Input to Accelerate Lunar Surface Technologies",
+    "excerpt": "NASA invita industria e partner a contribuire allo sviluppo di tecnologie per operazioni sulla superficie lunare.",
+    "body": "Il post ufficiale parla di infrastrutture, sistemi e collaborazione industriale per ridurre rischi e accelerare le capacita necessarie alle missioni lunari. Qui serve come esempio JSON per post collegati a fonti esterne NASA.",
+    "author": "NASA Space Technology",
+    "source_url": "https://www.nasa.gov/directorates/stmd/nasa-seeks-industry-input-to-accelerate-lunar-surface-technologies/",
+    "published_at": "2026-06-29"
+  }
+]

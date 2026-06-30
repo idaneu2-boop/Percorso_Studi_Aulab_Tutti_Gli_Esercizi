@@ -7,6 +7,7 @@ use App\Http\Controllers\ExerciseDashboardController;
 use App\Http\Controllers\HauntedHouseController;
 use App\Http\Controllers\InfoRequestController;
 use App\Http\Controllers\LegacyPageController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\SuperMarioGameController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,16 @@ Route::prefix('case-infestate')
         Route::get('/catalogo', 'index')->name('index');
         Route::get('/aggiungi', 'create')->name('create');
         Route::post('/catalogo', 'store')->name('store');
+    });
+
+Route::prefix('autenticazione')
+    ->name('autenticazione.')
+    ->middleware('auth')
+    ->group(function (): void {
+        Route::view('/', 'auth-exercise.home')->name('home');
+
+        Route::resource('posts', PostController::class)
+            ->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy']);
     });
 
 Route::prefix('gta-6')->group(function (): void {
